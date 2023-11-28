@@ -1,11 +1,11 @@
 # A-December-of-Algorithms-2022
 <div align="left">
 <h1>
-    <p align="center"><img alt="header" src="https://user-images.githubusercontent.com/105559815/206869067-620c21f7-9ba1-48b1-b690-c010be416ad2.jpg" width="500"></img></p>
+<!--     <p align="center"><img alt="header" src="https://user-images.githubusercontent.com/105559815/206869067-620c21f7-9ba1-48b1-b690-c010be416ad2.jpg" width="500"></img></p> -->
 
 
 </h1>
-Welcome to A December of Algorithms (2022). 
+Welcome to A December of Algorithms 2023. 
 
 After overwhelming responses from previous years, we present you with a new collection of algorithms to implement this December. 
 
