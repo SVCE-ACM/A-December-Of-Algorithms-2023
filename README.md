@@ -25,7 +25,7 @@ All you need to do is fork this repository, implement all 31  algorithms and sen
 Check out our FAQ for more information.
 
 ## Index
-  - [**December 1 - Cricketmetric**](#december-1---cricmetric)
+  - [**December 1 - Cricmetric**](#december-1---cricmetric)
   - [**FAQ**](#faq)
 
 
