@@ -25,13 +25,13 @@ All you need to do is fork this repository, implement all 31  algorithms and sen
 Check out our FAQ for more information.
 
 ## Index
-  - [**December 1 - Cricket Score Analysis**](#december-1---cricket-score-analysis)
+  - [**December 1 - Cricketmetric**](#december-1---cricmetric)
   - [**FAQ**](#faq)
 
 
 ## Algorithms
 
- ### December 1 - Cricket Score Analysis
+ ### December 1 - Cricmetric
 
    #### Problem Statement
    In a cricket match, each batsman has a unique identifier, and their corresponding  runs scored are stored in an array.     Your task is to analyze the cricket match data  and determine the following: 
