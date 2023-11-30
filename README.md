@@ -24,6 +24,67 @@ All you need to do is fork this repository, implement all 31  algorithms and sen
 
 Check out our FAQ for more information.
 
+## Index
+  - [**December 1 - Cricket Score Analysis**](#december-1---cricket-score-analysis)
+  - [**FAQ**](#faq)
+
+
+## Algorithms
+
+ ### December 1 - Cricket Score Analysis
+
+   #### Problem Statement
+   In a cricket match, each batsman has a unique identifier, and their corresponding  runs scored are stored in an array.     Your task is to analyze the cricket match data  and determine the following: 
+   
+    1. The total runs scored by the team. 
+    2. The batsman who scored the highest number of runs and their corresponding  unique identifier.
+
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/103169831/6e7189c3-455a-4f37-baaa-9f3bd3ceae87" width="400"></p>
+   
+   #### Sample Input/Output
+   ```
+      Input: 
+      5 
+      20 35 40 15 25
+
+      Output:
+      135 
+      2
+
+   ```
+
+   #### Explanation
+   ```
+     
+        There are five batsmen in the match. Their runs are 20, 35, 40, 15, and 25. The total  runs scored by the team are 135. Batsman number 3 (index 2) scored the highest  number of runs, which is 40. 
+        
+   ```
+   ```
+      Input: 
+      10 
+      10 20 30 40 50 60 70 80 90 100 
+      
+      Output: 
+      550 
+      9
+
+   ``` 
+   
+   #### Explanation
+   ```
+     
+        There are ten batsmen in the match. Their runs are 10, 20, 30, 40, 50, 60, 70, 80,  90, and 100. The total runs scored by the team are 550. Batsman number 10 (index  9) scored the highest number of runs, which is 100. 
+        
+   ```
+    
+- **References**
+    - [Arrays in C++](http://www.cplusplus.com/doc/tutorial/arrays/)
+    - [Arrays in Java](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
+    - [Arrays in Python](https://www.w3schools.com/python/python_lists.asp)
+    - [Indexing in Arrays](https://www.geeksforgeeks.org/how-exactly-does-indexing-works-in-arrays/)
+----
+
 FAQ
 ======
 
