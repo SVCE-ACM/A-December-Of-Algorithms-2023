@@ -10,8 +10,3 @@ while(c<=n):
 print("the total runs scored by the team is:",sum(l))
 m=max(l)
 print(l.index(m))
-'''
-for i in len(l):
-    if l[i]==m:
-        print("The highest scorer is player:",i)
-'''
