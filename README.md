@@ -97,10 +97,10 @@ Given an array of product IDs, develop a program to generate the frequency of ea
    
    #### Sample Input/Output
    ```
-Input 1 
-[2,2,3,4,5,6,2,4,6,7] 
-Output 1 
-[3,1,2,1,2,1] 
+    Input 1 
+    [2,2,3,4,5,6,2,4,6,7] 
+    Output 1 
+    [3,1,2,1,2,1] 
 
 
    ```
@@ -108,20 +108,20 @@ Output 1
    #### Explanation
    ```
      
-Frequency of 2: 3 
-Frequency of 3: 1 
-Frequency of 4: 2 
-Frequency of 5: 1 
-Frequency of 6: 2 
-Frequency of 7: 1
+    Frequency of 2: 3 
+    Frequency of 3: 1 
+    Frequency of 4: 2 
+    Frequency of 5: 1 
+    Frequency of 6: 2 
+    Frequency of 7: 1
  
         
    ```
    ```
-Input 2
-[25,28,33,27,28,25,25,31]
-Output 2
-[3,2,1,1,1]
+    Input 2
+    [25,28,33,27,28,25,25,31]
+    Output 2
+    [3,2,1,1,1]
 
 
    ``` 
@@ -129,11 +129,11 @@ Output 2
    #### Explanation
    ```
      
-Frequency of 25: 3 
-Frequency of 28: 2 
-Frequency of 33: 1 
-Frequency of 27: 1 
-Frequency of 31: 1 
+    Frequency of 25: 3 
+    Frequency of 28: 2 
+    Frequency of 33: 1 
+    Frequency of 27: 1 
+    Frequency of 31: 1 
   
         
    ```
