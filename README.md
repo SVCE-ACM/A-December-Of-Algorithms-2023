@@ -26,7 +26,7 @@ Check out our FAQ for more information.
 
 ## Index
   - [**December 1 - Cricmetric**](#december-1---cricmetric)
-  - [**December 2 - Shopper's Choice**](#december-2---shopper's--choice)
+  - [**December 2 - Shopper's Choice**](#december-2---shoppers--choice)
   - [**FAQ**](#faq)
 
 
