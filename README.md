@@ -27,7 +27,7 @@ Check out our FAQ for more information.
 ## Index
   - [**December 1 - Cricmetric**](#december-1---cricmetric)
   - [**December 2 - Shopper's Choice**](#december-2---shoppers-choice)
-  - [**December 3 - Sunburnt**](#december-3---suburnt)
+  - [**December 3 - Sunburnt**](#december-3---sunburnt)
   - [**FAQ**](#faq)
 
 
@@ -184,6 +184,8 @@ Given an array of product IDs, develop a program to generate the frequency of ea
     
 - **References**
     - [Searching Algorithms](https://www.geeksforgeeks.org/searching-algorithms/?ref=shm)
+ 
+  ----
 
 FAQ
 ======
@@ -231,7 +233,7 @@ Not to worry! Open your nearest terminal or command prompt and navigate over to 
 
 Enter these commands:
 ```bash
-git remote add upstream https://github.com/SVCE-ACM/A-December-of-Algorithms-2021.git
+git remote add upstream https://github.com/SVCE-ACM/A-December-of-Algorithms-2023.git
 git fetch upstream
 git merge upstream/main
 ```
