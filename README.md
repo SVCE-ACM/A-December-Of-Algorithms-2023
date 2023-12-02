@@ -172,7 +172,7 @@ Given an array of product IDs, develop a program to generate the frequency of ea
     H[] = {7, 4, 8, 2, 9}
 
     Output 2
-    [3,2,1,1,1]
+    3
 
 
    ``` 
@@ -180,7 +180,8 @@ Given an array of product IDs, develop a program to generate the frequency of ea
    #### Explanation
    ```
 
-   As 7 is the first element, it can see the sunrise. 4 can't see the sunrise as 7 is hiding it.  8 can see. 2 can't see the sunrise. 9 also can see the sunrise.
+   As 7 is the first element, it can see the sunrise. 4 can't see the sunrise as 7 is hiding it.
+   8 can see. 2 can't see the sunrise. 9 also can see the sunrise.
         
    ```
     
