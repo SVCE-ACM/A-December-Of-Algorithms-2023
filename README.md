@@ -150,7 +150,7 @@ Given an array of product IDs, develop a program to generate the frequency of ea
    #### Problem Statement
    In the city of Codeville, a skyline of buildings awaits the morning sun. Given an array 'H' representing their heights, design a function to count buildings that will see the sunrise from the side where the array begins. A building enjoys the sunrise if there are no taller buildings blocking its view. Determine how many buildings get to greet the day with the warmth of the first rays of sunlight.
    
-   Note : Height of building should be strictly greater than height of buildings in left in order to see the sun.
+   Note: Height of building should be strictly greater than height of buildings in left in order to see the sun.
 
    <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/103169831/18620cf0-87f4-42bf-827e-c785181823fe" width="400"></p>
    
