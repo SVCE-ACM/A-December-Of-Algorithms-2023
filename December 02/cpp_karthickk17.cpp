@@ -13,7 +13,8 @@ int main() {
     }
     for(int i:arr){
         if(count[i] > 0) {
-            cout<<count[i]<<" "; //inorder to preserve the order of appearance of elements, I have to mark the
+            cout<<count[i]<<" "; 
+            //inorder to preserve the order of appearance of elements, I have to mark the
             //visited elements by making their count as 0.
             count[i] = 0;
         }
