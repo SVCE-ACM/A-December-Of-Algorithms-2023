@@ -159,6 +159,7 @@ Given an array of product IDs, develop a program to generate the frequency of ea
     Input 1 
     N = 4
     H[] = {2, 3, 4, 5}
+
     Output 1 
     4
 
@@ -169,6 +170,7 @@ Given an array of product IDs, develop a program to generate the frequency of ea
     Input 2
     N = 5
     H[] = {7, 4, 8, 2, 9}
+
     Output 2
     [3,2,1,1,1]
 
@@ -185,7 +187,7 @@ Given an array of product IDs, develop a program to generate the frequency of ea
 - **References**
     - [Searching Algorithms](https://www.geeksforgeeks.org/searching-algorithms/?ref=shm)
  
-  ----
+----
 
 FAQ
 ======
