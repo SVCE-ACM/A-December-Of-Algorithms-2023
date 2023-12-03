@@ -28,6 +28,7 @@ Check out our FAQ for more information.
   - [**December 1 - Cricmetric**](#december-1---cricmetric)
   - [**December 2 - Shopper's Choice**](#december-2---shoppers-choice)
   - [**December 3 - Sunburnt**](#december-3---sunburnt)
+  - [**December 4 - Mirror Magic**](#december-4---mirror-magic)
   - [**FAQ**](#faq)
 
 
