@@ -195,7 +195,7 @@ Given an array of product IDs, develop a program to generate the frequency of ea
 
    #### Problem Statement
    - The great God Horus has found a way inside the treasure room, but what stands before him is The God Of Wisdom, The Spinnix. Horus must complete the mystery of The Spinnix name.
-   - Clue: It was there when you were born, and shall follow you till death, if any part of the name reflects on mirror and repeats itself (Palindromic), then the answer of the riddle would be “the smallest substring that is palindromic.”
+   - **Clue:** It was there when you were born, and shall follow you till death, if any part of the name reflects on mirror and repeats itself (Palindromic), then the answer of the riddle would be “the smallest substring that is palindromic.”
   - If not then Horus shall chant "Error".
 
 
