@@ -207,6 +207,7 @@ Given an array of product IDs, develop a program to generate the frequency of ea
 
     Input: 
     Hollow
+
     Output: 
     ll 
 
@@ -217,6 +218,7 @@ Given an array of product IDs, develop a program to generate the frequency of ea
 
     Input:
     Master
+
     Output:
     Error
 
