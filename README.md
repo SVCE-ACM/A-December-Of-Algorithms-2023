@@ -200,8 +200,7 @@ Given an array of product IDs, develop a program to generate the frequency of ea
 
 
 <p align="center"><img src="https://media.giphy.com/media/Y2tCgTgzWRji5U0dIn/giphy-downsized-large.gif" /></p>
-
-  
+ 
    
    #### Sample Input/Output
    ```
