@@ -6,10 +6,17 @@ int main()
     for(int i = 0;i < n; i++){
         scanf("%d",&a[i]);
     }
-    int b = 1;
-    for(int i = 1;i < n; i++){
-        if(a[i]>a[i-1]){
-            b += 1;
+    int b = 0;
+    for(int i = 0;i < n; i++){
+        int s = 0;
+        for(int j = 0;j < i;j++){
+            if(a[j]>=a[i]){
+                s = 1;
+                break;
+            }
+        }
+        if(s == 0){
+            b+=1;
         }
     }
     printf("%d",b);
