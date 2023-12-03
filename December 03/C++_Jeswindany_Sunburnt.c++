@@ -12,7 +12,7 @@ int main(){
     for(int i=0; i<n; i++){
         f = 1;
         for(int j=0; j<i; j++){
-            if(h[j] > h[i]){
+            if(h[j] >= h[i]){
                 f = 0;
                 break;
             }
