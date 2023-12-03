@@ -26,6 +26,8 @@ Check out our FAQ for more information.
 
 ## Index
   - [**December 1 - Cricmetric**](#december-1---cricmetric)
+  - [**December 2 - Shopper's Choice**](#december-2---shoppers-choice)
+  - [**December 3 - Sunburnt**](#december-3---sunburnt)
   - [**FAQ**](#faq)
 
 
@@ -85,6 +87,109 @@ Check out our FAQ for more information.
     - [Indexing in Arrays](https://www.geeksforgeeks.org/how-exactly-does-indexing-works-in-arrays/)
 ----
 
+ ### December 2 - Shopper's Choice
+
+   #### Problem Statement
+   In a retail store, the management wants to analyze customer purchase data to gain insights into the popularity of various products. They have a dataset representing customer purchases, where each entry corresponds to the product ID of the item bought.
+Given an array of product IDs, develop a program to generate the frequency of each product as an output array. The frequency represents how often each product has been purchased.
+
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/55a0cca7-6c69-48d4-9b90-55fd5799e820" width="400"></p>
+   
+   #### Sample Input/Output
+   ```
+    Input 1 
+    [2,2,3,4,5,6,2,4,6,7] 
+    Output 1 
+    [3,1,2,1,2,1] 
+
+
+   ```
+
+   #### Explanation
+   ```
+     
+    Frequency of 2: 3 
+    Frequency of 3: 1 
+    Frequency of 4: 2 
+    Frequency of 5: 1 
+    Frequency of 6: 2 
+    Frequency of 7: 1
+ 
+        
+   ```
+   ```
+    Input 2
+    [25,28,33,27,28,25,25,31]
+    Output 2
+    [3,2,1,1,1]
+
+
+   ``` 
+   
+   #### Explanation
+   ```
+     
+    Frequency of 25: 3 
+    Frequency of 28: 2 
+    Frequency of 33: 1 
+    Frequency of 27: 1 
+    Frequency of 31: 1 
+  
+        
+   ```
+    
+- **References**
+    - [Arrays in C++](http://www.cplusplus.com/doc/tutorial/arrays/)
+    - [Arrays in Java](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
+    - [Arrays in Python](https://www.w3schools.com/python/python_lists.asp)
+----
+
+ ### December 3 - Sunburnt
+
+   #### Problem Statement
+   In the city of Codeville, a skyline of buildings awaits the morning sun. Given an array 'H' representing their heights, design a function to count buildings that will see the sunrise from the side where the array begins. A building enjoys the sunrise if there are no taller buildings blocking its view. Determine how many buildings get to greet the day with the warmth of the first rays of sunlight.
+   
+   Note: Height of building should be strictly greater than height of buildings in left in order to see the sun.
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/103169831/18620cf0-87f4-42bf-827e-c785181823fe" width="400"></p>
+   
+   #### Sample Input/Output
+   ```
+    Input 1 
+    N = 4
+    H[] = {2, 3, 4, 5}
+
+    Output 1 
+    4
+
+
+   ```
+
+   ```
+    Input 2
+    N = 5
+    H[] = {7, 4, 8, 2, 9}
+
+    Output 2
+    3
+
+
+   ``` 
+   
+   #### Explanation
+   ```
+
+   As 7 is the first element, it can see the sunrise. 4 can't see the sunrise as 7 is hiding it.
+   8 can see. 2 can't see the sunrise. 9 also can see the sunrise.
+        
+   ```
+    
+- **References**
+    - [Searching Algorithms](https://www.geeksforgeeks.org/searching-algorithms/?ref=shm)
+ 
+----
+
 FAQ
 ======
 
@@ -131,7 +236,7 @@ Not to worry! Open your nearest terminal or command prompt and navigate over to 
 
 Enter these commands:
 ```bash
-git remote add upstream https://github.com/SVCE-ACM/A-December-of-Algorithms-2021.git
+git remote add upstream https://github.com/SVCE-ACM/A-December-of-Algorithms-2023.git
 git fetch upstream
 git merge upstream/main
 ```
