@@ -199,7 +199,7 @@ Given an array of product IDs, develop a program to generate the frequency of ea
   - If not then Horus shall chant "Error".
 
 
-
+<p align="center"><img src="https://i.imgur.com/O31uZDd.jpg" /></p>
 
   
    
@@ -213,11 +213,7 @@ Given an array of product IDs, develop a program to generate the frequency of ea
 
    ```
 
-   #### Explanation
-   ```
-    In the string “Hollow”, the possible palindromic substrings are “Ollo” and “ll” out of which the smallest palindromic substring is “ll”.
-  
-   ```
+   
    ```
 
     Input:
@@ -225,7 +221,13 @@ Given an array of product IDs, develop a program to generate the frequency of ea
     Output:
     Error
 
-   ``` 
+   ```
+
+#### Explanation
+   ```
+    In the string “Hollow”, the possible palindromic substrings are “Ollo” and “ll” out of which the smallest palindromic substring is “ll”.
+  
+   ```
    
 FAQ
 ======
