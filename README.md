@@ -27,6 +27,7 @@ Check out our FAQ for more information.
 ## Index
   - [**December 1 - Cricmetric**](#december-1---cricmetric)
   - [**December 2 - Shopper's Choice**](#december-2---shoppers-choice)
+  - [**December 3 - Sunburnt**](#december-3---sunburnt)
   - [**FAQ**](#faq)
 
 
@@ -144,6 +145,51 @@ Given an array of product IDs, develop a program to generate the frequency of ea
     - [Arrays in Python](https://www.w3schools.com/python/python_lists.asp)
 ----
 
+ ### December 3 - Sunburnt
+
+   #### Problem Statement
+   In the city of Codeville, a skyline of buildings awaits the morning sun. Given an array 'H' representing their heights, design a function to count buildings that will see the sunrise from the side where the array begins. A building enjoys the sunrise if there are no taller buildings blocking its view. Determine how many buildings get to greet the day with the warmth of the first rays of sunlight.
+   
+   Note: Height of building should be strictly greater than height of buildings in left in order to see the sun.
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/103169831/18620cf0-87f4-42bf-827e-c785181823fe" width="400"></p>
+   
+   #### Sample Input/Output
+   ```
+    Input 1 
+    N = 4
+    H[] = {2, 3, 4, 5}
+
+    Output 1 
+    4
+
+
+   ```
+
+   ```
+    Input 2
+    N = 5
+    H[] = {7, 4, 8, 2, 9}
+
+    Output 2
+    3
+
+
+   ``` 
+   
+   #### Explanation
+   ```
+
+   As 7 is the first element, it can see the sunrise. 4 can't see the sunrise as 7 is hiding it.
+   8 can see. 2 can't see the sunrise. 9 also can see the sunrise.
+        
+   ```
+    
+- **References**
+    - [Searching Algorithms](https://www.geeksforgeeks.org/searching-algorithms/?ref=shm)
+ 
+----
+
 FAQ
 ======
 
@@ -190,7 +236,7 @@ Not to worry! Open your nearest terminal or command prompt and navigate over to 
 
 Enter these commands:
 ```bash
-git remote add upstream https://github.com/SVCE-ACM/A-December-of-Algorithms-2021.git
+git remote add upstream https://github.com/SVCE-ACM/A-December-of-Algorithms-2023.git
 git fetch upstream
 git merge upstream/main
 ```
