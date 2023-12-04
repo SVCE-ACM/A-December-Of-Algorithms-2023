@@ -252,7 +252,7 @@ Given an array of product IDs, develop a program to generate the frequency of ea
         Elements greater than or equal to the average: 40, 50 
         Sum of elements greater than or equal to the average: 40 + 50 = 90
    ```
-#### Sample Input/Output
+   #### Sample Input/Output
    ```
       Input: [5, 10, 15, 20, 25] 
       Output: 95 
