@@ -233,9 +233,9 @@ Given an array of product IDs, develop a program to generate the frequency of ea
 
 ### December 5 - Peaky Blinders
 #### Problem Statement
-    - You are a detective working on a case involving a group of thieves. 
-    - You have obtained a list of the amounts stolen by each thief during a series of robberies. 
-    - Your task is to determine the total amount of money stolen by the thieves who stole more than or equal to the average amount stolen by the group.  
+- You are a detective working on a case involving a group of thieves.
+- You have obtained a list of the amounts stolen by each thief during a series of robberies.
+- Your task is to determine the total amount of money stolen by the thieves who stole more than or equal to the average amount stolen by the group.  
 
 
    <p align="center"><img src="https://media.giphy.com/media/l3mZpcNC69UuXjoME/giphy-downsized-large.gif"></p>
