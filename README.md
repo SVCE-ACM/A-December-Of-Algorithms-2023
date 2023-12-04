@@ -28,6 +28,7 @@ Check out our FAQ for more information.
   - [**December 1 - Cricmetric**](#december-1---cricmetric)
   - [**December 2 - Shopper's Choice**](#december-2---shoppers-choice)
   - [**December 3 - Sunburnt**](#december-3---sunburnt)
+  - [**December 4 - Mirror Magic**](#december-4---mirror-magic)
   - [**FAQ**](#faq)
 
 
@@ -190,6 +191,45 @@ Given an array of product IDs, develop a program to generate the frequency of ea
  
 ----
 
+### December 4 - Mirror Magic
+
+   #### Problem Statement
+   - The great God Horus has found a way inside the treasure room, but what stands before him is The God Of Wisdom, The Spinnix. Horus must complete the mystery of The Spinnix name.
+   - **Clue:** It was there when you were born, and shall follow you till death, if any part of the name reflects on mirror and repeats itself (Palindromic), then the answer of the riddle would be “the smallest substring that is palindromic.”
+  - If not then Horus shall chant "Error".
+
+
+<p align="center"><img src="https://media.giphy.com/media/Y2tCgTgzWRji5U0dIn/giphy-downsized-large.gif" /></p>
+ 
+   
+   #### Sample Input/Output
+   ```
+
+    Input: 
+    Hollow
+
+    Output: 
+    ll 
+
+   ```
+
+   
+   ```
+
+    Input:
+    Master
+
+    Output:
+    Error
+
+   ```
+
+#### Explanation
+   ```
+    In the string “Hollow”, the possible palindromic substrings are “Ollo” and “ll” out of which the smallest palindromic substring is “ll”.
+  
+   ```
+   
 FAQ
 ======
 
