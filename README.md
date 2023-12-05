@@ -28,6 +28,8 @@ Check out our FAQ for more information.
   - [**December 1 - Cricmetric**](#december-1---cricmetric)
   - [**December 2 - Shopper's Choice**](#december-2---shoppers-choice)
   - [**December 3 - Sunburnt**](#december-3---sunburnt)
+  - [**December 4 - Mirror Magic**](#december-4---mirror-magic)
+  - [**December 5 - Peaky Blinders**](#december-5---peaky-blinders)
   - [**FAQ**](#faq)
 
 
@@ -190,6 +192,73 @@ Given an array of product IDs, develop a program to generate the frequency of ea
  
 ----
 
+### December 4 - Mirror Magic
+
+   #### Problem Statement
+   - The great God Horus has found a way inside the treasure room, but what stands before him is The God Of Wisdom, The Spinnix. Horus must complete the mystery of The Spinnix name.
+   - **Clue:** It was there when you were born, and shall follow you till death, if any part of the name reflects on mirror and repeats itself (Palindromic), then the answer of the riddle would be “the smallest substring that is palindromic.”
+  - If not then Horus shall chant "Error".
+
+
+<p align="center"><img src="https://media.giphy.com/media/Y2tCgTgzWRji5U0dIn/giphy-downsized-large.gif" /></p>
+ 
+   
+   #### Sample Input/Output
+   ```
+
+    Input: 
+    Hollow
+
+    Output: 
+    ll 
+
+   ```
+
+   
+   ```
+
+    Input:
+    Master
+
+    Output:
+    Error
+
+   ```
+
+#### Explanation
+   ```
+    In the string “Hollow”, the possible palindromic substrings are “Ollo” and “ll” out of which the smallest palindromic substring is “ll”.
+  
+   ```
+
+### December 5 - Peaky Blinders
+#### Problem Statement
+- You are a detective working on a case involving a group of thieves.
+- You have obtained a list of the amounts stolen by each thief during a series of robberies.
+- Your task is to determine the total amount of money stolen by the thieves who stole more than or equal to the average amount stolen by the group.  
+
+
+   <p align="center"><img src="https://media.giphy.com/media/l3mZpcNC69UuXjoME/giphy-downsized-large.gif"></p>
+   
+   #### Sample Input/Output
+   ```
+        Input: [10, 20, 30, 40, 50] 
+        Output: 140 
+   ```
+
+   #### Explanation
+   ```
+        Average amount stolen: 30 
+        Elements greater than or equal to the average: 40, 50 
+        Sum of elements greater than or equal to the average: 40 + 50 = 90
+   ```
+   #### Sample Input/Output
+   ```
+      Input: [5, 10, 15, 20, 25] 
+      Output: 95 
+   ``` 
+   
+   
 FAQ
 ======
 
