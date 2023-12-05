@@ -30,7 +30,7 @@ Check out our FAQ for more information.
   - [**December 3 - Sunburnt**](#december-3---sunburnt)
   - [**December 4 - Mirror Magic**](#december-4---mirror-magic)
   - [**December 5 - Peaky Blinders**](#december-5---peaky-blinders)
-  - [**December 6 -The Lost Algorithm Scrolls**](#december-5---peaky-blinders)
+  - [**December 6 -The Lost Algorithm Scrolls**](#december-6---the-lost-algorithm-scrolls)
   - [**FAQ**](#faq)
 
 
