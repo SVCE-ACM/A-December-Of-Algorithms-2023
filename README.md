@@ -30,6 +30,7 @@ Check out our FAQ for more information.
   - [**December 3 - Sunburnt**](#december-3---sunburnt)
   - [**December 4 - Mirror Magic**](#december-4---mirror-magic)
   - [**December 5 - Peaky Blinders**](#december-5---peaky-blinders)
+  - [**December 6 -The Lost Algorithm Scrolls**](#december-6---the-lost-algorithm-scrolls)
   - [**FAQ**](#faq)
 
 
@@ -257,7 +258,44 @@ Given an array of product IDs, develop a program to generate the frequency of ea
       Input: [5, 10, 15, 20, 25] 
       Output: 95 
    ``` 
+ ### December 6 - The Lost Algorithm Scrolls
+#### Problem Statement
+Ancient algorithm scrolls containing the most potent coding spells have been scattered. Each scroll is encoded with a unique pattern. You are on a quest to collect the scrolls, decoding their patterns. Write a program that, given a list of encoded words, finds the optimal sequence where each word differs by a single letter, unlocking the ancient scrolls' power.
+  
+
+ <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/510191ec-569e-49d8-9127-b296394154c7"></p>
    
+   #### Sample Input/Output
+   ```
+       Input: ["cat", "cot", "dot", "dog", "cog", "coat", "doll"]
+       Output: ["cat", "cot", "dot", "dog", "cog"]
+
+   ```
+
+   #### Explanation
+   ```
+       1. "cat" to "cot":
+             Only one letter changes ("a" to "o").
+             This adheres to the rule that the words in the chain must differ by exactly one letter.
+       2. "cot" to "dot":
+             Again, only one letter changes ("c" to "d").
+             The chain is still follows the rule of a single-letter difference between consecutive words.
+       3. "dot" to "dog":
+             Just like before, only one letter changes ("t" to "g").
+       4. "dog" to "cog":
+             Once more, only one letter changes ("d" to "c").
+
+   ```
+#### Sample Input/Output
+   ```
+     Input: ["apple", "orange", "banana", "grape", "peach"]
+     Output: No valid chain.
+
+   ```
+- **References**
+    - [String Data Structure](https://www.geeksforgeeks.org/string-data-structure/)
+ 
+----
    
 FAQ
 ======
