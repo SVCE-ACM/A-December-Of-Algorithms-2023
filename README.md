@@ -244,19 +244,19 @@ Given an array of product IDs, develop a program to generate the frequency of ea
    #### Sample Input/Output
    ```
         Input: [10, 20, 30, 40, 50] 
-        Output: 140 
+        Output: 120 
    ```
 
    #### Explanation
    ```
         Average amount stolen: 30 
-        Elements greater than or equal to the average: 40, 50 
-        Sum of elements greater than or equal to the average: 40 + 50 = 90
+        Elements greater than or equal to the average: 30, 40, 50 
+        Sum of elements greater than or equal to the average: 30 + 40 + 50 = 120
    ```
 #### Sample Input/Output
    ```
       Input: [5, 10, 15, 20, 25] 
-      Output: 95 
+      Output: 60 
    ``` 
  ### December 6 - The Lost Algorithm Scrolls
 #### Problem Statement
