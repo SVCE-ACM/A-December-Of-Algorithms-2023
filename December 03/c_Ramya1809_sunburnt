@@ -1,0 +1,20 @@
+#include <stdio.h>
+void main(){
+    int h[20],i,j,n,c=1,a=0;
+    printf("Enter no. of buildings : ");
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        printf("Enter height of building %d : ",i+1);
+        scanf("%d",&h[i]);
+        }
+    for(i=1;i<n;i++){
+        a=0;
+        for(j=0;j<i;j++){
+            if (h[i]>h[j])
+                a++;
+        }
+        if (i==a)
+        c++;
+    }
+    printf("No. of buildings able to see sunrise : %d",c);    
+}
