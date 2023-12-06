@@ -1,0 +1,18 @@
+nm=input("Enter the name of the riddle : ")
+s=list(nm)
+rs=list(nm)
+rs.reverse()
+ps=""
+for i in range(len(s)):
+    if (s[i]==rs[i]):
+        a=i
+        ps=ps+s[i]
+sps=""
+if (ps==""):
+    print("Error ")
+else:
+    if (len(ps)%2==0):
+        sps=ps[int(len(ps)/2)-1]+ps[int(len(ps)/2)]
+    else:
+        sps=ps[int(len(ps)/2)-1:int(len(ps)/2)+2]
+    print("Answer to the riddle :\n",sps)
