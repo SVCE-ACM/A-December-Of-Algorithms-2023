@@ -352,6 +352,8 @@ The rule is as follows:
     2.The sum of the numbers in each row, column and both main diagonals must be the same.
 
 Write a function ‘find_path(n)’ that takes an odd integer ‘n’ as input and returns a 2D list representing the magic square required to safely traverse the enchanted forest.
+
+
 Constraints:
 The input ‘n’ is an odd integer (3<=n<=15)
 
