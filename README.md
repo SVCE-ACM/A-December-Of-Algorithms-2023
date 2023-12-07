@@ -401,8 +401,8 @@ Output:
   
     
 - **References**
-    - [2D arrays](https://www.geeksforgeeks.org/python-using-2d-arrays-lists-the-right-way/)
-    - [Multidimensional arrays](https://www.w3schools.com/c/c_arrays_multi.php)
+    - [2D lists in Python](https://www.geeksforgeeks.org/python-using-2d-arrays-lists-the-right-way/)
+    - [Multidimensional arrays in C](https://www.w3schools.com/c/c_arrays_multi.php)
  
 ----
    
