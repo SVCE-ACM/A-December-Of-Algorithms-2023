@@ -32,7 +32,7 @@ Check out our FAQ for more information.
   - [**December 5 - Peaky Blinders**](#december-5---peaky-blinders)
   - [**December 6 - The Lost Algorithm Scrolls**](#december-6---the-lost-algorithm-scrolls)
   - [**December 7 - Baby Blocks**](#december-7---baby-blocks)
-  - [**December 8 - The Enchanted Forest**](#december-7---baby-blocks)
+  - [**December 8 - The Enchanted Forest**](#december-8---the-enchanted-forest)
   - [**FAQ**](#faq)
 
 
