@@ -345,7 +345,7 @@ Ancient algorithm scrolls containing the most potent coding spells have been sca
 
    #### Problem Statement
    
-In the mystical land of Pyborg, there lies an enchanted forest guarded by a magical creature. Legend has it thaat the only way to navigate through the forest is by creating a magical square.The creature is kind but loves patterns, and the magic square must follow a unique rule.
+In the mystical land of Pyborg, there lies an enchanted forest guarded by a magical creature. Legend has it that the only way to navigate through the forest is by creating a magical square.The creature is kind but loves patterns, and the magic square must follow a unique rule.
 
 The rule is as follows:
     1.The numbers in the square must form an increasing sequence starting from 1.
