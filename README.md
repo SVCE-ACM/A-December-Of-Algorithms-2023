@@ -352,17 +352,14 @@ The rule is as follows:
     2.The sum of the numbers in each row, column and both main diagonals must be the same.
 
 Write a function ‘find_path(n)’ that takes an odd integer ‘n’ as input and returns a 2D list representing the magic square required to safely traverse the enchanted forest.
-
-
-
-
-   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/783a1d44-636d-4c5f-b7ae-69b6c9b7f355" width="400"></p>
-
 Constraints:
 The input ‘n’ is an odd integer (3<=n<=15)
 
 Help the brave adventurers in Pyborg to safely navigate the enchanted forest.
 
+
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/783a1d44-636d-4c5f-b7ae-69b6c9b7f355" width="400"></p>
 
 
    
