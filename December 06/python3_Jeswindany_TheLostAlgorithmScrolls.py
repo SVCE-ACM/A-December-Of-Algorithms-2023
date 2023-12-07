@@ -1,8 +1,14 @@
 def link(a, b):
-    if(len(a) == len(b) and len(set(a)^set(b))==2):
-        return True
-    elif((a in b) or (b in a)):
-        return True
+    if(len(a) == len(b)):
+        c = 0
+        for i in range(len(a)):
+            if(a[i] != b[i]):
+                c+=1
+        if(c == 1):
+            return True
+    elif(abs(len(a) - len(b)) == 1):
+        if((a in b) or (b in a)):
+            return True
     return False
 
 words = input().split()
@@ -29,4 +35,3 @@ else:
         else:
             break
     print(res)
-
