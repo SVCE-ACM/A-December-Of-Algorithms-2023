@@ -30,7 +30,8 @@ Check out our FAQ for more information.
   - [**December 3 - Sunburnt**](#december-3---sunburnt)
   - [**December 4 - Mirror Magic**](#december-4---mirror-magic)
   - [**December 5 - Peaky Blinders**](#december-5---peaky-blinders)
-  - [**December 6 -The Lost Algorithm Scrolls**](#december-6---the-lost-algorithm-scrolls)
+  - [**December 6 - The Lost Algorithm Scrolls**](#december-6---the-lost-algorithm-scrolls)
+  - [**December 7 - Baby Blocks**](#december-7---baby-blocks)
   - [**FAQ**](#faq)
 
 
@@ -244,19 +245,19 @@ Given an array of product IDs, develop a program to generate the frequency of ea
    #### Sample Input/Output
    ```
         Input: [10, 20, 30, 40, 50] 
-        Output: 140 
+        Output: 120 
    ```
 
    #### Explanation
    ```
         Average amount stolen: 30 
-        Elements greater than or equal to the average: 40, 50 
-        Sum of elements greater than or equal to the average: 40 + 50 = 90
+        Elements greater than or equal to the average: 30, 40, 50 
+        Sum of elements greater than or equal to the average: 30 + 40 + 50 = 120
    ```
    #### Sample Input/Output
    ```
       Input: [5, 10, 15, 20, 25] 
-      Output: 95 
+      Output: 60 
    ``` 
  ### December 6 - The Lost Algorithm Scrolls
 #### Problem Statement
@@ -294,6 +295,49 @@ Ancient algorithm scrolls containing the most potent coding spells have been sca
    ```
 - **References**
     - [String Data Structure](https://www.geeksforgeeks.org/string-data-structure/)
+ 
+----
+
+### December 7 - Baby Blocks
+
+   #### Problem Statement
+   Sarah, a toy designer, needs to verify if the rectangular piece fits into the circular hole for her Baby Block Toy design.
+   
+   Create a function that takes three numbers — the width and height of a rectangle, and the radius of a circle — and returns true if the rectangle can fit inside the circle, false if it can't.
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/103169831/ec47a50c-3241-4b24-9350-3516fb83e6ad" width="400"></p>
+
+   
+   #### Sample Input/Output
+   ```
+    Input 1 
+    rectangleInCircle(8, 6, 5)
+
+    Output 1 
+    true
+
+
+   ```
+
+   ```
+    Input 2
+    rectangleInCircle(5, 9, 5)
+
+    Output 2
+    false
+
+
+   ``` 
+   
+   #### Explanation
+   ```
+
+   If the length of the rectangle’s diagonal is greater than the diameter of the circle then the rectangle won’t fit/pass through. 
+        
+   ```
+    
+- **References**
+    - [Pythagoras Theorem](https://www.mathsisfun.com/pythagoras.html)
  
 ----
    
