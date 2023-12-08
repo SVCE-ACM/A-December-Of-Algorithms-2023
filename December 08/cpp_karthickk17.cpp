@@ -36,7 +36,7 @@ int main() {
     int maxDigits = to_string(n*n).length();//n*n is the maximum number in the matrix
     for (vector<int> arr : matrix) {
         for (int num : arr) {            
-            // Displaying the number with proper spacing
+            // Displaying the number with proper spacing.
             cout << setw(maxDigits) << num << " ";
         }
         cout << endl;
