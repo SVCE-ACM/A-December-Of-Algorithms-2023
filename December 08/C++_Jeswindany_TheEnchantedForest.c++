@@ -2,7 +2,7 @@
 #include <string.h>
 using namespace std;
 
-void magicsquare(int n){
+void find_path(int n){
     int sqr[n][n];
     memset(sqr, 0, sizeof(sqr));
     int i = n/2;
@@ -42,6 +42,6 @@ void magicsquare(int n){
 int main(){
     int n;
     cin >> n;
-    magicsquare(n);
+    find_path(n);
     return 0;
 }
