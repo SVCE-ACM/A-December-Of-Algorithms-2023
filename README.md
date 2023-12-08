@@ -412,10 +412,11 @@ Determine the number of words in s.
  <p align="center"><img src="https://media.giphy.com/media/l3fZPYrlEGoSLvq9O/giphy.gif"></p>
 
 #### Example
+```
 s= ‘onetwothree’
 
 There are 3 words in the string- ’one’, ’two’, ’three’
-
+```
 #### Constraints
 ```
 The camel case should contain the following parameters(s):
