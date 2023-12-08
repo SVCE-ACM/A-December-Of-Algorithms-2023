@@ -43,4 +43,5 @@ int main(){
     int n;
     cin >> n;
     magicsquare(n);
+    return 0;
 }
