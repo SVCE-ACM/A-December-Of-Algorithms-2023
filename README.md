@@ -413,15 +413,16 @@ Determine the number of words in s.
 
 #### Example
 s= ‘onetwothree’
+
 There are 3 words in the string- ’one’, ’two’, ’three’
 
 #### Constraints
+```
 The camel case should contain the following parameters(s):
 - string s: the string to be analyzed
 - int: the number of words in s
 - 1<= length of s<= 10^5
-
-
+```
      
 #### Sample Input/Output
    ```
