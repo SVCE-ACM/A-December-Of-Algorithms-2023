@@ -403,27 +403,24 @@ Output:
    #### Problem Statement
    
 There is a sequence of words in camel case as a string of letters, s, having the following properties:
-.it is a concatenation of one or more words consisting of english letter
-. all letters in the first word are lower case
-. for each subsequent words,the first letter is uppercase and the rest of the letters are lowercase
+- It is a concatenation of one or more words consisting of english letter
+- All letters in the first word are lower case
+- For each subsequent words,the first letter is uppercase and the rest of the letters are lowercase
 
-Given s, determines the number of words in s.
+Determine the number of words in s.
 
 #### Example:
 s= ‘onetwothree’
 There  are 3 words in the string:’one’,’two’,’three’
 
-#### Instructions:
+#### Constraints:
 The camel case should contain the following parameters(s):
-. string s:the string to be analyzed
-. int: the number of words in s
-. constraints: 1<= length of s<= 10^5
+- string s: the string to be analyzed
+- int: the number of words in s
+- 1<= length of s<= 10^5
 
 
-
-
-
-   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/511202aa-a45a-45bf-a234-9f8d6ff32c3f" width="400"></p>
+   <p align="center"><img src="https://media.giphy.com/media/l3fZPYrlEGoSLvq9O/giphy.gif"></p>
 
 
    
@@ -433,21 +430,16 @@ Input:  S = SaveChangesInTheEditor
 
 Output: 5
 
-
-
    ```
 
    #### Explanation
    ```
-
   String s contains 5 words:
 	1.save
 	2.changes
 	3.in
 	4.the
-	5.editor
-
-        
+	5.editor       
    ```
    
   
