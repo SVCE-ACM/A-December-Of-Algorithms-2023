@@ -33,7 +33,7 @@ Check out our FAQ for more information.
   - [**December 6 - The Lost Algorithm Scrolls**](#december-6---the-lost-algorithm-scrolls)
   - [**December 7 - Baby Blocks**](#december-7---baby-blocks)
   - [**December 8 - The Enchanted Forest**](#december-8---the-enchanted-forest)
-  - [**December 9 - Camels  on a String**](#december-8---the-enchanted-forest)
+  - [**December 9 - Camels  on a String!**]()
   - [**FAQ**](#faq)
 
 
