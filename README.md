@@ -409,30 +409,29 @@ There is a sequence of words in camel case as a string of letters, s, having the
 
 Determine the number of words in s.
 
-#### Example:
-s= ‘onetwothree’
-There  are 3 words in the string:’one’,’two’,’three’
+ <p align="center"><img src="https://media.giphy.com/media/l3fZPYrlEGoSLvq9O/giphy.gif"></p>
 
-#### Constraints:
+#### Example
+s= ‘onetwothree’
+There are 3 words in the string- ’one’, ’two’, ’three’
+
+#### Constraints
 The camel case should contain the following parameters(s):
 - string s: the string to be analyzed
 - int: the number of words in s
 - 1<= length of s<= 10^5
 
 
-   <p align="center"><img src="https://media.giphy.com/media/l3fZPYrlEGoSLvq9O/giphy.gif"></p>
-
-
-   
-   #### Sample Input/Output
+     
+#### Sample Input/Output
    ```
-Input:  S = SaveChangesInTheEditor
+   Input:  S = SaveChangesInTheEditor
 
-Output: 5
+   Output: 5
 
    ```
 
-   #### Explanation
+#### Explanation
    ```
   String s contains 5 words:
 	1.save
@@ -440,8 +439,7 @@ Output: 5
 	3.in
 	4.the
 	5.editor       
-   ```
-   
+   ```  
   
     
 - **References**
