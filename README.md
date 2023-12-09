@@ -33,6 +33,7 @@ Check out our FAQ for more information.
   - [**December 6 - The Lost Algorithm Scrolls**](#december-6---the-lost-algorithm-scrolls)
   - [**December 7 - Baby Blocks**](#december-7---baby-blocks)
   - [**December 8 - The Enchanted Forest**](#december-8---the-enchanted-forest)
+  - [**December 9 - Camels  on a String!**](#december-9---camels-on-a-string)
   - [**FAQ**](#faq)
 
 
@@ -396,13 +397,55 @@ Output:
 
 
 
-   ``` 
+   ```
+### December 9 - Camels on a String!
+
+   #### Problem Statement
    
+There is a sequence of words in camel case as a string of letters, s, having the following properties:
+- It is a concatenation of one or more words consisting of english letter
+- All letters in the first word are lower case
+- For each subsequent words,the first letter is uppercase and the rest of the letters are lowercase
+
+Determine the number of words in s.
+
+ <p align="center"><img src="https://media.giphy.com/media/l3fZPYrlEGoSLvq9O/giphy.gif"></p>
+
+#### Example
+```
+s= ‘onetwothree’
+
+There are 3 words in the string- ’one’, ’two’, ’three’
+```
+#### Constraints
+```
+The camel case should contain the following parameters(s):
+- string s: the string to be analyzed
+- int: the number of words in s
+- 1<= length of s<= 10^5
+```
+     
+#### Sample Input/Output
+   ```
+   Input:  S = SaveChangesInTheEditor
+
+   Output: 5
+
+   ```
+
+#### Explanation
+   ```
+  String s contains 5 words:
+	1.save
+	2.changes
+	3.in
+	4.the
+	5.editor       
+   ```  
   
     
 - **References**
-    - [2D lists in Python](https://www.geeksforgeeks.org/python-using-2d-arrays-lists-the-right-way/)
-    - [Multidimensional arrays in C](https://www.w3schools.com/c/c_arrays_multi.php)
+    - [Strings in C](https://www.geeksforgeeks.org/strings-in-c/)
  
 ----
    
