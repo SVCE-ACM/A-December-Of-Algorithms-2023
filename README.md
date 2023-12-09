@@ -457,7 +457,7 @@ The camel case should contain the following parameters(s):
 - A group of citizens found themselves unable to recall their passwords, but they had a single clue to aid them.
 - By deciphering the clues, help the forgetful citizens to rediscover their passwords
 
- <p align="center"><img src="https://drive.google.com/file/d/1QRc6JxF2492LchzKsgHs2W1PtQC3MQCt/view?usp=sharing"></p>
+ <p align="center"><img src="https://i.imgur.com/BHynXrm.gif"></p>
 
  
 
