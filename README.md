@@ -483,7 +483,8 @@ The camel case should contain the following parameters(s):
 
 #### Explanation
    ```
- The SQL query SELECT SUBSTRING(empname, 2, 2) FROM emp; retrieves a substring from the "empname" column in the "emp" table for each row. The SUBSTRING function is employed, specifying the starting position as the second character and extracting two characters.
+ - The SQL query SELECT SUBSTRING(empname, 2, 2) FROM emp; retrieves a substring from the "empname" column in the "emp" table for each row.
+ - The SUBSTRING function is employed, specifying the starting position as the second character and extracting two characters.
     
    ```   
 ----
