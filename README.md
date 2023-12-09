@@ -466,19 +466,21 @@ The camel case should contain the following parameters(s):
    ```
    Input:  select substring(empname,4,13) from emp;
 
-   
+   Output:
 ```
-Output:
 <p align="center"><img src="https://i.imgur.com/HLup9iu.gif"></p>
+
+
+
    
 
 #### Sample Input/Output
-   ```
+   
    Input:  select substring(empname,2,2) from emp;
 
-   Output:
-	   <p align="center"><img src=""></p>
-   ```
+   Output: <p align="center"><img src="https://i.imgur.com/4xKljsl.gif"></p>
+	   
+   
 
 #### Explanation
    ```
