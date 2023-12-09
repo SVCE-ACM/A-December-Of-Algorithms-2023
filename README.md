@@ -466,13 +466,11 @@ The camel case should contain the following parameters(s):
    ```
    Input:  select substring(empname,4,13) from emp;
 
-   Output:
-```
+   ```
+#####Output:
 <p align="center"><img src="https://i.imgur.com/HLup9iu.gif"></p>
 
-
-
-   
+  
 
 #### Sample Input/Output
    
