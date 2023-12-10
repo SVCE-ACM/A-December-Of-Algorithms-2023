@@ -28,6 +28,13 @@ Check out our FAQ for more information.
   - [**December 1 - Cricmetric**](#december-1---cricmetric)
   - [**December 2 - Shopper's Choice**](#december-2---shoppers-choice)
   - [**December 3 - Sunburnt**](#december-3---sunburnt)
+  - [**December 4 - Mirror Magic**](#december-4---mirror-magic)
+  - [**December 5 - Peaky Blinders**](#december-5---peaky-blinders)
+  - [**December 6 - The Lost Algorithm Scrolls**](#december-6---the-lost-algorithm-scrolls)
+  - [**December 7 - Baby Blocks**](#december-7---baby-blocks)
+  - [**December 8 - The Enchanted Forest**](#december-8---the-enchanted-forest)
+  - [**December 9 - Camels  on a String!**](#december-9---camels-on-a-string)
+  - [**December 10 - Forgot Password.**](#december-10---forgot-password)
   - [**FAQ**](#faq)
 
 
@@ -189,6 +196,300 @@ Given an array of product IDs, develop a program to generate the frequency of ea
     - [Searching Algorithms](https://www.geeksforgeeks.org/searching-algorithms/?ref=shm)
  
 ----
+
+
+### December 4 - Mirror Magic
+
+   #### Problem Statement
+   - The great God Horus has found a way inside the treasure room, but what stands before him is The God Of Wisdom, The Spinnix. Horus must complete the mystery of The Spinnix name.
+   - **Clue:** It was there when you were born, and shall follow you till death, if any part of the name reflects on mirror and repeats itself (Palindromic), then the answer of the riddle would be “the smallest substring that is palindromic.”
+  - If not then Horus shall chant "Error".
+
+
+<p align="center"><img src="https://media.giphy.com/media/Y2tCgTgzWRji5U0dIn/giphy-downsized-large.gif" /></p>
+ 
+   
+   #### Sample Input/Output
+   ```
+
+    Input: 
+    Hollow
+
+    Output: 
+    ll 
+
+   ```
+
+   
+   ```
+
+    Input:
+    Master
+
+    Output:
+    Error
+
+   ```
+
+#### Explanation
+   ```
+    In the string “Hollow”, the possible palindromic substrings are “Ollo” and “ll” out of which the smallest palindromic substring is “ll”.
+  
+   ```
+
+### December 5 - Peaky Blinders
+#### Problem Statement
+- You are a detective working on a case involving a group of thieves.
+- You have obtained a list of the amounts stolen by each thief during a series of robberies.
+- Your task is to determine the total amount of money stolen by the thieves who stole more than or equal to the average amount stolen by the group.  
+
+
+   <p align="center"><img src="https://media.giphy.com/media/l3mZpcNC69UuXjoME/giphy-downsized-large.gif"></p>
+   
+   #### Sample Input/Output
+   ```
+        Input: [10, 20, 30, 40, 50] 
+        Output: 120 
+   ```
+
+   #### Explanation
+   ```
+        Average amount stolen: 30 
+        Elements greater than or equal to the average: 30, 40, 50 
+        Sum of elements greater than or equal to the average: 30 + 40 + 50 = 120
+   ```
+   #### Sample Input/Output
+   ```
+      Input: [5, 10, 15, 20, 25] 
+      Output: 60 
+   ``` 
+ ### December 6 - The Lost Algorithm Scrolls
+#### Problem Statement
+Ancient algorithm scrolls containing the most potent coding spells have been scattered. Each scroll is encoded with a unique pattern. You are on a quest to collect the scrolls, decoding their patterns. Write a program that, given a list of encoded words, finds the optimal sequence where each word differs by a single letter, unlocking the ancient scrolls' power.
+  
+
+ <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/510191ec-569e-49d8-9127-b296394154c7"></p>
+   
+   #### Sample Input/Output
+   ```
+       Input: ["cat", "cot", "dot", "dog", "cog", "coat", "doll"]
+       Output: ["cat", "cot", "dot", "dog", "cog"]
+
+   ```
+
+   #### Explanation
+   ```
+       1. "cat" to "cot":
+             Only one letter changes ("a" to "o").
+             This adheres to the rule that the words in the chain must differ by exactly one letter.
+       2. "cot" to "dot":
+             Again, only one letter changes ("c" to "d").
+             The chain is still follows the rule of a single-letter difference between consecutive words.
+       3. "dot" to "dog":
+             Just like before, only one letter changes ("t" to "g").
+       4. "dog" to "cog":
+             Once more, only one letter changes ("d" to "c").
+
+   ```
+#### Sample Input/Output
+   ```
+     Input: ["apple", "orange", "banana", "grape", "peach"]
+     Output: No valid chain.
+
+   ```
+- **References**
+    - [String Data Structure](https://www.geeksforgeeks.org/string-data-structure/)
+ 
+----
+
+### December 7 - Baby Blocks
+
+   #### Problem Statement
+   Sarah, a toy designer, needs to verify if the rectangular piece fits into the circular hole for her Baby Block Toy design.
+   
+   Create a function that takes three numbers — the width and height of a rectangle, and the radius of a circle — and returns true if the rectangle can fit inside the circle, false if it can't.
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/103169831/ec47a50c-3241-4b24-9350-3516fb83e6ad" width="400"></p>
+
+   
+   #### Sample Input/Output
+   ```
+    Input 1 
+    rectangleInCircle(8, 6, 5)
+
+    Output 1 
+    true
+
+
+   ```
+
+   ```
+    Input 2
+    rectangleInCircle(5, 9, 5)
+
+    Output 2
+    false
+
+
+   ``` 
+   
+   #### Explanation
+   ```
+
+   If the length of the rectangle’s diagonal is greater than the diameter of the circle then the rectangle won’t fit/pass through. 
+        
+   ```
+    
+- **References**
+    - [Pythagoras Theorem](https://www.mathsisfun.com/pythagoras.html)
+ 
+----
+### December 8 - The Enchanted Forest
+
+   #### Problem Statement
+   
+In the mystical land of Pyborg, there lies an enchanted forest guarded by a magical creature. Legend has it that the only way to navigate through the forest is by creating a magical square.The creature is kind but loves patterns, and the magic square must follow a unique rule.
+
+The rule is as follows:
+    1.The numbers in the square must form an increasing sequence starting from 1.
+    2.The sum of the numbers in each row, column and both main diagonals must be the same.
+
+Write a function ‘find_path(n)’ that takes an odd integer ‘n’ as input and returns a 2D list representing the magic square required to safely traverse the enchanted forest.
+
+
+Constraints:
+The input ‘n’ is an odd integer (3<=n<=15)
+
+Help the brave adventurers in Pyborg to safely navigate the enchanted forest.
+
+
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/783a1d44-636d-4c5f-b7ae-69b6c9b7f355" width="400"></p>
+
+
+   
+   #### Sample Input/Output
+   ```
+Input: 3
+Output: 
+    2 7 6
+	9 5 1
+	4 3 8
+
+
+
+   ```
+
+   #### Explanation
+   ```
+
+  It is a 3x3 matrix where (2+7+6 = 2+9+4=15 ) and similarly all rows, diagonals and columns give the same sum as 15
+
+        
+   ```
+
+   ```
+Input: 5
+Output: 
+	       9    3   22  16  15
+	       2   21   20  14   8
+           25  19   13   7   1
+           18  12   6    5   24
+           11  10   4   23   17
+
+
+
+   ```
+### December 9 - Camels on a String!
+
+   #### Problem Statement
+   
+There is a sequence of words in camel case as a string of letters, s, having the following properties:
+- It is a concatenation of one or more words consisting of english letter
+- All letters in the first word are lower case
+- For each subsequent words,the first letter is uppercase and the rest of the letters are lowercase
+
+Determine the number of words in s.
+
+ <p align="center"><img src="https://media.giphy.com/media/l3fZPYrlEGoSLvq9O/giphy.gif"></p>
+
+#### Example
+```
+s= ‘onetwothree’
+
+There are 3 words in the string- ’one’, ’two’, ’three’
+```
+#### Constraints
+```
+The camel case should contain the following parameters(s):
+- string s: the string to be analyzed
+- int: the number of words in s
+- 1<= length of s<= 10^5
+```
+     
+#### Sample Input/Output
+   ```
+   Input:  S = SaveChangesInTheEditor
+
+   Output: 5
+
+   ```
+
+#### Explanation
+   ```
+  String s contains 5 words:
+	1.save
+	2.changes
+	3.in
+	4.the
+	5.editor       
+   ```  
+  
+    
+- **References**
+    - [Strings in C](https://www.geeksforgeeks.org/strings-in-c/)
+ 
+----
+
+### December 10 - Forgot Password.
+   #### Problem Statement
+   
+- In the town of Willow, where everyone's computer password was part of their actual name.One day, a peculiar situation arose.
+- A group of citizens found themselves unable to recall their passwords, but they had a single clue to aid them.
+- By deciphering the clues, help the forgetful citizens to rediscover their passwords
+
+ <p align="center"><img src="https://i.imgur.com/BHynXrm.gif"></p>
+
+ 
+
+     
+#### Sample Input/Output
+   ```
+   Input:  select substring(empname,4,13) from emp;
+
+   ```
+   ##### Output:
+   <p align="center"><img src="https://i.imgur.com/HLup9iu.gif"></p>
+
+  
+
+#### Sample Input/Output
+  ``` 
+   Input:  select substring(empname,2,2) from emp;
+```
+   ##### Output: 
+   <p align="center"><img src="https://i.imgur.com/4xKljsl.gif"></p>
+	   
+   
+
+#### Explanation
+   ```
+ - The SQL query SELECT SUBSTRING(empname, 2, 2) FROM emp; retrieves a substring from the "empname" column in the "emp" table for each row.
+ - The SUBSTRING function is employed, specifying the starting position as the second character and extracting two characters.
+    
+   ```   
+----
+   
 
 FAQ
 ======
