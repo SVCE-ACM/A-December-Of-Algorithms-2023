@@ -35,7 +35,7 @@ Check out our FAQ for more information.
   - [**December 8 - The Enchanted Forest**](#december-8---the-enchanted-forest)
   - [**December 9 - Camels  on a String!**](#december-9---camels-on-a-string)
   - [**December 10 - Forgot Password.**](#december-10---forgot-password)
-  - [**December 11 - Binary**](#december-11---binary)
+  - [**December 11 - Coder of Conversions**](#december-11---coder-of-conversions)
   - [**FAQ**](#faq)
 
 
@@ -490,7 +490,7 @@ The camel case should contain the following parameters(s):
    ```   
 ----
 
-### December 11 - Binary
+### December 11 - Coder of Conversions
    #### Problem Statement
   - In Algorithmsville, Digitius and Binarya had a simple request for the Coder of Conversions. 
   - They wanted a function that could add them up and show the sum in binary. 
