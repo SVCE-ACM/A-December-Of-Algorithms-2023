@@ -34,6 +34,7 @@ Check out our FAQ for more information.
   - [**December 7 - Baby Blocks**](#december-7---baby-blocks)
   - [**December 8 - The Enchanted Forest**](#december-8---the-enchanted-forest)
   - [**December 9 - Camels  on a String!**](#december-9---camels-on-a-string)
+  - [**December 10 - Forgot Password.**](#december-10---forgot-password)
   - [**FAQ**](#faq)
 
 
@@ -447,6 +448,45 @@ The camel case should contain the following parameters(s):
 - **References**
     - [Strings in C](https://www.geeksforgeeks.org/strings-in-c/)
  
+----
+
+### December 10 - Forgot Password.
+   #### Problem Statement
+   
+- In the town of Willow, where everyone's computer password was part of their actual name.One day, a peculiar situation arose.
+- A group of citizens found themselves unable to recall their passwords, but they had a single clue to aid them.
+- By deciphering the clues, help the forgetful citizens to rediscover their passwords
+
+ <p align="center"><img src="https://i.imgur.com/BHynXrm.gif"></p>
+
+ 
+
+     
+#### Sample Input/Output
+   ```
+   Input:  select substring(empname,4,13) from emp;
+
+   ```
+   ##### Output:
+   <p align="center"><img src="https://i.imgur.com/HLup9iu.gif"></p>
+
+  
+
+#### Sample Input/Output
+  ``` 
+   Input:  select substring(empname,2,2) from emp;
+```
+   ##### Output: 
+   <p align="center"><img src="https://i.imgur.com/4xKljsl.gif"></p>
+	   
+   
+
+#### Explanation
+   ```
+ - The SQL query SELECT SUBSTRING(empname, 2, 2) FROM emp; retrieves a substring from the "empname" column in the "emp" table for each row.
+ - The SUBSTRING function is employed, specifying the starting position as the second character and extracting two characters.
+    
+   ```   
 ----
    
 FAQ
