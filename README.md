@@ -530,7 +530,7 @@ A group of thieves has recently stolen a collection of valuable jewelry from a v
 
 #### Sample Input/Output
    ```
-   Input: Box1=[Emerald, Ruby, Gold, Silver]
+   Input:   Box1=[Emerald, Ruby, Gold, Silver]
    	  Box2=[Silver, Diamond, Emerald, Copper]
    	  Box3=[Ruby, Platinum ,Bronze, Silver]
    Output: Box1 Contains the Gold
@@ -540,7 +540,7 @@ A group of thieves has recently stolen a collection of valuable jewelry from a v
 
 
    ```
-   Input: Box1=[Emerald, Ruby, Bronze ,Silver]
+   Input:   Box1=[Emerald, Ruby, Bronze ,Silver]
    	  Box2=[Gold, Diamond, Ruby, Copper]
    	  Box3=[Ruby, Platinum, Bronze, Silver]
    Output: Box2 Contains the Gold
