@@ -36,7 +36,7 @@ Check out our FAQ for more information.
   - [**December 9 - Camels  on a String!**](#december-9---camels-on-a-string)
   - [**December 10 - Forgot Password.**](#december-10---forgot-password)
   - [**December 11 - Coder of Conversions**](#december-11---coder-of-conversions)
-  - [**December 12 - The Heist**](#december-11---coder-of-conversions)
+  - [**December 12 - The Heist**](#december-12---the-heist)
   - [**FAQ**](#faq)
 
 
