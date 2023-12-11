@@ -36,6 +36,7 @@ Check out our FAQ for more information.
   - [**December 9 - Camels  on a String!**](#december-9---camels-on-a-string)
   - [**December 10 - Forgot Password.**](#december-10---forgot-password)
   - [**December 11 - Coder of Conversions**](#december-11---coder-of-conversions)
+  - [**December 12 - The Heist**](#december-11---coder-of-conversions)
   - [**FAQ**](#faq)
 
 
@@ -521,7 +522,41 @@ The camel case should contain the following parameters(s):
    ```
   Sum of the Input is 64 whose binary value is 111111.     
    ```  
+### December 12 - The Heist
+A group of thieves has recently stolen a collection of valuable jewelry from a vault. Among the loot are three boxes. To quickly identify the box containing the gold without arousing suspicion, the thieves decide to employ a binary search algorithm. The goal is to minimize the number of inspections and swiftly pinpoint the box with the gold.
+
+<p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/124942fd-1f3e-4147-ac5a-1b9de0b7b34c"></p>
     
+
+#### Sample Input/Output
+   ```
+   Input: Box1=[Emerald, Ruby, Gold, Silver]
+   	  Box2=[Silver, Diamond, Emerald, Copper]
+   	  Box3=[Ruby, Platinum ,Bronze, Silver]
+   Output: Box1 Contains the Gold
+
+
+   ```
+
+
+   ```
+   Input: Box1=[Emerald, Ruby, Bronze ,Silver]
+   	  Box2=[Gold, Diamond, Ruby, Copper]
+   	  Box3=[Ruby, Platinum, Bronze, Silver]
+   Output: Box2 Contains the Gold
+
+
+  ```
+
+#### Explanation
+   ```
+  Input: Box2: [Gold, Diamond, Ruby, Copper]
+  The Binary Search is done with the search element as Gold 
+  The Box containing Gold is Box 2.
+   
+   ```
+- **References**
+    - [Binary Search](https://www.geeksforgeeks.org/binary-search/)
 
    
 FAQ
