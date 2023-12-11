@@ -35,6 +35,7 @@ Check out our FAQ for more information.
   - [**December 8 - The Enchanted Forest**](#december-8---the-enchanted-forest)
   - [**December 9 - Camels  on a String!**](#december-9---camels-on-a-string)
   - [**December 10 - Forgot Password.**](#december-10---forgot-password)
+  - [**December 11 - Coder of Conversions**](#december-11---coder-of-conversions)
   - [**FAQ**](#faq)
 
 
@@ -488,6 +489,40 @@ The camel case should contain the following parameters(s):
     
    ```   
 ----
+
+### December 11 - Coder of Conversions
+   #### Problem Statement
+  - In Algorithmsville, Digitius and Binarya had a simple request for the Coder of Conversions. 
+  - They wanted a function that could add them up and show the sum in binary. 
+  - Without much fuss, the Coder whipped up a quick function. 
+  - Now, whenever numbers in Algorithmsville wanted to go binary, they just used that handy function. Assume you are the coder and design the function.
+
+    <p align="center"><img src="https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif"></p>
+
+#### Sample Input/Output
+   ```
+   Input: (1,1) 
+   Output: 10
+
+   ```
+
+#### Explanation
+   ```
+  Sum of the Input is 2 whose binary value is 10.     
+   ```
+#### Sample Input/Output
+   ```
+   Input: (51,12) 
+   Output: 111111
+
+   ```
+
+#### Explanation
+   ```
+  Sum of the Input is 64 whose binary value is 111111.     
+   ```  
+    
+
    
 FAQ
 ======
