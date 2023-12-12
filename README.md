@@ -37,7 +37,7 @@ Check out our FAQ for more information.
   - [**December 10 - Forgot Password.**](#december-10---forgot-password)
   - [**December 11 - Coder of Conversions**](#december-11---coder-of-conversions)
   - [**December 12 - The Heist**](#december-12---the-heist)
-  - [**December 13 - Call Cipher**](#december-12---the-heist)
+  - [**December 13 - Call Cipher**](#december-13---call-cipher)
   - [**FAQ**](#faq)
 
 
