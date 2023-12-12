@@ -22,7 +22,6 @@ for i in words:
             break
     if(start != ""):
         break
-
 if start == "":
     print("No valid chain")
 else:
