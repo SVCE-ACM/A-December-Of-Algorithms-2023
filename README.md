@@ -37,6 +37,7 @@ Check out our FAQ for more information.
   - [**December 10 - Forgot Password.**](#december-10---forgot-password)
   - [**December 11 - Coder of Conversions**](#december-11---coder-of-conversions)
   - [**December 12 - The Heist**](#december-12---the-heist)
+  - [**December 13 - Call Cipher**](#december-12---the-heist)
   - [**FAQ**](#faq)
 
 
@@ -559,6 +560,40 @@ A group of thieves has recently stolen a collection of valuable jewelry from a v
     - [Binary Search](https://www.geeksforgeeks.org/binary-search/)
 
 ----   
+### December 13 - Call Cipher
+Holmes and Watson are racing against time on a mission to decipher the encoded phone numbers of the killer's next victims. With just one clue in hand, they urgently need a program to convert these letter-encoded numbers into their numerical form, all to swiftly warn and save the potential targets.
+
+
+<p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/ae2f782f-6280-4bb6-a762-6af147d078c2"></p>
+
+<p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/9e8360d2-92f7-486d-a372-adb8c72a7993"></p>
+
+
+    
+
+#### Sample Input/Output
+   ```
+textToNum("123-647-EYES") ➞ "123-647-3937"
+textToNum("(325)444-TEST") ➞ "(325)444-8378"
+textToNum("653-TRY-THIS") ➞ "653-879-8447"
+textToNum("435-224-7613") ➞ "435-224-7613"
+
+   ```
+
+
+
+#### Explanation
+   ```
+  Given an encoded phone number like "1-800-HOLMES" as input, the program needs to convert it to its numerical form, such as "1-800-465637." The output should represent the same phone number with letters replaced by their corresponding digits.
+
+
+   
+   ```
+- **References**
+    - [Ciphering](https://www.tutorialspoint.com/count-of-alphabets-having-ascii-value-less-than-and-greater-than-k-in-cplusplus)
+
+----   
+
 FAQ
 ======
 
