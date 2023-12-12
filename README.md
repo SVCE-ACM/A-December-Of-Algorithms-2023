@@ -558,7 +558,7 @@ A group of thieves has recently stolen a collection of valuable jewelry from a v
 - **References**
     - [Binary Search](https://www.geeksforgeeks.org/binary-search/)
 
-   
+----   
 FAQ
 ======
 
