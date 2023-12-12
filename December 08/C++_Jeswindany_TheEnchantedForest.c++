@@ -2,6 +2,7 @@
 #include <string.h>
 using namespace std;
 
+
 void find_path(int n){
     int sqr[n][n];
     memset(sqr, 0, sizeof(sqr));
