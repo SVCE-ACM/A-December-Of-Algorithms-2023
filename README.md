@@ -32,6 +32,11 @@ Check out our FAQ for more information.
   - [**December 5 - Peaky Blinders**](#december-5---peaky-blinders)
   - [**December 6 - The Lost Algorithm Scrolls**](#december-6---the-lost-algorithm-scrolls)
   - [**December 7 - Baby Blocks**](#december-7---baby-blocks)
+  - [**December 8 - The Enchanted Forest**](#december-8---the-enchanted-forest)
+  - [**December 9 - Camels  on a String!**](#december-9---camels-on-a-string)
+  - [**December 10 - Forgot Password.**](#december-10---forgot-password)
+  - [**December 11 - Coder of Conversions**](#december-11---coder-of-conversions)
+  - [**December 12 - The Heist**](#december-12---the-heist)
   - [**FAQ**](#faq)
 
 
@@ -340,6 +345,219 @@ Ancient algorithm scrolls containing the most potent coding spells have been sca
     - [Pythagoras Theorem](https://www.mathsisfun.com/pythagoras.html)
  
 ----
+### December 8 - The Enchanted Forest
+
+   #### Problem Statement
+   
+In the mystical land of Pyborg, there lies an enchanted forest guarded by a magical creature. Legend has it that the only way to navigate through the forest is by creating a magical square.The creature is kind but loves patterns, and the magic square must follow a unique rule.
+
+The rule is as follows:
+    1.The numbers in the square must form an increasing sequence starting from 1.
+    2.The sum of the numbers in each row, column and both main diagonals must be the same.
+
+Write a function ‘find_path(n)’ that takes an odd integer ‘n’ as input and returns a 2D list representing the magic square required to safely traverse the enchanted forest.
+
+
+Constraints:
+The input ‘n’ is an odd integer (3<=n<=15)
+
+Help the brave adventurers in Pyborg to safely navigate the enchanted forest.
+
+
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/783a1d44-636d-4c5f-b7ae-69b6c9b7f355" width="400"></p>
+
+
+   
+   #### Sample Input/Output
+   ```
+Input: 3
+Output: 
+    2 7 6
+	9 5 1
+	4 3 8
+
+
+
+   ```
+
+   #### Explanation
+   ```
+
+  It is a 3x3 matrix where (2+7+6 = 2+9+4=15 ) and similarly all rows, diagonals and columns give the same sum as 15
+
+        
+   ```
+
+   ```
+Input: 5
+Output: 
+	       9    3   22  16  15
+	       2   21   20  14   8
+           25  19   13   7   1
+           18  12   6    5   24
+           11  10   4   23   17
+
+
+
+   ```
+### December 9 - Camels on a String!
+
+   #### Problem Statement
+   
+There is a sequence of words in camel case as a string of letters, s, having the following properties:
+- It is a concatenation of one or more words consisting of english letter
+- All letters in the first word are lower case
+- For each subsequent words,the first letter is uppercase and the rest of the letters are lowercase
+
+Determine the number of words in s.
+
+ <p align="center"><img src="https://media.giphy.com/media/l3fZPYrlEGoSLvq9O/giphy.gif"></p>
+
+#### Example
+```
+s= ‘onetwothree’
+
+There are 3 words in the string- ’one’, ’two’, ’three’
+```
+#### Constraints
+```
+The camel case should contain the following parameters(s):
+- string s: the string to be analyzed
+- int: the number of words in s
+- 1<= length of s<= 10^5
+```
+     
+#### Sample Input/Output
+   ```
+   Input:  S = SaveChangesInTheEditor
+
+   Output: 5
+
+   ```
+
+#### Explanation
+   ```
+  String s contains 5 words:
+	1.save
+	2.changes
+	3.in
+	4.the
+	5.editor       
+   ```  
+  
+    
+- **References**
+    - [Strings in C](https://www.geeksforgeeks.org/strings-in-c/)
+ 
+----
+
+### December 10 - Forgot Password.
+   #### Problem Statement
+   
+- In the town of Willow, where everyone's computer password was part of their actual name.One day, a peculiar situation arose.
+- A group of citizens found themselves unable to recall their passwords, but they had a single clue to aid them.
+- By deciphering the clues, help the forgetful citizens to rediscover their passwords
+
+ <p align="center"><img src="https://i.imgur.com/BHynXrm.gif"></p>
+
+ 
+
+     
+#### Sample Input/Output
+   ```
+   Input:  select substring(empname,4,13) from emp;
+
+   ```
+   ##### Output:
+   <p align="center"><img src="https://i.imgur.com/HLup9iu.gif"></p>
+
+  
+
+#### Sample Input/Output
+  ``` 
+   Input:  select substring(empname,2,2) from emp;
+```
+   ##### Output: 
+   <p align="center"><img src="https://i.imgur.com/4xKljsl.gif"></p>
+	   
+   
+
+#### Explanation
+   ```
+ - The SQL query SELECT SUBSTRING(empname, 2, 2) FROM emp; retrieves a substring from the "empname" column in the "emp" table for each row.
+ - The SUBSTRING function is employed, specifying the starting position as the second character and extracting two characters.
+    
+   ```   
+----
+
+### December 11 - Coder of Conversions
+   #### Problem Statement
+  - In Algorithmsville, Digitius and Binarya had a simple request for the Coder of Conversions. 
+  - They wanted a function that could add them up and show the sum in binary. 
+  - Without much fuss, the Coder whipped up a quick function. 
+  - Now, whenever numbers in Algorithmsville wanted to go binary, they just used that handy function. Assume you are the coder and design the function.
+
+    <p align="center"><img src="https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif"></p>
+
+#### Sample Input/Output
+   ```
+   Input: (1,1) 
+   Output: 10
+
+   ```
+
+#### Explanation
+   ```
+  Sum of the Input is 2 whose binary value is 10.     
+   ```
+#### Sample Input/Output
+   ```
+   Input: (51,12) 
+   Output: 111111
+
+   ```
+
+#### Explanation
+   ```
+  Sum of the Input is 64 whose binary value is 111111.     
+   ```  
+### December 12 - The Heist
+A group of thieves has recently stolen a collection of valuable jewelry from a vault. Among the loot are three boxes. To quickly identify the box containing the gold without arousing suspicion, the thieves decide to employ a binary search algorithm. The goal is to minimize the number of inspections and swiftly pinpoint the box with the gold.
+
+<p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/124942fd-1f3e-4147-ac5a-1b9de0b7b34c"></p>
+    
+
+#### Sample Input/Output
+   ```
+   Input:   Box1=[Emerald, Ruby, Gold, Silver]
+   	  Box2=[Silver, Diamond, Emerald, Copper]
+   	  Box3=[Ruby, Platinum ,Bronze, Silver]
+   Output: Box1 Contains the Gold
+
+
+   ```
+
+
+   ```
+   Input:   Box1=[Emerald, Ruby, Bronze ,Silver]
+   	  Box2=[Gold, Diamond, Ruby, Copper]
+   	  Box3=[Ruby, Platinum, Bronze, Silver]
+   Output: Box2 Contains the Gold
+
+
+  ```
+
+#### Explanation
+   ```
+  Input: Box2: [Gold, Diamond, Ruby, Copper]
+  The Binary Search is done with the search element as Gold 
+  The Box containing Gold is Box 2.
+   
+   ```
+- **References**
+    - [Binary Search](https://www.geeksforgeeks.org/binary-search/)
+
    
 FAQ
 ======
