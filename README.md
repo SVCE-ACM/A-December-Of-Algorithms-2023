@@ -38,6 +38,7 @@ Check out our FAQ for more information.
   - [**December 11 - Coder of Conversions**](#december-11---coder-of-conversions)
   - [**December 12 - The Heist**](#december-12---the-heist)
   - [**December 13 - Call Cipher**](#december-13---call-cipher)
+  - [**December 14 - Call of Justice**](#december-14---call-of-justice)
   - [**FAQ**](#faq)
 
 
@@ -591,6 +592,67 @@ textToNum("435-224-7613") ➞ "435-224-7613"
    ```
 - **References**
     - [Ciphering](https://www.tutorialspoint.com/count-of-alphabets-having-ascii-value-less-than-and-greater-than-k-in-cplusplus)
+
+----   
+
+### December 14 - Call of Justice
+In the midst of a criminal purge on this foggy night, where I can only identify those within a one-meter radius, I seek your assistance in spotting criminals nearby. 
+
+Additionally, I am grappling with a challenge involving a binary tree, a target node, and an integer value k. The task is to locate all nodes at a distance of k from the specified target node, with the constraint of not having access to parent pointers. Your support is crucial in both endeavors as we strive for justice.
+
+
+<p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/8c0155b8-702c-453c-8528-61648f17fa12"></p>
+
+<p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/3c60f582-21f4-42a9-a51e-84141030129d"></p>
+    
+
+#### Sample Input/Output
+   ```
+   Input:     
+          17
+        /    \
+       8      27
+     /   \
+    4     14 
+        /   \
+      10     16
+
+Target Node = 8, K = 2
+
+Output: 10 16 27
+
+
+
+   ```
+
+
+   ```
+ Input:
+          14
+        /    \
+      7       20
+    /   \       \
+   4     3       30
+        /  
+       2    
+     /  \
+   1      4
+
+Target Node = 7, K = 3
+
+Output: 1 4 30
+
+
+
+  ```
+
+#### Explanation
+   ```
+  Complete the function KDistanceNodes() which takes the root of the tree, target, and K as input parameters and returns a list of nodes at k distance from target in a sorted order.
+   
+   ```
+- **References**
+    - [Tree Data Structure](https://www.geeksforgeeks.org/binary-tree-data-structure/)
 
 ----   
 
