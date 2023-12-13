@@ -38,7 +38,7 @@ Check out our FAQ for more information.
   - [**December 11 - Coder of Conversions**](#december-11---coder-of-conversions)
   - [**December 12 - The Heist**](#december-12---the-heist)
   - [**December 13 - Call Cipher**](#december-13---call-cipher)
-  - [**December 14 - Call of Justice**](#december-13---call-cipher)
+  - [**December 14 - Call of Justice**](#december-14---call-of-justice)
   - [**FAQ**](#faq)
 
 
