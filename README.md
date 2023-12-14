@@ -39,7 +39,7 @@ Check out our FAQ for more information.
   - [**December 12 - The Heist**](#december-12---the-heist)
   - [**December 13 - Call Cipher**](#december-13---call-cipher)
   - [**December 14 - Call of Justice**](#december-14---call-of-justice)
-  - [**December 15 - Subsequence Sorcery**](#december-14---call-of-justice)
+  - [**December 15 - Subsequence Sorcery**](#december-15---subsequence-sorcery)
   - [**FAQ**](#faq)
 
 
