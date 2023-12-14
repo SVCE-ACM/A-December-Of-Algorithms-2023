@@ -36,6 +36,9 @@ Check out our FAQ for more information.
   - [**December 9 - Camels  on a String!**](#december-9---camels-on-a-string)
   - [**December 10 - Forgot Password.**](#december-10---forgot-password)
   - [**December 11 - Coder of Conversions**](#december-11---coder-of-conversions)
+  - [**December 12 - The Heist**](#december-12---the-heist)
+  - [**December 13 - Call Cipher**](#december-13---call-cipher)
+  - [**December 14 - Call of Justice**](#december-14---call-of-justice)
   - [**FAQ**](#faq)
 
 
@@ -521,9 +524,138 @@ The camel case should contain the following parameters(s):
    ```
   Sum of the Input is 64 whose binary value is 111111.     
    ```  
+### December 12 - The Heist
+A group of thieves has recently stolen a collection of valuable jewelry from a vault. Among the loot are three boxes. To quickly identify the box containing the gold without arousing suspicion, the thieves decide to employ a binary search algorithm. The goal is to minimize the number of inspections and swiftly pinpoint the box with the gold.
+
+<p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/124942fd-1f3e-4147-ac5a-1b9de0b7b34c"></p>
     
 
+#### Sample Input/Output
+   ```
+   Input:   Box1=[Emerald, Ruby, Gold, Silver]
+   	  Box2=[Silver, Diamond, Emerald, Copper]
+   	  Box3=[Ruby, Platinum ,Bronze, Silver]
+   Output: Box1 Contains the Gold
+
+
+   ```
+
+
+   ```
+   Input:   Box1=[Emerald, Ruby, Bronze ,Silver]
+   	  Box2=[Gold, Diamond, Ruby, Copper]
+   	  Box3=[Ruby, Platinum, Bronze, Silver]
+   Output: Box2 Contains the Gold
+
+
+  ```
+
+#### Explanation
+   ```
+  Input: Box2: [Gold, Diamond, Ruby, Copper]
+  The Binary Search is done with the search element as Gold 
+  The Box containing Gold is Box 2.
    
+   ```
+- **References**
+    - [Binary Search](https://www.geeksforgeeks.org/binary-search/)
+
+----   
+### December 13 - Call Cipher
+Holmes and Watson are racing against time on a mission to decipher the encoded phone numbers of the killer's next victims. With just one clue in hand, they urgently need a program to convert these letter-encoded numbers into their numerical form, all to swiftly warn and save the potential targets.
+
+
+<p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/ae2f782f-6280-4bb6-a762-6af147d078c2"></p>
+
+<p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/9e8360d2-92f7-486d-a372-adb8c72a7993"></p>
+
+
+    
+
+#### Sample Input/Output
+   ```
+textToNum("123-647-EYES") ➞ "123-647-3937"
+textToNum("(325)444-TEST") ➞ "(325)444-8378"
+textToNum("653-TRY-THIS") ➞ "653-879-8447"
+textToNum("435-224-7613") ➞ "435-224-7613"
+
+   ```
+
+
+
+#### Explanation
+   ```
+  Given an encoded phone number like "1-800-HOLMES" as input, the program needs to convert it to its numerical form, such as "1-800-465637." The output should represent the same phone number with letters replaced by their corresponding digits.
+
+
+   
+   ```
+- **References**
+    - [Ciphering](https://www.tutorialspoint.com/count-of-alphabets-having-ascii-value-less-than-and-greater-than-k-in-cplusplus)
+
+----   
+
+### December 14 - Call of Justice
+In the midst of a criminal purge on this foggy night, where I can only identify those within a one-meter radius, I seek your assistance in spotting criminals nearby. 
+
+Additionally, I am grappling with a challenge involving a binary tree, a target node, and an integer value k. The task is to locate all nodes at a distance of k from the specified target node, with the constraint of not having access to parent pointers. Your support is crucial in both endeavors as we strive for justice.
+
+
+<p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/8c0155b8-702c-453c-8528-61648f17fa12"></p>
+
+<p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/3c60f582-21f4-42a9-a51e-84141030129d"></p>
+    
+
+#### Sample Input/Output
+   ```
+   Input:     
+          17
+        /    \
+       8      27
+     /   \
+    4     14 
+        /   \
+      10     16
+
+Target Node = 8, K = 2
+
+Output: 10 16 27
+
+
+
+   ```
+
+
+   ```
+ Input:
+          14
+        /    \
+      7       20
+    /   \       \
+   4     3       30
+        /  
+       2    
+     /  \
+   1      4
+
+Target Node = 7, K = 3
+
+Output: 1 4 30
+
+
+
+  ```
+
+#### Explanation
+   ```
+  Complete the function KDistanceNodes() which takes the root of the tree, target, and K as input parameters and returns a list of nodes at k distance from target in a sorted order.
+   
+   ```
+- **References**
+    - [Tree Data Structure](https://www.geeksforgeeks.org/binary-tree-data-structure/)
+
+----   
+
 FAQ
 ======
 
