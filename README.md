@@ -686,7 +686,7 @@ The possible distinct subsequences from the input string are : “ “,”g”,�
 ```
 
 - **References**
-    - [Subsequence](https://www.geeksforgeeks.org/)
+    - [Subsequences](https://www.geeksforgeeks.org/)
 
 ----
 FAQ
