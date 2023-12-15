@@ -40,7 +40,7 @@ Check out our FAQ for more information.
   - [**December 13 - Call Cipher**](#december-13---call-cipher)
   - [**December 14 - Call of Justice**](#december-14---call-of-justice)
   - [**December 15 - Subsequence Sorcery**](#december-15---subsequence-sorcery)
-  - [**December 16 - Outbreak Dynamics**]()
+  - [**December 16 - Outbreak Dynamics**](#december-16---outbreak-dynamics)
   - [**FAQ**](#faq)
 
 
