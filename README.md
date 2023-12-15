@@ -701,7 +701,7 @@ The possible distinct subsequences from the input string are : “ “,”g”,�
 -1 represents an obstacle.
 
 
-   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/471a8b2c-6459-4983-bf42-13e2ee8c909c"></p>
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/a5fc5d69-b8a4-41dc-b59c-9009c31e9cb9"></p>
    
    #### Sample Input/Output
    ```
