@@ -40,6 +40,7 @@ Check out our FAQ for more information.
   - [**December 13 - Call Cipher**](#december-13---call-cipher)
   - [**December 14 - Call of Justice**](#december-14---call-of-justice)
   - [**December 15 - Subsequence Sorcery**](#december-15---subsequence-sorcery)
+  - [**December 16 - Outbreak Dynamics**](#december-16---outbreak-dynamics)
   - [**FAQ**](#faq)
 
 
@@ -688,6 +689,71 @@ The possible distinct subsequences from the input string are : “ “,”g”,�
 - **References**
     - [Subsequences](https://www.geeksforgeeks.org/)
 
+----
+
+### December 16 - Outbreak Dynamics
+
+   #### Problem Statement
+   In a grid representing a city, there are zombies and humans. Zombies can infect humans in adjacent cells (up, down, left, or right), turning them into zombies. However, zombies cannot cross obstacles represented by the value -1. Humans can move freely. Implement a function to calculate the minimum time it takes for the zombie infection to spread throughout the entire city. If it's not possible for the infection to spread to all humans, return -1.The city is represented as a 2D grid, where:
+
+0 represents an empty cell (can be occupied by a human),
+1 represents a cell with a zombie,
+-1 represents an obstacle.
+
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/a5fc5d69-b8a4-41dc-b59c-9009c31e9cb9"></p>
+   
+   #### Sample Input/Output
+   ```
+      Input 1:
+grid = [
+    [0, 1, 0, 0],
+    [1, 1, 1, 1],
+    [0, 1, -1, 0],
+    [0, 0, 0, 0]
+]
+
+Output: 3
+   ```
+
+   #### Explanation
+   ```
+     For Input 1:
+In this example, it takes 3 minutes for the zombie infection to spread to all humans. The path is as follows:
+
+1.Minute 1: Zombies in (0, 1) and (1, 0) infect humans in (0, 0) and (1, 1).
+2.Minute 2: Zombies in (1, 2) and (1, 3) infect humans in (0, 2), (1, 2), and (2, 2).
+3.Minute 3: Zombies in (2, 1) and (2, 3) infect humans in (2, 0), (2, 1), and (2, 2).
+        
+   ```
+#### Sample Input/Output
+   ```
+      Input 2:
+grid = [
+    [1, 0, 1, 1, 0],
+    [0, 0, 0, 1, 1],
+    [1, 0, 1, 1, 1],
+    [1, 0, -1, 0, 0],
+    [1, 1, 0, 0, 1]
+]
+Output: 4
+
+   ``` 
+   
+   #### Explanation
+   ```
+     For Input 2:
+Minute 1: Zombies in (0, 0) and (2, 0) infect humans in (0, 1) and (1, 0).
+Minute 2: Zombies in (0, 2) and (2, 2) infect humans in (0, 0), (0, 2), (1, 1), and (1, 3).
+Minute 3: Zombies in (0, 3) and (2, 3) infect humans in (1, 2), (2, 1), and (2, 2).
+Minute 4: Zombies in (0, 4), (1, 4), and (4, 4) infect humans in (1, 3), (2, 4), (3, 4), and (4, 3).        
+   ```
+    
+- **References**
+    - [Breadth First Search](https://www.javatpoint.com/breadth-first-search-algorithm)
+    - [Queue](https://www.geeksforgeeks.org/queue-data-structure/)
+    - [Graphs](https://www.programiz.com/dsa/graph)
+  
 ----
 FAQ
 ======
