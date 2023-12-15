@@ -39,6 +39,7 @@ Check out our FAQ for more information.
   - [**December 12 - The Heist**](#december-12---the-heist)
   - [**December 13 - Call Cipher**](#december-13---call-cipher)
   - [**December 14 - Call of Justice**](#december-14---call-of-justice)
+  - [**December 15 - Subsequence Sorcery**](#december-15---subsequence-sorcery)
   - [**FAQ**](#faq)
 
 
@@ -655,7 +656,39 @@ Output: 1 4 30
     - [Tree Data Structure](https://www.geeksforgeeks.org/binary-tree-data-structure/)
 
 ----   
+### December 15 - Subsequence Sorcery
+A wizard discovered a magical scroll containing a cryptic string. Legend has it that the number of distinct subsequences within this string holds the key to unlocking a portal to a parallel universe. Can you create an algorithm to unveil the magical count and guide the wizard through the portal to their extraordinary adventure?
 
+
+<p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/e279e7d1-bc54-4dbc-8474-560eb75e5a08"></p>
+
+Given a string as an input.Find the number of distinct subsequences from it.
+
+    
+
+#### Sample Input/Output
+   ```
+Input 1: “ghg”
+Output 1: 7
+```
+```
+Input 2: “ice”
+Output 2: 8
+
+   ```
+
+
+
+#### Explanation
+   ```
+The possible distinct subsequences from the input string are : “ “,”g”,”h”,”gh”,”gg”,”hg”,”ghg”. Hence, the total number of distinct subsequences is 7.
+
+```
+
+- **References**
+    - [Subsequences](https://www.geeksforgeeks.org/)
+
+----
 FAQ
 ======
 
