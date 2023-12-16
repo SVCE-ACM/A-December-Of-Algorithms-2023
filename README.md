@@ -39,6 +39,9 @@ Check out our FAQ for more information.
   - [**December 12 - The Heist**](#december-12---the-heist)
   - [**December 13 - Call Cipher**](#december-13---call-cipher)
   - [**December 14 - Call of Justice**](#december-14---call-of-justice)
+  - [**December 15 - Subsequence Sorcery**](#december-15---subsequence-sorcery)
+  - [**December 16 - Outbreak Dynamics**](#december-16---outbreak-dynamics)
+  - [**December 17 - Bookshelf Dilemma**](#december-17---bookshelf-dilemma)
   - [**FAQ**](#faq)
 
 
@@ -655,7 +658,138 @@ Output: 1 4 30
     - [Tree Data Structure](https://www.geeksforgeeks.org/binary-tree-data-structure/)
 
 ----   
+### December 15 - Subsequence Sorcery
+A wizard discovered a magical scroll containing a cryptic string. Legend has it that the number of distinct subsequences within this string holds the key to unlocking a portal to a parallel universe. Can you create an algorithm to unveil the magical count and guide the wizard through the portal to their extraordinary adventure?
 
+
+<p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/e279e7d1-bc54-4dbc-8474-560eb75e5a08"></p>
+
+Given a string as an input.Find the number of distinct subsequences from it.
+
+    
+
+#### Sample Input/Output
+   ```
+Input 1: “ghg”
+Output 1: 7
+```
+```
+Input 2: “ice”
+Output 2: 8
+
+   ```
+
+
+
+#### Explanation
+   ```
+The possible distinct subsequences from the input string are : “ “,”g”,”h”,”gh”,”gg”,”hg”,”ghg”. Hence, the total number of distinct subsequences is 7.
+
+```
+
+- **References**
+    - [Subsequences](https://www.geeksforgeeks.org/)
+
+----
+
+### December 16 - Outbreak Dynamics
+
+   #### Problem Statement
+   In a grid representing a city, there are zombies and humans. Zombies can infect humans in adjacent cells (up, down, left, or right), turning them into zombies. However, zombies cannot cross obstacles represented by the value -1. Humans can move freely. Implement a function to calculate the minimum time it takes for the zombie infection to spread throughout the entire city. If it's not possible for the infection to spread to all humans, return -1.The city is represented as a 2D grid, where:
+
+0 represents an empty cell (can be occupied by a human),
+1 represents a cell with a zombie,
+-1 represents an obstacle.
+
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/a5fc5d69-b8a4-41dc-b59c-9009c31e9cb9"></p>
+   
+   #### Sample Input/Output
+   ```
+      Input 1:
+grid = [
+    [0, 1, 0, 0],
+    [1, 1, 1, 1],
+    [0, 1, -1, 0],
+    [0, 0, 0, 0]
+]
+
+Output: 3
+   ```
+
+   #### Explanation
+   ```
+     For Input 1:
+In this example, it takes 3 minutes for the zombie infection to spread to all humans. The path is as follows:
+
+1.Minute 1: Zombies in (0, 1) and (1, 0) infect humans in (0, 0) and (1, 1).
+2.Minute 2: Zombies in (1, 2) and (1, 3) infect humans in (0, 2), (1, 2), and (2, 2).
+3.Minute 3: Zombies in (2, 1) and (2, 3) infect humans in (2, 0), (2, 1), and (2, 2).
+        
+   ```
+#### Sample Input/Output
+   ```
+      Input 2:
+grid = [
+    [1, 0, 1, 1, 0],
+    [0, 0, 0, 1, 1],
+    [1, 0, 1, 1, 1],
+    [1, 0, -1, 0, 0],
+    [1, 1, 0, 0, 1]
+]
+Output: 4
+
+   ``` 
+   
+   #### Explanation
+   ```
+     For Input 2:
+Minute 1: Zombies in (0, 0) and (2, 0) infect humans in (0, 1) and (1, 0).
+Minute 2: Zombies in (0, 2) and (2, 2) infect humans in (0, 0), (0, 2), (1, 1), and (1, 3).
+Minute 3: Zombies in (0, 3) and (2, 3) infect humans in (1, 2), (2, 1), and (2, 2).
+Minute 4: Zombies in (0, 4), (1, 4), and (4, 4) infect humans in (1, 3), (2, 4), (3, 4), and (4, 3).        
+   ```
+    
+- **References**
+    - [Breadth First Search](https://www.javatpoint.com/breadth-first-search-algorithm)
+    - [Queue](https://www.geeksforgeeks.org/queue-data-structure/)
+    - [Graphs](https://www.programiz.com/dsa/graph)
+  
+----
+### December 17 - Bookshelf Dilemma
+
+   #### Problem Statement
+   Imagine you're a librarian in a busy city library. A visitor complains about confusing loops in certain book sections. Create a function called detectAndRemoveLoop(). Swiftly, you navigate the shelves, untangling and fixing loops. The books now sit neatly, providing an orderly reading experience for visitors. This tool proves invaluable in maintaining the library's organization. Create a linked list that detects and removes the loops.
+
+
+
+   <p align="center"><img src = "https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/3378af05-944d-4e9c-b3e1-cf53e5bccac9"></p>
+   
+   #### Sample Input/Output
+   ```
+   Input1: 1 -> 2 -> 3 -> 4 -> 5
+          ↑         ↓
+          7 <- 6 <- 8
+   Output1:  1 -> 2 -> 3 -> 4 -> 5
+   ```
+
+   #### Explanation
+   ```
+     The detectAndRemoveLoop() function works like a librarian straightening the chain. It finds the person stuck in the loop and gently releases their hand.
+After removing the loop, the chain remains the same. People (books) still hold hands in the same order, just without the confusing circle.
+Therefore, the output (1->2->3->4->5) represents the straightened chain. It only shows the main line of connected books, not the removed loop.        
+   ```
+#### Sample Input/Output
+   ```
+      Input2: A -> B -> C -> D -> E
+          ↑         ↓
+          G <- F <- H
+      Output2: A -> B -> C -> D -> E -> F -> H
+   ``` 
+    
+- **References**
+    - [Detect and Remove loop](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/)
+----
 FAQ
 ======
 
