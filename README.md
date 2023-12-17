@@ -796,7 +796,7 @@ Therefore, the output (1->2->3->4->5) represents the straightened chain. It only
    #### Problem Statement
    Alice has received a beautiful tree as a gift from her math teacher. This tree has N nodes connected by N-1 edges, and each node is assigned a value represented by arr[i]. Alice enjoys playing with the tree by cutting certain edges and dividing it into multiple subtrees. She has a favorite number X, and she’s curious to find out the number of ways she can cut the tree into subtrees so that the sum of values in each subtree is divisible by X, the cutting order of the edges doesn’t matter.
 
-Help Alice solve this interesting problem by determining the count of good cuttings she can make when dividing the initial tree into 1 subtree ,2 subtree,3 subtree,and so on ,up to N subtrees.
+Help Alice solve this interesting problem by determining the count of good cuttings she can make when dividing the initial tree into 1 subtree, 2 subtree, 3 subtree, and so on, up to N subtrees.
 
 As the number of good cuttings can be huge you need to print the answer modulo 10^9 +7.
 
@@ -810,17 +810,17 @@ INPUT FORMAT:
  
 . The first line of the input contains an integer T, representing the number of test cases.
 . The first line of each test case contains 2 integers , N, X.
- .Next line of each test case contains N integers separated by a space, representing the array arr.
+. Next line of each test case contains N integers separated by a space, representing the array arr.
 . The next N-1 lines of each test case contain 2 integers each, representing an edge of the tree.
 
 OUTPUT FORMAT:
 
-.for each test case, output N integers separated by space telling the count of good cuttings when divided the tree into 1 subtree, 2 subtree, 3 subtree and so on up to  N subtrees.
+. For each test case, output N integers separated by space telling the count of good cuttings when divided the tree into 1 subtree, 2 subtree, 3 subtree and so on up to  N subtrees.
 ```
    
    #### Sample Input/Output
    ```
-     input:
+Input:
 2
 5 3
 3 2 3 2 5
@@ -846,7 +846,7 @@ In the first test case;
   . {(1,2)}
   . {(1,3)}
 . to divide the initial tree into 3 subtrees the possible set of edges which can be removed are:
-    . {(1,2),(1,3)}
+  . {(1,2),(1,3)}
         
    ```
   
