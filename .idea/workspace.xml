@@ -28,13 +28,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Documents/GitHub/A-December-Of-Algorithms-2023&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Admin/Documents/GitHub/A-December-Of-Algorithms-2023/December 17"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Documents\GitHub\A-December-Of-Algorithms-2023\December 17" />
+      <recent name="C:\Users\Admin\Documents\GitHub\A-December-Of-Algorithms-2023\December 16" />
+      <recent name="C:\Users\Admin\Documents\GitHub\A-December-Of-Algorithms-2023\December 14" />
+      <recent name="C:\Users\Admin\Documents\GitHub\A-December-Of-Algorithms-2023\December 13" />
+      <recent name="C:\Users\Admin\Documents\GitHub\A-December-Of-Algorithms-2023\December 12" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.python3_lakshminarayanans_shopperschoice">
     <configuration name="python3_lakshminarayanans_cricmetric" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="A-December-Of-Algorithms-2023" />
