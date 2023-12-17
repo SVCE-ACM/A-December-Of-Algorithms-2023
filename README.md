@@ -35,6 +35,13 @@ Check out our FAQ for more information.
   - [**December 8 - The Enchanted Forest**](#december-8---the-enchanted-forest)
   - [**December 9 - Camels  on a String!**](#december-9---camels-on-a-string)
   - [**December 10 - Forgot Password.**](#december-10---forgot-password)
+  - [**December 11 - Coder of Conversions**](#december-11---coder-of-conversions)
+  - [**December 12 - The Heist**](#december-12---the-heist)
+  - [**December 13 - Call Cipher**](#december-13---call-cipher)
+  - [**December 14 - Call of Justice**](#december-14---call-of-justice)
+  - [**December 15 - Subsequence Sorcery**](#december-15---subsequence-sorcery)
+  - [**December 16 - Outbreak Dynamics**](#december-16---outbreak-dynamics)
+  - [**December 17 - Bookshelf Dilemma**](#december-17---bookshelf-dilemma)
   - [**FAQ**](#faq)
 
 
@@ -488,7 +495,301 @@ The camel case should contain the following parameters(s):
     
    ```   
 ----
+
+### December 11 - Coder of Conversions
+   #### Problem Statement
+  - In Algorithmsville, Digitius and Binarya had a simple request for the Coder of Conversions. 
+  - They wanted a function that could add them up and show the sum in binary. 
+  - Without much fuss, the Coder whipped up a quick function. 
+  - Now, whenever numbers in Algorithmsville wanted to go binary, they just used that handy function. Assume you are the coder and design the function.
+
+    <p align="center"><img src="https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif"></p>
+
+#### Sample Input/Output
+   ```
+   Input: (1,1) 
+   Output: 10
+
+   ```
+
+#### Explanation
+   ```
+  Sum of the Input is 2 whose binary value is 10.     
+   ```
+#### Sample Input/Output
+   ```
+   Input: (51,12) 
+   Output: 111111
+
+   ```
+
+#### Explanation
+   ```
+  Sum of the Input is 64 whose binary value is 111111.     
+   ```  
+### December 12 - The Heist
+A group of thieves has recently stolen a collection of valuable jewelry from a vault. Among the loot are three boxes. To quickly identify the box containing the gold without arousing suspicion, the thieves decide to employ a binary search algorithm. The goal is to minimize the number of inspections and swiftly pinpoint the box with the gold.
+
+<p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/124942fd-1f3e-4147-ac5a-1b9de0b7b34c"></p>
+    
+
+#### Sample Input/Output
+   ```
+   Input:   Box1=[Emerald, Ruby, Gold, Silver]
+   	  Box2=[Silver, Diamond, Emerald, Copper]
+   	  Box3=[Ruby, Platinum ,Bronze, Silver]
+   Output: Box1 Contains the Gold
+
+
+   ```
+
+
+   ```
+   Input:   Box1=[Emerald, Ruby, Bronze ,Silver]
+   	  Box2=[Gold, Diamond, Ruby, Copper]
+   	  Box3=[Ruby, Platinum, Bronze, Silver]
+   Output: Box2 Contains the Gold
+
+
+  ```
+
+#### Explanation
+   ```
+  Input: Box2: [Gold, Diamond, Ruby, Copper]
+  The Binary Search is done with the search element as Gold 
+  The Box containing Gold is Box 2.
    
+   ```
+- **References**
+    - [Binary Search](https://www.geeksforgeeks.org/binary-search/)
+
+----   
+### December 13 - Call Cipher
+Holmes and Watson are racing against time on a mission to decipher the encoded phone numbers of the killer's next victims. With just one clue in hand, they urgently need a program to convert these letter-encoded numbers into their numerical form, all to swiftly warn and save the potential targets.
+
+
+<p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/ae2f782f-6280-4bb6-a762-6af147d078c2"></p>
+
+<p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/9e8360d2-92f7-486d-a372-adb8c72a7993"></p>
+
+
+    
+
+#### Sample Input/Output
+   ```
+textToNum("123-647-EYES") ➞ "123-647-3937"
+textToNum("(325)444-TEST") ➞ "(325)444-8378"
+textToNum("653-TRY-THIS") ➞ "653-879-8447"
+textToNum("435-224-7613") ➞ "435-224-7613"
+
+   ```
+
+
+
+#### Explanation
+   ```
+  Given an encoded phone number like "1-800-HOLMES" as input, the program needs to convert it to its numerical form, such as "1-800-465637." The output should represent the same phone number with letters replaced by their corresponding digits.
+
+
+   
+   ```
+- **References**
+    - [Ciphering](https://www.tutorialspoint.com/count-of-alphabets-having-ascii-value-less-than-and-greater-than-k-in-cplusplus)
+
+----   
+
+### December 14 - Call of Justice
+In the midst of a criminal purge on this foggy night, where I can only identify those within a one-meter radius, I seek your assistance in spotting criminals nearby. 
+
+Additionally, I am grappling with a challenge involving a binary tree, a target node, and an integer value k. The task is to locate all nodes at a distance of k from the specified target node, with the constraint of not having access to parent pointers. Your support is crucial in both endeavors as we strive for justice.
+
+
+<p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/8c0155b8-702c-453c-8528-61648f17fa12"></p>
+
+<p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/3c60f582-21f4-42a9-a51e-84141030129d"></p>
+    
+
+#### Sample Input/Output
+   ```
+   Input:     
+          17
+        /    \
+       8      27
+     /   \
+    4     14 
+        /   \
+      10     16
+
+Target Node = 8, K = 2
+
+Output: 10 16 27
+
+
+
+   ```
+
+
+   ```
+ Input:
+          14
+        /    \
+      7       20
+    /   \       \
+   4     3       30
+        /  
+       2    
+     /  \
+   1      4
+
+Target Node = 7, K = 3
+
+Output: 1 4 30
+
+
+
+  ```
+
+#### Explanation
+   ```
+  Complete the function KDistanceNodes() which takes the root of the tree, target, and K as input parameters and returns a list of nodes at k distance from target in a sorted order.
+   
+   ```
+- **References**
+    - [Tree Data Structure](https://www.geeksforgeeks.org/binary-tree-data-structure/)
+
+----   
+### December 15 - Subsequence Sorcery
+A wizard discovered a magical scroll containing a cryptic string. Legend has it that the number of distinct subsequences within this string holds the key to unlocking a portal to a parallel universe. Can you create an algorithm to unveil the magical count and guide the wizard through the portal to their extraordinary adventure?
+
+
+<p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/e279e7d1-bc54-4dbc-8474-560eb75e5a08"></p>
+
+Given a string as an input.Find the number of distinct subsequences from it.
+
+    
+
+#### Sample Input/Output
+   ```
+Input 1: “ghg”
+Output 1: 7
+```
+```
+Input 2: “ice”
+Output 2: 8
+
+   ```
+
+
+
+#### Explanation
+   ```
+The possible distinct subsequences from the input string are : “ “,”g”,”h”,”gh”,”gg”,”hg”,”ghg”. Hence, the total number of distinct subsequences is 7.
+
+```
+
+- **References**
+    - [Subsequences](https://www.geeksforgeeks.org/)
+
+----
+
+### December 16 - Outbreak Dynamics
+
+   #### Problem Statement
+   In a grid representing a city, there are zombies and humans. Zombies can infect humans in adjacent cells (up, down, left, or right), turning them into zombies. However, zombies cannot cross obstacles represented by the value -1. Humans can move freely. Implement a function to calculate the minimum time it takes for the zombie infection to spread throughout the entire city. If it's not possible for the infection to spread to all humans, return -1.The city is represented as a 2D grid, where:
+
+0 represents an empty cell (can be occupied by a human),
+1 represents a cell with a zombie,
+-1 represents an obstacle.
+
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/a5fc5d69-b8a4-41dc-b59c-9009c31e9cb9"></p>
+   
+   #### Sample Input/Output
+   ```
+      Input 1:
+grid = [
+    [0, 1, 0, 0],
+    [1, 1, 1, 1],
+    [0, 1, -1, 0],
+    [0, 0, 0, 0]
+]
+
+Output: 3
+   ```
+
+   #### Explanation
+   ```
+     For Input 1:
+In this example, it takes 3 minutes for the zombie infection to spread to all humans. The path is as follows:
+
+1.Minute 1: Zombies in (0, 1) and (1, 0) infect humans in (0, 0) and (1, 1).
+2.Minute 2: Zombies in (1, 2) and (1, 3) infect humans in (0, 2), (1, 2), and (2, 2).
+3.Minute 3: Zombies in (2, 1) and (2, 3) infect humans in (2, 0), (2, 1), and (2, 2).
+        
+   ```
+#### Sample Input/Output
+   ```
+      Input 2:
+grid = [
+    [1, 0, 1, 1, 0],
+    [0, 0, 0, 1, 1],
+    [1, 0, 1, 1, 1],
+    [1, 0, -1, 0, 0],
+    [1, 1, 0, 0, 1]
+]
+Output: 4
+
+   ``` 
+   
+   #### Explanation
+   ```
+     For Input 2:
+Minute 1: Zombies in (0, 0) and (2, 0) infect humans in (0, 1) and (1, 0).
+Minute 2: Zombies in (0, 2) and (2, 2) infect humans in (0, 0), (0, 2), (1, 1), and (1, 3).
+Minute 3: Zombies in (0, 3) and (2, 3) infect humans in (1, 2), (2, 1), and (2, 2).
+Minute 4: Zombies in (0, 4), (1, 4), and (4, 4) infect humans in (1, 3), (2, 4), (3, 4), and (4, 3).        
+   ```
+    
+- **References**
+    - [Breadth First Search](https://www.javatpoint.com/breadth-first-search-algorithm)
+    - [Queue](https://www.geeksforgeeks.org/queue-data-structure/)
+    - [Graphs](https://www.programiz.com/dsa/graph)
+  
+----
+### December 17 - Bookshelf Dilemma
+
+   #### Problem Statement
+   Imagine you're a librarian in a busy city library. A visitor complains about confusing loops in certain book sections. Create a function called detectAndRemoveLoop(). Swiftly, you navigate the shelves, untangling and fixing loops. The books now sit neatly, providing an orderly reading experience for visitors. This tool proves invaluable in maintaining the library's organization. Create a linked list that detects and removes the loops.
+
+
+
+   <p align="center"><img src = "https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/3378af05-944d-4e9c-b3e1-cf53e5bccac9"></p>
+   
+   #### Sample Input/Output
+   ```
+   Input1: 1 -> 2 -> 3 -> 4 -> 5
+          ↑         ↓
+          7 <- 6 <- 8
+   Output1:  1 -> 2 -> 3 -> 4 -> 5
+   ```
+
+   #### Explanation
+   ```
+     The detectAndRemoveLoop() function works like a librarian straightening the chain. It finds the person stuck in the loop and gently releases their hand.
+After removing the loop, the chain remains the same. People (books) still hold hands in the same order, just without the confusing circle.
+Therefore, the output (1->2->3->4->5) represents the straightened chain. It only shows the main line of connected books, not the removed loop.        
+   ```
+#### Sample Input/Output
+   ```
+      Input2: A -> B -> C -> D -> E
+          ↑         ↓
+          G <- F <- H
+      Output2: A -> B -> C -> D -> E -> F -> H
+   ``` 
+    
+- **References**
+    - [Detect and Remove loop](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/)
+----
 FAQ
 ======
 
