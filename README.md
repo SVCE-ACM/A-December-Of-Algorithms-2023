@@ -42,7 +42,7 @@ Check out our FAQ for more information.
   - [**December 15 - Subsequence Sorcery**](#december-15---subsequence-sorcery)
   - [**December 16 - Outbreak Dynamics**](#december-16---outbreak-dynamics)
   - [**December 17 - Bookshelf Dilemma**](#december-17---bookshelf-dilemma)
-  - [**December 18 - It's Christman Season**](#december-18---its-christmas-season)
+  - [**December 18 - It's Christmas Season**](#december-18---its-christmas-season)
   - [**FAQ**](#faq)
 
 
