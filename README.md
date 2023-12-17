@@ -41,6 +41,7 @@ Check out our FAQ for more information.
   - [**December 14 - Call of Justice**](#december-14---call-of-justice)
   - [**December 15 - Subsequence Sorcery**](#december-15---subsequence-sorcery)
   - [**December 16 - Outbreak Dynamics**](#december-16---outbreak-dynamics)
+  - [**December 17 - Bookshelf Dilemma**](#december-17---bookshelf-dilemma)
   - [**FAQ**](#faq)
 
 
@@ -754,6 +755,40 @@ Minute 4: Zombies in (0, 4), (1, 4), and (4, 4) infect humans in (1, 3), (2, 4),
     - [Queue](https://www.geeksforgeeks.org/queue-data-structure/)
     - [Graphs](https://www.programiz.com/dsa/graph)
   
+----
+### December 17 - Bookshelf Dilemma
+
+   #### Problem Statement
+   Imagine you're a librarian in a busy city library. A visitor complains about confusing loops in certain book sections. Create a function called detectAndRemoveLoop(). Swiftly, you navigate the shelves, untangling and fixing loops. The books now sit neatly, providing an orderly reading experience for visitors. This tool proves invaluable in maintaining the library's organization. Create a linked list that detects and removes the loops.
+
+
+
+   <p align="center"><img src = "https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/3378af05-944d-4e9c-b3e1-cf53e5bccac9"></p>
+   
+   #### Sample Input/Output
+   ```
+   Input1: 1 -> 2 -> 3 -> 4 -> 5
+          ↑         ↓
+          7 <- 6 <- 8
+   Output1:  1 -> 2 -> 3 -> 4 -> 5
+   ```
+
+   #### Explanation
+   ```
+     The detectAndRemoveLoop() function works like a librarian straightening the chain. It finds the person stuck in the loop and gently releases their hand.
+After removing the loop, the chain remains the same. People (books) still hold hands in the same order, just without the confusing circle.
+Therefore, the output (1->2->3->4->5) represents the straightened chain. It only shows the main line of connected books, not the removed loop.        
+   ```
+#### Sample Input/Output
+   ```
+      Input2: A -> B -> C -> D -> E
+          ↑         ↓
+          G <- F <- H
+      Output2: A -> B -> C -> D -> E -> F -> H
+   ``` 
+    
+- **References**
+    - [Detect and Remove loop](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/)
 ----
 FAQ
 ======
