@@ -40,6 +40,9 @@ Check out our FAQ for more information.
   - [**December 13 - Call Cipher**](#december-13---call-cipher)
   - [**December 14 - Call of Justice**](#december-14---call-of-justice)
   - [**December 15 - Subsequence Sorcery**](#december-15---subsequence-sorcery)
+  - [**December 16 - Outbreak Dynamics**](#december-16---outbreak-dynamics)
+  - [**December 17 - Bookshelf Dilemma**](#december-17---bookshelf-dilemma)
+  - [**December 18 - It's Christmas Season**](#december-18---its-christmas-season)
   - [**FAQ**](#faq)
 
 
@@ -688,6 +691,167 @@ The possible distinct subsequences from the input string are : “ “,”g”,�
 - **References**
     - [Subsequences](https://www.geeksforgeeks.org/)
 
+----
+
+### December 16 - Outbreak Dynamics
+
+   #### Problem Statement
+   In a grid representing a city, there are zombies and humans. Zombies can infect humans in adjacent cells (up, down, left, or right), turning them into zombies. However, zombies cannot cross obstacles represented by the value -1. Humans can move freely. Implement a function to calculate the minimum time it takes for the zombie infection to spread throughout the entire city. If it's not possible for the infection to spread to all humans, return -1.The city is represented as a 2D grid, where:
+
+0 represents an empty cell (can be occupied by a human),
+1 represents a cell with a zombie,
+-1 represents an obstacle.
+
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/113821083/a5fc5d69-b8a4-41dc-b59c-9009c31e9cb9"></p>
+   
+   #### Sample Input/Output
+   ```
+      Input 1:
+grid = [
+    [0, 1, 0, 0],
+    [1, 1, 1, 1],
+    [0, 1, -1, 0],
+    [0, 0, 0, 0]
+]
+
+Output: 3
+   ```
+
+   #### Explanation
+   ```
+     For Input 1:
+In this example, it takes 3 minutes for the zombie infection to spread to all humans. The path is as follows:
+
+1.Minute 1: Zombies in (0, 1) and (1, 0) infect humans in (0, 0) and (1, 1).
+2.Minute 2: Zombies in (1, 2) and (1, 3) infect humans in (0, 2), (1, 2), and (2, 2).
+3.Minute 3: Zombies in (2, 1) and (2, 3) infect humans in (2, 0), (2, 1), and (2, 2).
+        
+   ```
+#### Sample Input/Output
+   ```
+      Input 2:
+grid = [
+    [1, 0, 1, 1, 0],
+    [0, 0, 0, 1, 1],
+    [1, 0, 1, 1, 1],
+    [1, 0, -1, 0, 0],
+    [1, 1, 0, 0, 1]
+]
+Output: 4
+
+   ``` 
+   
+   #### Explanation
+   ```
+     For Input 2:
+Minute 1: Zombies in (0, 0) and (2, 0) infect humans in (0, 1) and (1, 0).
+Minute 2: Zombies in (0, 2) and (2, 2) infect humans in (0, 0), (0, 2), (1, 1), and (1, 3).
+Minute 3: Zombies in (0, 3) and (2, 3) infect humans in (1, 2), (2, 1), and (2, 2).
+Minute 4: Zombies in (0, 4), (1, 4), and (4, 4) infect humans in (1, 3), (2, 4), (3, 4), and (4, 3).        
+   ```
+    
+- **References**
+    - [Breadth First Search](https://www.javatpoint.com/breadth-first-search-algorithm)
+    - [Queue](https://www.geeksforgeeks.org/queue-data-structure/)
+    - [Graphs](https://www.programiz.com/dsa/graph)
+  
+----
+### December 17 - Bookshelf Dilemma
+
+   #### Problem Statement
+   Imagine you're a librarian in a busy city library. A visitor complains about confusing loops in certain book sections. Create a function called detectAndRemoveLoop(). Swiftly, you navigate the shelves, untangling and fixing loops. The books now sit neatly, providing an orderly reading experience for visitors. This tool proves invaluable in maintaining the library's organization. Create a linked list that detects and removes the loops.
+
+
+
+   <p align="center"><img src = "https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/3378af05-944d-4e9c-b3e1-cf53e5bccac9"></p>
+   
+   #### Sample Input/Output
+   ```
+   Input1: 1 -> 2 -> 3 -> 4 -> 5
+          ↑         ↓
+          7 <- 6 <- 8
+   Output1:  1 -> 2 -> 3 -> 4 -> 5
+   ```
+
+   #### Explanation
+   ```
+     The detectAndRemoveLoop() function works like a librarian straightening the chain. It finds the person stuck in the loop and gently releases their hand.
+After removing the loop, the chain remains the same. People (books) still hold hands in the same order, just without the confusing circle.
+Therefore, the output (1->2->3->4->5) represents the straightened chain. It only shows the main line of connected books, not the removed loop.        
+   ```
+#### Sample Input/Output
+   ```
+      Input2: A -> B -> C -> D -> E
+          ↑         ↓
+          G <- F <- H
+      Output2: A -> B -> C -> D -> E -> F -> H
+   ``` 
+    
+- **References**
+    - [Detect and Remove loop](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/)
+----
+### December 18 - It's Christmas Season
+
+   #### Problem Statement
+   Alice has received a beautiful tree as a gift from her math teacher. This tree has N nodes connected by N-1 edges, and each node is assigned a value represented by arr[i]. Alice enjoys playing with the tree by cutting certain edges and dividing it into multiple subtrees. She has a favorite number X, and she’s curious to find out the number of ways she can cut the tree into subtrees so that the sum of values in each subtree is divisible by X, the cutting order of the edges doesn’t matter.
+
+Help Alice solve this interesting problem by determining the count of good cuttings she can make when dividing the initial tree into 1 subtree, 2 subtree, 3 subtree, and so on, up to N subtrees.
+
+As the number of good cuttings can be huge you need to print the answer modulo 10^9 +7.
+
+
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/461ad714-e900-4fa0-886c-902d246d0682"></p>
+
+   #### Input and Output Constraints
+   ```
+INPUT FORMAT:
+ 
+. The first line of the input contains an integer T, representing the number of test cases.
+. The first line of each test case contains 2 integers , N, X.
+. Next line of each test case contains N integers separated by a space, representing the array arr.
+. The next N-1 lines of each test case contain 2 integers each, representing an edge of the tree.
+
+OUTPUT FORMAT:
+
+. For each test case, output N integers separated by space telling the count of good cuttings when divided the tree into 1 subtree, 2 subtree, 3 subtree and so on up to  N subtrees.
+```
+   
+   #### Sample Input/Output
+   ```
+Input:
+2
+5 3
+3 2 3 2 5
+1 2
+1 3
+2 4
+2 5
+5 1
+1 2 3 4 5
+1 2
+1 5
+2 3
+2 4
+Output:
+1 2 1 0 0 
+1 4 6 4 1
+   ```
+
+   #### Explanation
+   ```
+In the first test case;
+. to divide the initial tree into 2 subtrees the possible set of edges which can be removed are:
+  . {(1,2)}
+  . {(1,3)}
+. to divide the initial tree into 3 subtrees the possible set of edges which can be removed are:
+  . {(1,2),(1,3)}
+        
+   ```
+  
+- **References**
+    - [Tree Data Structure](https://www.geeksforgeeks.org/tree-data-structure/)
 ----
 FAQ
 ======
