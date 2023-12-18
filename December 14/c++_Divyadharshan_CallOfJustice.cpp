@@ -10,7 +10,6 @@ public:
 
     TreeNode(int val) : value(val), left(nullptr), right(nullptr) {}
 };
-
 void findKDistanceNodes(TreeNode* root, int target, int k, vector<int>& result) {
     if (!root)
         return;
