@@ -42,6 +42,8 @@ Check out our FAQ for more information.
   - [**December 15 - Subsequence Sorcery**](#december-15---subsequence-sorcery)
   - [**December 16 - Outbreak Dynamics**](#december-16---outbreak-dynamics)
   - [**December 17 - Bookshelf Dilemma**](#december-17---bookshelf-dilemma)
+  - [**December 18 - It's Christmas Season**](#december-18---its-christmas-season)
+  - [**December 19 - Symbolic Sum**](#december-19---symbolic-sum)
   - [**FAQ**](#faq)
 
 
@@ -790,6 +792,101 @@ Therefore, the output (1->2->3->4->5) represents the straightened chain. It only
 - **References**
     - [Detect and Remove loop](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/)
 ----
+### December 18 - It's Christmas Season
+
+   #### Problem Statement
+   Alice has received a beautiful tree as a gift from her math teacher. This tree has N nodes connected by N-1 edges, and each node is assigned a value represented by arr[i]. Alice enjoys playing with the tree by cutting certain edges and dividing it into multiple subtrees. She has a favorite number X, and she’s curious to find out the number of ways she can cut the tree into subtrees so that the sum of values in each subtree is divisible by X, the cutting order of the edges doesn’t matter.
+
+Help Alice solve this interesting problem by determining the count of good cuttings she can make when dividing the initial tree into 1 subtree, 2 subtree, 3 subtree, and so on, up to N subtrees.
+
+As the number of good cuttings can be huge you need to print the answer modulo 10^9 +7.
+
+
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/461ad714-e900-4fa0-886c-902d246d0682"></p>
+
+   #### Input and Output Constraints
+   ```
+INPUT FORMAT:
+ 
+. The first line of the input contains an integer T, representing the number of test cases.
+. The first line of each test case contains 2 integers , N, X.
+. Next line of each test case contains N integers separated by a space, representing the array arr.
+. The next N-1 lines of each test case contain 2 integers each, representing an edge of the tree.
+
+OUTPUT FORMAT:
+
+. For each test case, output N integers separated by space telling the count of good cuttings when divided the tree into 1 subtree, 2 subtree, 3 subtree and so on up to  N subtrees.
+```
+   
+   #### Sample Input/Output
+   ```
+Input:
+2
+5 3
+3 2 3 2 5
+1 2
+1 3
+2 4
+2 5
+5 1
+1 2 3 4 5
+1 2
+1 5
+2 3
+2 4
+Output:
+1 2 1 0 0 
+1 4 6 4 1
+   ```
+
+   #### Explanation
+   ```
+In the first test case;
+. to divide the initial tree into 2 subtrees the possible set of edges which can be removed are:
+  . {(1,2)}
+  . {(1,3)}
+. to divide the initial tree into 3 subtrees the possible set of edges which can be removed are:
+  . {(1,2),(1,3)}
+        
+   ```
+  
+- **References**
+    - [Tree Data Structure](https://www.geeksforgeeks.org/tree-data-structure/)
+----
+### December 19 - Symbolic Sum
+
+   #### Problem Statement
+   Consider a sequence of elements where each element is either a positive integer or a special symbol 'X'. The goal is to calculate the symbolic sum of the sequence, where 'X' is treated as a 
+   placeholder for the sum of all the positive integers in the subsequence rooted at that 'X'. Additionally, each 'X' node can have a multiplier associated with it, denoted as 'Xk', where 'k' is a
+   positive integer. The 'Xk' node represents the sum of all positive integers in the subsequence rooted at that 'X' multiplied by 'k'. Write a function that takes such a sequence and returns the symbolic sum.
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/a555d31f-7645-4981-af36-4c775cdcd446"></p>
+   
+   #### Sample Input/Output
+   ```
+   Input-1: [X3, 3, X2, 2, X1, 1, 4]
+   Output-1: 49
+   ```
+   #### Explanation
+   ```
+  The subsequence rooted at the first 'X3' is the entire sequence, so its sum is 3 + 2 + 1 + 4 = 10, and the multiplier is 3. Therefore, the contribution is 3 * 10 = 30.
+  The subsequence rooted at the second 'X2' is the sequence [2, 1, 4], so its sum is 2 + 1 + 4 = 7, and the multiplier is 2. Therefore, the contribution is 2 * 7 = 14.
+  The subsequence rooted at the third 'X1' is the sequence [1, 4], so its sum is 1 + 4 = 5, and the multiplier is 1. Therefore, the contribution is 1 * 5 = 5.
+  Therefore, the overall symbolic sum is 30 + 14 + 5 = 49.
+   ```
+  #### Sample Input/Output
+  ```
+   Input-2: ['X2', 1, 'X3', 2, 3, 'X2', 4, 'X1', 5]
+   Output-2: 50
+   ``` 
+    
+- **References**
+    - [Tree Traversal Techniques](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
+    - [Recursion](https://www.geeksforgeeks.org/introduction-to-recursion-data-structure-and-algorithm-tutorials/)
+ 
+----
+
 FAQ
 ======
 
