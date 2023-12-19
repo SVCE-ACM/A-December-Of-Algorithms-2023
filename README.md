@@ -43,6 +43,7 @@ Check out our FAQ for more information.
   - [**December 16 - Outbreak Dynamics**](#december-16---outbreak-dynamics)
   - [**December 17 - Bookshelf Dilemma**](#december-17---bookshelf-dilemma)
   - [**December 18 - It's Christmas Season**](#december-18---its-christmas-season)
+  - [**December 19 - Symbolic Sum**](#december-19---symbolic-sum)
   - [**FAQ**](#faq)
 
 
@@ -853,6 +854,39 @@ In the first test case;
 - **References**
     - [Tree Data Structure](https://www.geeksforgeeks.org/tree-data-structure/)
 ----
+### December 19 - Symbolic Sum
+
+   #### Problem Statement
+   Consider a sequence of elements where each element is either a positive integer or a special symbol 'X'. The goal is to calculate the symbolic sum of the sequence, where 'X' is treated as a 
+   placeholder for the sum of all the positive integers in the subsequence rooted at that 'X'. Additionally, each 'X' node can have a multiplier associated with it, denoted as 'Xk', where 'k' is a
+   positive integer. The 'Xk' node represents the sum of all positive integers in the subsequence rooted at that 'X' multiplied by 'k'. Write a function that takes such a sequence and returns the symbolic sum.
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/a555d31f-7645-4981-af36-4c775cdcd446"></p>
+   
+   #### Sample Input/Output
+   ```
+   Input-1: [X3, 3, X2, 2, X1, 1, 4]
+   Output-1: 49
+   ```
+   #### Explanation
+   ```
+  The subsequence rooted at the first 'X3' is the entire sequence, so its sum is 3 + 2 + 1 + 4 = 10, and the multiplier is 3. Therefore, the contribution is 3 * 10 = 30.
+  The subsequence rooted at the second 'X2' is the sequence [2, 1, 4], so its sum is 2 + 1 + 4 = 7, and the multiplier is 2. Therefore, the contribution is 2 * 7 = 14.
+  The subsequence rooted at the third 'X1' is the sequence [1, 4], so its sum is 1 + 4 = 5, and the multiplier is 1. Therefore, the contribution is 1 * 5 = 5.
+  Therefore, the overall symbolic sum is 30 + 14 + 5 = 49.
+   ```
+  #### Sample Input/Output
+  ```
+   Input-2: ['X2', 1, 'X3', 2, 3, 'X2', 4, 'X1', 5]
+   Output-2: 50
+   ``` 
+    
+- **References**
+    - [Tree Traversal Techniques](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
+    - [Recursion](https://www.geeksforgeeks.org/introduction-to-recursion-data-structure-and-algorithm-tutorials/)
+ 
+----
+
 FAQ
 ======
 
