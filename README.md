@@ -880,7 +880,24 @@ In the first test case;
   ```
    Input-2: ['X2', 1, 'X3', 2, 3, 'X2', 4, 'X1', 5]
    Output-2: 50
-   ``` 
+   ```
+  ### NOTE:
+  The solution to this problem may result in multiple valid outputs based on the formation of the symbolic sum tree. The 
+  order in which 'X' nodes are processed and chosen as the root node can influence the tree and, consequently, the final 
+  symbolic sum.
+
+  Please be aware that different valid symbolic sum trees may lead to distinct output values.
+
+  Feel free to document and communicate (in the code) your chosen approach for handling the order of node processing in your solution.
+
+  #### Other Possible Outputs:
+  ```
+   Input-1: [X3, 3, X2, 2, X1, 1, 4]
+   Output-1: 49
+   Output-1a: 51 [Forming a right-most tree with X3 as root node]
+   Output-1b: 33 [Forming a tree with X3 as root node]
+   Output-1c: 14 [Forming a right-most tree with X2 as root node]
+   ```
     
 - **References**
     - [Tree Traversal Techniques](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
@@ -931,22 +948,22 @@ but also the path with the least interference.
    #### Explanation
    ```
 
-The graph represents the following cave network:
-
-Cave_A --3--> Cave_B --7--> Cave_D --5--> Cave_E
-|       |
-5       1
-|       |
-V       V
-Cave_C --3→
-
-The adventurer starts at Cave_A and seeks to reach Cave_E with the shortest and
-least-interfered path.
-
-The graph is represented as a dictionary where keys are cave names, and values are dictionaries representing neighboring caves and the level of ghostly interference(weights).
-All weights are positive integers.
-Cave names are unique strings.
-The start and end caves are guaranteed to be valid caves in the graph.
+	The graph represents the following cave network:
+	
+	Cave_A --3--> Cave_B --7--> Cave_D --5--> Cave_E
+	|       |
+	5       1
+	|       |
+	V       V
+	Cave_C --3→
+	
+	The adventurer starts at Cave_A and seeks to reach Cave_E with the shortest and
+	least-interfered path.
+	
+	The graph is represented as a dictionary where keys are cave names, and values are dictionaries representing neighboring caves and the level of ghostly interference(weights).
+	All weights are positive integers.
+	Cave names are unique strings.
+	The start and end caves are guaranteed to be valid caves in the graph.
 
         
    ```
