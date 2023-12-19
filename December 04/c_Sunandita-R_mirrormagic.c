@@ -44,7 +44,7 @@ void generateSmallestPalindrome(char str[]) {
 int main() {
     char input[100];
 
-    printf("Enter the word: ");
+   
     scanf("%s", input);
 
     generateSmallestPalindrome(input);
