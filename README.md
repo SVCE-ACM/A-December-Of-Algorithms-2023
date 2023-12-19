@@ -44,6 +44,7 @@ Check out our FAQ for more information.
   - [**December 17 - Bookshelf Dilemma**](#december-17---bookshelf-dilemma)
   - [**December 18 - It's Christmas Season**](#december-18---its-christmas-season)
   - [**December 19 - Symbolic Sum**](#december-19---symbolic-sum)
+  - [**December 20 - Treasure Hunt In The Isles**](#december-20---treasure-hunt-in-the-isles)
   - [**FAQ**](#faq)
 
 
@@ -885,6 +886,93 @@ In the first test case;
     - [Tree Traversal Techniques](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
     - [Recursion](https://www.geeksforgeeks.org/introduction-to-recursion-data-structure-and-algorithm-tutorials/)
  
+----
+
+### December 20 - Treasure Hunt In The Isles
+
+   #### Problem Statement
+   
+In the treacherous Cursed Isles, there lies a network of mysterious caves connected by ancient
+pathways. Legends speak of hidden treasures guarded by spectral entities. Brave adventurers
+seek to navigate this perilous network to uncover the greatest treasure—the Enchanted Diamond.
+
+Your task is to write a function treasure_hunt(graph, start, end) that takes a weighted, directed
+graph representing the cave network and finds the safest path from the start cave to the end
+cave. However, beware! The caves are cursed, and the weights on the edges not only represent
+distances but also the level of ghostly interference. The higher the weight, the more likely
+spectral entities are to appear along the way.
+To complete the treasure hunt successfully, the adventurer must not only find the shortest path
+but also the path with the least interference.
+
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/115417933/af96e8c4-d13a-46f4-b0e6-645670c7239a" width="400"></p>
+   
+   #### Sample Input/Output
+   ```
+      Input: 
+      graph = {
+     'Cave_A': {'Cave_B': 3, 'Cave_C': 5},
+     'Cave_B': {'Cave_D': 7, 'Cave_E': 1},
+     'Cave_C': {'Cave_D': 3},
+     'Cave_D': {'Cave_E': 5},
+     'Cave_E': {}
+     }
+     start_cave = 'Cave_A'
+     end_cave   = 'Cave_E'
+
+     Output:
+      ['Cave_A', 'Cave_B', 'Cave_E']
+
+
+   ```
+
+
+
+   #### Explanation
+   ```
+
+The graph represents the following cave network:
+
+Cave_A --3--> Cave_B --7--> Cave_D --5--> Cave_E
+|       |
+5       1
+|       |
+V       V
+Cave_C --3→
+
+The adventurer starts at Cave_A and seeks to reach Cave_E with the shortest and
+least-interfered path.
+
+The graph is represented as a dictionary where keys are cave names, and values are dictionaries representing neighboring caves and the level of ghostly interference(weights).
+All weights are positive integers.
+Cave names are unique strings.
+The start and end caves are guaranteed to be valid caves in the graph.
+
+        
+   ```
+
+   #### Sample Input/Output
+   ```
+      Input: 
+       graph = {
+      'Cave_A': {'Cave_B': 4, 'Cave_C': 6},
+      'Cave_B': {'Cave_C': 2, 'Cave_D': 5, 'Cave_E': 8},
+      'Cave_C': {'Cave_A': 6, 'Cave_D': 7},
+      'Cave_D': {'Cave_B': 5, 'Cave_E': 3},
+      'Cave_E': {}
+      }
+      start_cave = 'Cave_B'
+      end_cave   = 'Cave_E'
+
+      Output:
+       ['Cave_B', 'Cave_D', 'Cave_E']
+
+
+   ```
+    
+- **References**
+    - [Graph Data Structure And Algorithms](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
+    - [Shortest Path Algorithm In C++](https://www.geeksforgeeks.org/c-program-for-dijkstras-shortest-path-algorithm-greedy-algo-7/)
 ----
 
 FAQ
