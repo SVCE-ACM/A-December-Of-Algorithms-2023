@@ -89,6 +89,7 @@ int calculate_time (vector<vector<int>>& grid) {
 
 int main()
 {
+    //The second test is incorrect. The time in minutes required to infect the entire city is 2 minutes and not 4.
     vector<vector<int>> grid {
                                 {0, 1, 0, 0},
                                 {1, 1, 1, 1},
