@@ -999,13 +999,13 @@ but also the path with the least interference.
    In Gotham, the Riddler has concealed a bomb with a coded message "RQHODQTLATCTQ."
 Batman, faces the challenge of deciphering the hidden location. He must craft a code-breaking
 script to decrypt the message left by the Riddler below :
-“ Greetings, Batman!
+"Greetings, Batman!
 A riddle wrapped in an enigma,
 The city's key lies within.
 Explore the dance of letters,
 Zero to twenty-five, the truth unveils.
 Who is the true Caesar? Unmask the cipher,
-And the bomb's secret shall be revealed “ .
+And the bomb's secret shall be revealed."
 
    <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/115417933/1304aafc-5b0c-4c4a-a1f4-84dbc89ea13f" ></p>
    
