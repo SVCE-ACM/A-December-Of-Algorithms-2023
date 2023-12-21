@@ -45,6 +45,7 @@ Check out our FAQ for more information.
   - [**December 18 - It's Christmas Season**](#december-18---its-christmas-season)
   - [**December 19 - Symbolic Sum**](#december-19---symbolic-sum)
   - [**December 20 - Treasure Hunt In The Isles**](#december-20---treasure-hunt-in-the-isles)
+  - [**December 21 - Riddle Me This**](#december-21---riddle-me-this)
   - [**FAQ**](#faq)
 
 
@@ -990,6 +991,56 @@ but also the path with the least interference.
 - **References**
     - [Graph Data Structure And Algorithms](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
     - [Shortest Path Algorithm In C++](https://www.geeksforgeeks.org/c-program-for-dijkstras-shortest-path-algorithm-greedy-algo-7/)
+----
+
+ ### December 21 - Riddle Me This 
+
+   #### Problem Statement
+   In Gotham, the Riddler has concealed a bomb with a coded message "RQHODQTLATCTQ."
+Batman, faces the challenge of deciphering the hidden location. He must craft a code-breaking
+script to decrypt the message left by the Riddler below :
+"Greetings, Batman!
+A riddle wrapped in an enigma,
+The city's key lies within.
+Explore the dance of letters,
+Zero to twenty-five, the truth unveils.
+Who is the true Caesar? Unmask the cipher,
+And the bomb's secret shall be revealed."
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/115417933/1304aafc-5b0c-4c4a-a1f4-84dbc89ea13f" ></p>
+   
+   #### Sample Input/Output
+   ```
+     Input: 
+      Enter code : RQHODQTLATCTQ
+     Output:
+      The Bomb location is : SRIPERUMBUDUR - Shift 25
+
+   ```
+
+   #### Explanation
+   ```
+     
+Input: The code given in the question decrypts to “SRIPERUMBUDUR”.
+The participants needs the use the message left by the Riddler to identify that Caesar cipher
+with a shift from 0-25 is used and they need to write a program to reveal the bomb location.
+
+        
+   ```
+   #### Sample Input/Output
+   ```
+     Input: 
+      Enter code: QZBMIABQQMZQB
+     Output:
+      The Bomb location is: MADRASHIGHCOURT - Shift 22
+
+   ```
+   
+    
+- **References**
+
+    - [Caesar cipher](https://cryptii.com/pipes/caesar-cipher)
+ 
 ----
 
 FAQ
