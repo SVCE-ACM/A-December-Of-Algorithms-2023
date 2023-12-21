@@ -46,6 +46,7 @@ Check out our FAQ for more information.
   - [**December 19 - Symbolic Sum**](#december-19---symbolic-sum)
   - [**December 20 - Treasure Hunt In The Isles**](#december-20---treasure-hunt-in-the-isles)
   - [**December 21 - Riddle Me This**](#december-21---riddle-me-this)
+  - [**December 22 - Rotten Oranges**](#december-22---rotten-oranges)
   - [**FAQ**](#faq)
 
 
@@ -1041,6 +1042,47 @@ with a shift from 0-25 is used and they need to write a program to reveal the bo
 
     - [Caesar cipher](https://cryptii.com/pipes/caesar-cipher)
  
+----
+
+ ### December 22 - Rotten Oranges 
+
+   #### Problem Statement
+   Given a grid of dimension nXm where each cell in the grid can have values 0, 1 or 2 which has the following meaning:
+0 : Empty cell
+1 : Cells have fresh oranges
+2 : Cells have rotten oranges
+We have to determine what is the earliest time after which all the oranges are rotten.
+NOTE:  A rotten orange at index [i,j] can rot other fresh oranges at indexes [i-1,j], [i+1,j], [i,j-1], [i,j+1] (up, down, left and right) in unit time. 
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/119551893/a3a7e9fa-d0d5-4c93-b19b-f9b9faa6884e"></p>
+   
+   #### Sample Input/Output
+   ```
+     Input:   
+Input: grid = {{0,1,2},{0,1,2},{2,1,1}}
+Output: 1
+
+   ```
+
+   #### Explanation
+   ```
+     The grid is-
+2 2 0 1
+Oranges at (0,0) and (0,1) can't rot orange at
+(0,3).
+        
+   ```
+   #### Sample Input/Output
+   ```
+     Input: grid = {{2,2,0,1}}
+Output: -1
+
+   ```
+   
+- **References**
+
+    - [Graph execution](https://www.geeksforgeeks.org/graph-execution/)
+    
 ----
 
 FAQ
