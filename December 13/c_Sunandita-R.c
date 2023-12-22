@@ -1,3 +1,9 @@
+/*   **********************INPUT FORMAT EXAMPLE ******************
+
+        653-TRY-THIS
+
+*/
+
 #include <stdio.h>
 #include <string.h>
 
@@ -35,8 +41,3 @@ int main() {
     return 0;
 }
 
-/*   input format Example
-
-        653-TRY-THIS
-
-*/
