@@ -1132,8 +1132,8 @@ he must spend rotating dominoes to make his wish come true.
 ### December 24 - Golden Rule Violation
 
    #### Problem Statement
-   Mark loves to arrange things in order. Mark sticks to his “Golden rule” that every set of numbers must be in ascending order. Unfortunately, that is not always the case. Mark defines a “violation”
-   as a situation when a smaller number comes after a larger number in the set, which violates the ascending order. Given a set of integers, help Mark to find out the total number of such violations.
+   Mark loves to arrange things in order. Mark sticks to his “Golden Rule” that every set of numbers must be in ascending order. Unfortunately, that is not always the case. Mark defines a “violation”
+   as a situation when a smaller number comes after a larger number in the set, which violates the ascending order. Given a set of integers, help Mark find out the total number of such violations.
 
    <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/6994ba7f-3f00-45e8-ac01-da88f4e4da94"></p>
    
