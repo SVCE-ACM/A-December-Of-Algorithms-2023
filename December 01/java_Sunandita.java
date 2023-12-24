@@ -1,3 +1,15 @@
+/*  ******* INPUT FORMAT ********
+
+Line 1 contains number of values n
+Line  two consists n space separated values
+
+EXAMPLE
+
+ 9
+ 10 20 30 40 50 60 70 80 90 
+
+ */
+
 
 import java.util.*;
 public class java_Sunandita {

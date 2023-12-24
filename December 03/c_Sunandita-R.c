@@ -1,3 +1,16 @@
+/*  ******* INPUT FORMAT ********
+
+Line 1 contains number of values n
+Line  two consists n space separated values
+
+EXAMPLE
+
+ 5
+ 7 4 8 2 9
+
+ */
+
+
 #include<stdio.h>
 int main(){
 int n,i;

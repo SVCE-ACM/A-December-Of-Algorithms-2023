@@ -1,3 +1,11 @@
+/* 
+
+    INPUT FORMAT: A single spaceless string
+    Example     : Hollow
+
+*/
+
+
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
