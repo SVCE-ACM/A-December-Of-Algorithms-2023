@@ -2,10 +2,11 @@ import java.util.Scanner;
 public class java_Sunandita_Camelcase {
    
         public static void main(String[] args) {
-            Scanner s=new Scanner(System.in);
-            String camelCaseString =s.nextLine() ;
-            int wordCount = countWordsInCamelCase(camelCaseString);
-            System.out.println(wordCount);
+            try (Scanner s = new Scanner(System.in)) {
+                String camelCaseString =s.nextLine() ;
+                int wordCount = countWordsInCamelCase(camelCaseString);
+                System.out.println(wordCount);
+            }
         }
         private static int countWordsInCamelCase(String s) {
        
