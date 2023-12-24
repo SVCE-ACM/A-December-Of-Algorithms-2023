@@ -43,6 +43,12 @@ Check out our FAQ for more information.
   - [**December 16 - Outbreak Dynamics**](#december-16---outbreak-dynamics)
   - [**December 17 - Bookshelf Dilemma**](#december-17---bookshelf-dilemma)
   - [**December 18 - It's Christmas Season**](#december-18---its-christmas-season)
+  - [**December 19 - Symbolic Sum**](#december-19---symbolic-sum)
+  - [**December 20 - Treasure Hunt In The Isles**](#december-20---treasure-hunt-in-the-isles)
+  - [**December 21 - Riddle Me This**](#december-21---riddle-me-this)
+  - [**December 22 - Rotten Oranges**](#december-22---rotten-oranges)
+  - [**December 23 - Dominoes**](#december-23---dominoes)
+  - [**December 24 - Golden Rule Violation**](#december-24---golden-rule-violation)
   - [**FAQ**](#faq)
 
 
@@ -852,6 +858,311 @@ In the first test case;
   
 - **References**
     - [Tree Data Structure](https://www.geeksforgeeks.org/tree-data-structure/)
+----
+### December 19 - Symbolic Sum
+
+   #### Problem Statement
+   Consider a sequence of elements where each element is either a positive integer or a special symbol 'X'. The goal is to calculate the symbolic sum of the sequence, where 'X' is treated as a 
+   placeholder for the sum of all the positive integers in the subsequence rooted at that 'X'. Additionally, each 'X' node can have a multiplier associated with it, denoted as 'Xk', where 'k' is a
+   positive integer. The 'Xk' node represents the sum of all positive integers in the subsequence rooted at that 'X' multiplied by 'k'. Write a function that takes such a sequence and returns the symbolic sum.
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/a555d31f-7645-4981-af36-4c775cdcd446"></p>
+   
+   #### Sample Input/Output
+   ```
+   Input-1: [X3, 3, X2, 2, X1, 1, 4]
+   Output-1: 49
+   ```
+   #### Explanation
+   ```
+  The subsequence rooted at the first 'X3' is the entire sequence, so its sum is 3 + 2 + 1 + 4 = 10, and the multiplier is 3. Therefore, the contribution is 3 * 10 = 30.
+  The subsequence rooted at the second 'X2' is the sequence [2, 1, 4], so its sum is 2 + 1 + 4 = 7, and the multiplier is 2. Therefore, the contribution is 2 * 7 = 14.
+  The subsequence rooted at the third 'X1' is the sequence [1, 4], so its sum is 1 + 4 = 5, and the multiplier is 1. Therefore, the contribution is 1 * 5 = 5.
+  Therefore, the overall symbolic sum is 30 + 14 + 5 = 49.
+   ```
+  #### Sample Input/Output
+  ```
+   Input-2: ['X2', 1, 'X3', 2, 3, 'X2', 4, 'X1', 5]
+   Output-2: 50
+   ```
+  ### NOTE:
+  The solution to this problem may result in multiple valid outputs based on the formation of the symbolic sum tree. The 
+  order in which 'X' nodes are processed and chosen as the root node can influence the tree and, consequently, the final 
+  symbolic sum.
+
+  Please be aware that different valid symbolic sum trees may lead to distinct output values.
+
+  Feel free to document and communicate (in the code) your chosen approach for handling the order of node processing in your solution.
+
+  #### Other Possible Outputs:
+  ```
+   Input-1: [X3, 3, X2, 2, X1, 1, 4]
+   Output-1: 49
+   Output-1a: 51 [Forming a right-most tree with X3 as root node]
+   Output-1b: 33 [Forming a tree with X3 as root node]
+   Output-1c: 14 [Forming a right-most tree with X2 as root node]
+   ```
+    
+- **References**
+    - [Tree Traversal Techniques](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
+    - [Recursion](https://www.geeksforgeeks.org/introduction-to-recursion-data-structure-and-algorithm-tutorials/)
+ 
+----
+
+### December 20 - Treasure Hunt In The Isles
+
+   #### Problem Statement
+   
+In the treacherous Cursed Isles, there lies a network of mysterious caves connected by ancient
+pathways. Legends speak of hidden treasures guarded by spectral entities. Brave adventurers
+seek to navigate this perilous network to uncover the greatest treasure—the Enchanted Diamond.
+
+Your task is to write a function treasure_hunt(graph, start, end) that takes a weighted, directed
+graph representing the cave network and finds the safest path from the start cave to the end
+cave. However, beware! The caves are cursed, and the weights on the edges not only represent
+distances but also the level of ghostly interference. The higher the weight, the more likely
+spectral entities are to appear along the way.
+To complete the treasure hunt successfully, the adventurer must not only find the shortest path
+but also the path with the least interference.
+
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/115417933/af96e8c4-d13a-46f4-b0e6-645670c7239a" width="400"></p>
+   
+   #### Sample Input/Output
+   ```
+      Input: 
+      graph = {
+     'Cave_A': {'Cave_B': 3, 'Cave_C': 5},
+     'Cave_B': {'Cave_D': 7, 'Cave_E': 1},
+     'Cave_C': {'Cave_D': 3},
+     'Cave_D': {'Cave_E': 5},
+     'Cave_E': {}
+     }
+     start_cave = 'Cave_A'
+     end_cave   = 'Cave_E'
+
+     Output:
+      ['Cave_A', 'Cave_B', 'Cave_E']
+
+
+   ```
+
+
+
+   #### Explanation
+   ```
+
+	The graph represents the following cave network:
+	
+	Cave_A --3--> Cave_B --7--> Cave_D --5--> Cave_E
+	|       |
+	5       1
+	|       |
+	V       V
+	Cave_C --3→
+	
+	The adventurer starts at Cave_A and seeks to reach Cave_E with the shortest and
+	least-interfered path.
+	
+	The graph is represented as a dictionary where keys are cave names, and values are dictionaries representing neighboring caves and the level of ghostly interference(weights).
+	All weights are positive integers.
+	Cave names are unique strings.
+	The start and end caves are guaranteed to be valid caves in the graph.
+
+        
+   ```
+
+   #### Sample Input/Output
+   ```
+      Input: 
+       graph = {
+      'Cave_A': {'Cave_B': 4, 'Cave_C': 6},
+      'Cave_B': {'Cave_C': 2, 'Cave_D': 5, 'Cave_E': 8},
+      'Cave_C': {'Cave_A': 6, 'Cave_D': 7},
+      'Cave_D': {'Cave_B': 5, 'Cave_E': 3},
+      'Cave_E': {}
+      }
+      start_cave = 'Cave_B'
+      end_cave   = 'Cave_E'
+
+      Output:
+       ['Cave_B', 'Cave_D', 'Cave_E']
+
+
+   ```
+    
+- **References**
+    - [Graph Data Structure And Algorithms](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
+    - [Shortest Path Algorithm In C++](https://www.geeksforgeeks.org/c-program-for-dijkstras-shortest-path-algorithm-greedy-algo-7/)
+----
+
+ ### December 21 - Riddle Me This 
+
+   #### Problem Statement
+   In Gotham, the Riddler has concealed a bomb with a coded message "RQHODQTLATCTQ."
+Batman, faces the challenge of deciphering the hidden location. He must craft a code-breaking
+script to decrypt the message left by the Riddler below :
+"Greetings, Batman!
+A riddle wrapped in an enigma,
+The city's key lies within.
+Explore the dance of letters,
+Zero to twenty-five, the truth unveils.
+Who is the true Caesar? Unmask the cipher,
+And the bomb's secret shall be revealed."
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/115417933/1304aafc-5b0c-4c4a-a1f4-84dbc89ea13f" ></p>
+   
+   #### Sample Input/Output
+   ```
+     Input: 
+      Enter code : RQHODQTLATCTQ
+     Output:
+      The Bomb location is : SRIPERUMBUDUR - Shift 25
+
+   ```
+
+   #### Explanation
+   ```
+     
+Input: The code given in the question decrypts to “SRIPERUMBUDUR”.
+The participants needs the use the message left by the Riddler to identify that Caesar cipher
+with a shift from 0-25 is used and they need to write a program to reveal the bomb location.
+
+        
+   ```
+   #### Sample Input/Output
+   ```
+     Input: 
+      Enter code: QZBMIABQQMZQB
+     Output:
+      The Bomb location is: MADRASHIGHCOURT - Shift 22
+
+   ```
+   
+    
+- **References**
+
+    - [Caesar cipher](https://cryptii.com/pipes/caesar-cipher)
+ 
+----
+
+ ### December 22 - Rotten Oranges 
+
+   #### Problem Statement
+   Given a grid of dimension nXm where each cell in the grid can have values 0, 1 or 2 which has the following meaning:
+- 0 : Empty cell
+- 1 : Cells have fresh oranges
+- 2 : Cells have rotten oranges
+  
+  We have to determine what is the earliest time after which all the oranges are rotten.
+  
+  NOTE:  A rotten orange at index [i,j] can rot other fresh oranges at indexes [i-1,j], [i+1,j], [i,j-1], [i,j+1] (up, down, left and right) in unit time. 
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/119551893/a3a7e9fa-d0d5-4c93-b19b-f9b9faa6884e"></p>
+   
+   #### Sample Input/Output
+   ```   
+     Input: grid = {{0,1,2},{0,1,2},{2,1,1}}
+     Output: 1
+
+   ```
+
+   #### Explanation
+   ```
+     The grid is-
+     2 2 0 1
+     Oranges at (0,0) and (0,1) can't rot orange at
+     (0,3).
+        
+   ```
+   #### Sample Input/Output
+   ```
+     Input: grid = {{2,2,0,1}}
+     Output: -1
+
+   ```
+   
+- **References**
+
+    - [Graph Execution](https://www.geeksforgeeks.org/graph-execution/)
+    
+----
+
+ ### December 23 - Dominoes 
+
+   #### Problem Statement
+   Valera has got n domino pieces in a row. Each piece consists of two halves — the upper one
+and the lower one. Each of the halves contains a number from 1 to 6. Valera loves even integers
+very much, so he wants the sum of the numbers on the upper halves and the sum of the
+numbers on the lower halves to be even.
+To do that, Valera can rotate the dominoes by 180 degrees. After the rotation the upper and the
+lower halves swap places. This action takes one second. Help Valera find out the minimum time
+he must spend rotating dominoes to make his wish come true.
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/119551893/f9d30e72-a14c-4c1c-baa0-8b33e0a30d3a"></p>
+   
+   #### Sample Input/Output
+   ```
+     Input:   
+     2
+     4 2
+     6 4
+     Output: 0
+
+   ```
+
+   #### Explanation
+   ```
+     In the first test case the sum of the numbers on the upper halves equals 10 and the sum of the numbers on the lower halves equals 6. Both numbers are even, so Valera doesn't required to do
+     anything.     
+   ```
+   #### Sample Input/Output
+   ```
+     Input:
+     1
+     2 3
+     Output: -1
+
+   ```
+   
+- **References**
+
+    - [Greedy Algorithms](https://www.geeksforgeeks.org/greedy-algorithms/)
+----
+
+### December 24 - Golden Rule Violation
+
+   #### Problem Statement
+   Mark loves to arrange things in order. Mark sticks to his “Golden Rule” that every set of numbers must be in ascending order. Unfortunately, that is not always the case. Mark defines a “violation”
+   as a situation when a smaller number comes after a larger number in the set, which violates the ascending order. Given a set of integers, help Mark find out the total number of such violations.
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/6994ba7f-3f00-45e8-ac01-da88f4e4da94"></p>
+   
+   #### Sample Input/Output 1
+   ```
+   Input:
+   5
+   4 5 6 7 1
+
+   Output: 4
+   ```
+
+   #### Explanation
+   ```
+   The first line refers to the total number of input. 4, 5, 6 and 7 are in order. 1 comes after 4, 5, 6, 7 on the list but is smaller than all 4 of them. Hence 4 is the output.        
+   ```
+
+   #### Sample Input/Output 2
+   ```
+   Input:
+   5
+   5 4 3 2 1
+
+   Output: 10
+   ```
+
+- **References**
+    - [Divide And Conquer](https://www.javatpoint.com/divide-and-conquer-introduction)
+    - [Merge Sort](https://www.javatpoint.com/merge-sort)  
 ----
 FAQ
 ======
