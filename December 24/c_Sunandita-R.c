@@ -1,4 +1,8 @@
 /*
+    INPUT FORMAT : First Line consists number of values n
+                   Second line contains n space separated integers.
+
+
     ********        INPUT FORMAT EXAMPLE   ********
     5
     5 4 3 2 1

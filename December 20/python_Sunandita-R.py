@@ -10,10 +10,10 @@ Line 1 of input:
 
 Eval is used so give the dictionary in one line without line breaks.
 
-Line 2 of input:
+Line 2 of input - Start cave:
 Cave_B
 
-Line 3 of input:
+Line 3 of input - End cave:
 Cave_C
 
 """

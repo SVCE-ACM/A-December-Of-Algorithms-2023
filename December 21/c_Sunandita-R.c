@@ -1,3 +1,8 @@
+/*
+    Since the task is just to decode the riddler's code the Input is fixed and the program is static
+    The shift used is 25 and the bomb location after decoding is SRIPERUMBUDUR.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

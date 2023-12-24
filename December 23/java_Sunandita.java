@@ -1,5 +1,9 @@
 /*
- *  INPUT FORMAT EXAMPLE
+ *  
+ * INPUT FORMAT: First line contains number  of dominos n.
+ *               Subsequent n Lines have the first number as upper half value and the next is lower half value
+ * 
+ * INPUT FORMAT EXAMPLE
  * 
  * 2
  * 4 3

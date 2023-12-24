@@ -1,8 +1,13 @@
 """
+INPUT FORMAT : A nested list with comma separated integers
+
 ************************ INPUT FORMAT Example*************
 [[0,1,2],[0,1,2],[2,1,1]]
 
 Eval is used to parse the input so follow the above input format without line breaks
+
+If there is only one row even then give it as nested list.
+Example : [[2,2,0,1]]
 
 """
 
