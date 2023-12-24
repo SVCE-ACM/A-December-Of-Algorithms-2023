@@ -49,6 +49,7 @@ Check out our FAQ for more information.
   - [**December 22 - Rotten Oranges**](#december-22---rotten-oranges)
   - [**December 23 - Dominoes**](#december-23---dominoes)
   - [**December 24 - Golden Rule Violation**](#december-24---golden-rule-violation)
+  - [**December 25 - Harmony Hurdle**](#december-25---harmony-hurdle)
   - [**FAQ**](#faq)
 
 
@@ -1164,6 +1165,43 @@ he must spend rotating dominoes to make his wish come true.
     - [Divide And Conquer](https://www.javatpoint.com/divide-and-conquer-introduction)
     - [Merge Sort](https://www.javatpoint.com/merge-sort)  
 ----
+### December 25 - Harmony Hurdle
+
+   #### Problem Statement
+   In a parallel universe, tasks await execution, each with dependencies. Task 'i' can only be done when all tasks in dependencies[i] are complete. Write a function to calculate the minimum time needed to 
+   complete all tasks, considering parallel execution while respecting task dependencies. Can you optimize the parallel execution plan?
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/febee453-b9f4-42df-a165-adf13025a620"></p>
+   
+   #### Sample Input/Output 1
+   ```
+      Input: tasks = [1, 2, 3, 4, 5]
+             dependencies = [[], [1], [2], [3], [4, 1]]
+
+      Output: 6
+   ```
+
+   #### Explanation
+   ```
+   Task 1 has no dependencies and can be executed first.
+   Task 2 depends on Task 1.
+   Task 3 depends on Task 2.
+   Task 4 depends on Task 3.
+   Task 5 depends on both Task 4 and Task 1, so it can only start after Task 4 and Task 1 are completed.
+   The minimum time required to execute all tasks is 6.
+   ```
+   #### Sample Input/Output 2
+   ```
+      Input: tasks = [1, 2, 3, 4, 5]
+             dependencies = [[], [1], [2], [3], [4]]
+
+      Output: 5
+   ```
+    
+- **References**
+    - [Topological Sorting](https://www.geeksforgeeks.org/topological-sorting/)
+----
+
 FAQ
 ======
 
