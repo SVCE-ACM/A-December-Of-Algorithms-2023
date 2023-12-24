@@ -13,7 +13,7 @@ For the Sample input 1: [X3, 3, X2, 2, X1, 1, 4]
 
 
 
-            First 2 Lines of output is the input and output of first test case.
+            ******  First 2 Lines of output is the input and output of first test case.******
 
             The cursor in the next line accepts user input.
 
@@ -22,7 +22,7 @@ For the Sample input 1: [X3, 3, X2, 2, X1, 1, 4]
 
             space separated node values without quotes (X must be in capital)
 
-            Example :  x3 3 x2 2 x1 1 4
+            Example :  X3 3 X2 2 X1 1 4
 
  */
 
@@ -81,9 +81,9 @@ int symbolicSum(TreeNode* node) {
 int main() {
     std::vector<std::string> inputSequence = {"X3", "3", "X2", "2", "X1", "1", "4"};
     TreeNode* root = constructTree(inputSequence);
-
+    std::cout<<"\nINPUT : [X3, 3, X2, 2, X1, 1, 4]";
     int result = symbolicSum(root);
-    std::cout << "\nSymbolic Sum: " << result << std::endl;
+    std::cout << "\nOUTPUT : " << result << std::endl;
 
     std::string input;
     std::getline(std::cin, input);

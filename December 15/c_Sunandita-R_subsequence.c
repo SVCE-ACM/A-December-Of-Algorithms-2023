@@ -1,3 +1,7 @@
+/*   INPUT FORMAT : A spaceless string
+     Example : ice
+*/
+
 #include <stdio.h>
 #include <string.h>
 
@@ -24,13 +28,8 @@ int countDistinctSubsequences(char* str) {
 
 int main() {
     char input[100];
-    
-    printf("Enter the input string: ");
     scanf("%s", input);
-
     int result = countDistinctSubsequences(input);
-
-    printf("Total number of distinct subsequences: %d\n", result);
-
+    printf("%d",result);
     return 0;
 }

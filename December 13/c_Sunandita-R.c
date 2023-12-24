@@ -1,4 +1,7 @@
-/*   **********************INPUT FORMAT EXAMPLE ******************
+/*   
+        INPUT FORMAT : A spaceless string with combinations of capital letters and numbers without quotes
+
+        **********************INPUT FORMAT EXAMPLE ******************
 
         653-TRY-THIS
 

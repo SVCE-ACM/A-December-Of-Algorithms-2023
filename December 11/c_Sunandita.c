@@ -1,9 +1,11 @@
+/*      INPUT FORMAT : Two space separated integers in the same line
+        Example : 51 13
+*/
+
 #include <stdio.h>
 
 int main() {
     int num1, num2, sum;
-
-    printf("Enter two numbers separated by a space: ");
     scanf("%d %d", &num1, &num2);
 
     sum = num1 + num2;

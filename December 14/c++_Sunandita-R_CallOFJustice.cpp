@@ -1,3 +1,15 @@
+/*
+    Since the task here is only to complete the KDistanceNodes function,
+    I have assumed the values of all the tree nodes to be fixed programatically
+    You can change it manually in the code itself under createBinaryTree function
+
+    _____The tree constructed is the one given in test case 1 of the question______
+
+    INPUT FORMAT : Two space separated Integers denoting Target and K values
+    Example : 7 3
+*/
+
+
 #include <iostream>
 #include <vector>
 #include <functional>

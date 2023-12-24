@@ -1,3 +1,14 @@
+"""
+    Since the task here is only to complete the DetectandRemoveLoop function,
+    I have assumed the values of all the nodes to be fixed programatically
+    You can add more nodes; change the linked list structure in the main part of the program
+
+    The linked list constructed is that of testcase 1 in the question
+
+    No input needs to be given. Pls test by changing the values in the program itself.
+
+"""
+
 class Node:
     def __init__(self, value):
         self.value = value
@@ -53,11 +64,6 @@ node3.next=node8
 node8.next=node7
 node3.next = node4
 node7.next=node6
-node6.next=node1# Creating a loop
-
-
-
+node6.next=node1
 detect_and_remove_loop(node1)
-
-
 print_list(node1)

@@ -1,8 +1,31 @@
+"""
+    INPUT FORMAT : 
+
+. The first line of the input contains an integer T, representing the number of test cases.
+. The first line of each test case contains 2 integers , N, X.
+. Next line of each test case contains N integers separated by a space, representing the array arr.
+. The next N-1 lines of each test case contain 2 integers each, representing an edge of the tree.
+
+    EXAMPLE:
+2
+5 3
+3 2 3 2 5
+1 2
+1 3
+2 4
+2 5
+5 1
+1 2 3 4 5
+1 2
+1 5
+2 3
+2 4
+
+"""
 import sys
-
 sys.setrecursionlimit(10 ** 6)
-
 N = 100000
+l=[]
 MOD = 10 ** 9 + 7
 f = [0] * (N + 1)
 invf = [0] * (N + 1)
@@ -66,7 +89,8 @@ def solve():
     for i in range(2, n + 1):
         result.append(cn(i - 1, cnt - 1, MOD))
     
-    print(' '.join(map(str, result)))
+    #print(' '.join(map(str, result)))
+    l.append(list(''.join(map(str,result))))
 
 def main():
     global N, MOD, f, invf
@@ -84,6 +108,10 @@ def main():
     
     for _ in range(t):
         solve()
+    for i in l:
+        for j in i:
+            print(int(j),end=" ")
+        print()
 
 if __name__ == "__main__":
     main()

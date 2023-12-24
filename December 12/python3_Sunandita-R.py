@@ -1,6 +1,14 @@
+"""
+INPUT FORMAT  : Three lines of input as and when prompted
+                Each  line consists of space separated strings without quotes
+
+Example : Gold silver plat ruby
+          Silver emerald
+          Diamond ruby
+"""
+
 print("Box1 = ")
 l1=[str(x) for x in input().split()]
-print(l1)
 print("Box2 = ")
 l2=[str(x) for x in input().split()]
 print("Box3 = ")
@@ -16,7 +24,6 @@ def binary_search(arr, target):
         mid = (low + high) // 2
 
         if arr[mid] == target:
-            print("success")
             return 1
             
         elif arr[mid] < target:
