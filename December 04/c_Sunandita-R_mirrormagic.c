@@ -1,6 +1,6 @@
 /* 
 
-    INPUT FORMAT: A single spaceless string
+    INPUT FORMAT: A single spaceless string without quotes
     Example     : Hollow
 
 */

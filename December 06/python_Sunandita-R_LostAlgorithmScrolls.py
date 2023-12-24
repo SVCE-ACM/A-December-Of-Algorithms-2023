@@ -1,3 +1,22 @@
+"""
+Approach chosen : All the words that can be obtained by adding/removing the first or last letter 
+                  from the previous word is also chosen to be a part of a chain.
+
+Example : [ dot, dote, eagle]  
+Output: [ dot, dote]  Here since addition of single letter in the end to dot gives the next word dote
+                      The two words form a sequence.
+
+In case of 2 or more sequence : Sequence with greatest length is chosen
+
+If the sequences are equal in length the first valid chain is chosen
+
+
+    ***********         INPUT FORMAT        ******
+
+    Single line of space separated strings 
+
+"""
+
 l=[str(x) for x in input().split()]
 
 l2=[]
