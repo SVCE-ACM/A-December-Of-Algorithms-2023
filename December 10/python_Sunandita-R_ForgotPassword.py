@@ -1,3 +1,15 @@
+""" If program throws database error try the folowing command in cmd :
+    
+        "pip install db-sqlite3"
+
+                            *****   INPUT FORMAT ******
+
+        Just a sql query to get all substrings from column empname from emp table 
+        with the starting index and no of characters to be extracted.
+
+       INPUT EXAMPLE:  select substring(empname,4,13) from emp;
+"""
+
 import sqlite3
 db_file = "willow.db"
 create_table_query = "CREATE TABLE IF NOT EXISTS emp (empno INT, empname TEXT)"
@@ -29,15 +41,3 @@ try:
 
 finally:
     connection.close()
-
-
-
-    """ If program throws database error try the folowing command in cmd :
-    
-        "pip install db-sqlite3"
-
-        Input format:(Just type the next-line)
-        
-        select substring(empname,4,13) from emp;
-    
-    """

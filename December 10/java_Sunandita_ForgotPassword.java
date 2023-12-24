@@ -1,3 +1,15 @@
+/*
+ *  This is just a simulation of a database. To involve real databases look
+ *  into the next python program
+ * 
+ *                      *****   INPUT FORMAT ******
+
+        Just a sql query to get all substrings from column empname from emp table 
+        with the starting index and no of characters to be extracted.
+
+       INPUT EXAMPLE:  select substring(empname,4,13) from emp;
+ */
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.Scanner;

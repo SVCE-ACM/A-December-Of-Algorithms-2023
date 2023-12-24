@@ -1,3 +1,8 @@
+/*
+   The input ‘n’ is an odd integer (3<=n<=15)
+
+*/
+
 #include <iostream>
 #include <vector>
 

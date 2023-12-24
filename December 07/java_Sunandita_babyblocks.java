@@ -1,3 +1,15 @@
+/*
+ *      First two lines in the output is the Sample input output of Testcase 1
+ *
+ *      It is followwed by a prompt  to accept user input
+ * 
+ *      ******  INPUT FORMAT    *****
+ * 
+ *      A single line of Three space separated integers
+ * 
+ *      Example : 5 9 5
+ */
+
 import java.util.Scanner;
 
 public class java_Sunandita_babyblocks {

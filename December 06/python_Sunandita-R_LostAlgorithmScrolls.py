@@ -13,7 +13,9 @@ If the sequences are equal in length the first valid chain is chosen
 
     ***********         INPUT FORMAT        ******
 
-    Single line of space separated strings 
+    Single line of space separated strings without quotes
+
+    Example: cat cot dog doll coat
 
 """
 

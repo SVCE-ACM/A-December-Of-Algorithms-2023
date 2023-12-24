@@ -1,3 +1,7 @@
+/*    INPUT FORMAT: Sequence of words in camel case as a string of letters without space   
+ *    Example : SaveChangesInTheEditor 
+*/
+
 import java.util.Scanner;
 public class java_Sunandita_Camelcase {
    
