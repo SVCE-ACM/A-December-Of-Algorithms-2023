@@ -50,6 +50,7 @@ Check out our FAQ for more information.
   - [**December 23 - Dominoes**](#december-23---dominoes)
   - [**December 24 - Golden Rule Violation**](#december-24---golden-rule-violation)
   - [**December 25 - Harmony Hurdle**](#december-25---harmony-hurdle)
+  - [**December 26 - The Phantom Cycle**](#december-26---the-phantom-cycle)
   - [**FAQ**](#faq)
 
 
@@ -1200,6 +1201,37 @@ he must spend rotating dominoes to make his wish come true.
     
 - **References**
     - [Topological Sorting](https://www.geeksforgeeks.org/topological-sorting/)
+----
+
+### December 26 - The Phantom Cycle
+
+   #### Problem Statement
+   Hackers use sophisticated methods to exploit computer systems, such as exploiting vulnerabilities in memory management mechanisms like linked lists. Linked lists are commonly used data structures in 
+   programming, but they can be susceptible to errors that can be exploited by hackers. In this challenge, you must identify a specific vulnerability in a linked list implementation. Your goal is to determine 
+   whether the linked list contains any cyclic references, which could indicate a malicious attempt to execute the commands repeatedly or cause the system to crash.
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/a862cf5b-4a90-4eab-9045-b4cd58561692" width = "350"></p>
+   
+   #### Sample Input/Output 1
+   ```
+   Input: 1 -> 2 -> 3 -> 4 -> 5 -> 1
+   Output: Cycle Found
+   ```
+
+   #### Explanation
+   ```
+   The linked list contains a cyclic reference. The last node (5) points back to the first node (1), creating a loop that will never terminate. This cyclic reference could
+   indicate a malicious attempt to execute the commands repeatedly or cause the system to crash.       
+   ```
+   #### Sample Input/Output 2
+   ```
+    Input: 1 -> 2 -> 3 -> 4 -> 5 -> None
+    Output: No Cycle Found
+   ``` 
+    
+- **References**
+    - [Linked List](https://www.tutorialspoint.com/data_structures_algorithms/linked_lists_a)
+    - [Cycle Detection in Linked Lists](https://www.geeksforgeeks.org/problems/detect-loop-in-linked-list/1)
 ----
 
 FAQ
