@@ -48,6 +48,8 @@ Check out our FAQ for more information.
   - [**December 21 - Riddle Me This**](#december-21---riddle-me-this)
   - [**December 22 - Rotten Oranges**](#december-22---rotten-oranges)
   - [**December 23 - Dominoes**](#december-23---dominoes)
+  - [**December 24 - Golden Rule Violation**](#december-24---golden-rule-violation)
+  - [**December 25 - Harmony Hurdle**](#december-25---harmony-hurdle)
   - [**FAQ**](#faq)
 
 
@@ -1126,6 +1128,79 @@ he must spend rotating dominoes to make his wish come true.
 - **References**
 
     - [Greedy Algorithms](https://www.geeksforgeeks.org/greedy-algorithms/)
+----
+
+### December 24 - Golden Rule Violation
+
+   #### Problem Statement
+   Mark loves to arrange things in order. Mark sticks to his “Golden Rule” that every set of numbers must be in ascending order. Unfortunately, that is not always the case. Mark defines a “violation”
+   as a situation when a smaller number comes after a larger number in the set, which violates the ascending order. Given a set of integers, help Mark find out the total number of such violations.
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/6994ba7f-3f00-45e8-ac01-da88f4e4da94"></p>
+   
+   #### Sample Input/Output 1
+   ```
+   Input:
+   5
+   4 5 6 7 1
+
+   Output: 4
+   ```
+
+   #### Explanation
+   ```
+   The first line refers to the total number of input. 4, 5, 6 and 7 are in order. 1 comes after 4, 5, 6, 7 on the list but is smaller than all 4 of them. Hence 4 is the output.        
+   ```
+
+   #### Sample Input/Output 2
+   ```
+   Input:
+   5
+   5 4 3 2 1
+
+   Output: 10
+   ```
+
+- **References**
+    - [Divide And Conquer](https://www.javatpoint.com/divide-and-conquer-introduction)
+    - [Merge Sort](https://www.javatpoint.com/merge-sort)  
+----
+### December 25 - Harmony Hurdle
+
+   #### Problem Statement
+   In a parallel universe, tasks await execution, each with dependencies. Task 'i' can only be done when all tasks in dependencies[i] are complete. Write a function to calculate the minimum time needed to 
+   complete all tasks, considering parallel execution while respecting task dependencies. Can you optimize the parallel execution plan?
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/febee453-b9f4-42df-a165-adf13025a620"></p>
+   
+   #### Sample Input/Output 1
+   ```
+      Input: tasks = [1, 2, 3, 4, 5]
+             dependencies = [[], [1], [2], [3], [4, 1]]
+
+      Output: 6
+   ```
+
+   #### Explanation
+   ```
+   Task 1 has no dependencies and can be executed first.
+   Task 2 depends on Task 1.
+   Task 3 depends on Task 2.
+   Task 4 depends on Task 3.
+   Task 5 depends on both Task 4 and Task 1, so it can only start after Task 4 and Task 1 are completed.
+   The minimum time required to execute all tasks is 6.
+   ```
+   #### Sample Input/Output 2
+   ```
+      Input: tasks = [1, 2, 3, 4, 5]
+             dependencies = [[], [1], [2], [3], [4]]
+
+      Output: 5
+   ```
+    
+- **References**
+    - [Topological Sorting](https://www.geeksforgeeks.org/topological-sorting/)
+----
 
 FAQ
 ======
