@@ -51,6 +51,7 @@ Check out our FAQ for more information.
   - [**December 24 - Golden Rule Violation**](#december-24---golden-rule-violation)
   - [**December 25 - Harmony Hurdle**](#december-25---harmony-hurdle)
   - [**December 26 - The Phantom Cycle**](#december-26---the-phantom-cycle)
+  - [**December 27 - Circle of Endurance**](#december-27---circle-of-endurance)
   - [**FAQ**](#faq)
 
 
@@ -1232,6 +1233,48 @@ he must spend rotating dominoes to make his wish come true.
 - **References**
     - [Linked List](https://www.tutorialspoint.com/data_structures_algorithms/linked_lists_a)
     - [Cycle Detection in Linked Lists](https://www.geeksforgeeks.org/problems/detect-loop-in-linked-list/1)
+----
+### December 27 - Circle of Endurance
+
+   #### Problem Statement
+   A truck driver embarks on a challenging expedition across a circular route dotted with N petrol pumps. Each pump has a unique combination of petrol reserves and distances to the next stop. The trucker, 
+   determined to complete the circle without running out of fuel, seeks your expertise to identify the optimal starting point. Can you help the resilient driver navigate this journey, ensuring
+   a seamless trip through the circle of petrol pumps, and emerge victorious in the face of this fueling challenge?
+   
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/acf248a7-5b62-4fed-94a5-d491180183d6"></p>
+
+   #### Input/Output Constraints
+   There are N petrol pumps on that circular path. You will be given two sets of data.
+   1. The amount of petrol that every petrol pump has.
+   2. Distance from that petrol pump to the next petrol pump.
+   Find a starting point where the truck can start to get through the complete circle without exhausting its petrol in between.
+   Note:  For 1-litre petrol, the truck can go 1 unit of distance.
+
+   #### Sample Input/Output 1
+   ```
+   Input: N = 4
+          Petrol = 4 6 7 4
+          Distance = 6 5 3 5
+
+   Output: 2
+   ```
+
+   #### Explanation
+   ```
+   There are 4 petrol pumps with the amount of petrol and distance to the next petrol pump value pairs as {4, 6}, {6, 5},{7, 3} and {4, 5}. The first point from where
+   the truck can make a circular tour is 2nd petrol pump. Output in this case is 2nd petrol pump.
+   ```
+   #### Sample Input/Output 2
+   ```
+    Input: 5
+           Petrol = 2 3 7 4 5
+           Distance = 6 5 3 5 3
+
+    Output: 3
+   ``` 
+    
+- **References**
+    - [Circular Tour using Queue](https://www.geeksforgeeks.org/find-a-tour-that-visits-all-stations/)
 ----
 
 FAQ
