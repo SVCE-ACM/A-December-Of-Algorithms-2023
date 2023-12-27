@@ -48,6 +48,10 @@ Check out our FAQ for more information.
   - [**December 21 - Riddle Me This**](#december-21---riddle-me-this)
   - [**December 22 - Rotten Oranges**](#december-22---rotten-oranges)
   - [**December 23 - Dominoes**](#december-23---dominoes)
+  - [**December 24 - Golden Rule Violation**](#december-24---golden-rule-violation)
+  - [**December 25 - Harmony Hurdle**](#december-25---harmony-hurdle)
+  - [**December 26 - The Phantom Cycle**](#december-26---the-phantom-cycle)
+  - [**December 27 - Circle of Endurance**](#december-27---circle-of-endurance)
   - [**FAQ**](#faq)
 
 
@@ -1126,6 +1130,152 @@ he must spend rotating dominoes to make his wish come true.
 - **References**
 
     - [Greedy Algorithms](https://www.geeksforgeeks.org/greedy-algorithms/)
+----
+
+### December 24 - Golden Rule Violation
+
+   #### Problem Statement
+   Mark loves to arrange things in order. Mark sticks to his “Golden Rule” that every set of numbers must be in ascending order. Unfortunately, that is not always the case. Mark defines a “violation”
+   as a situation when a smaller number comes after a larger number in the set, which violates the ascending order. Given a set of integers, help Mark find out the total number of such violations.
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/6994ba7f-3f00-45e8-ac01-da88f4e4da94"></p>
+   
+   #### Sample Input/Output 1
+   ```
+   Input:
+   5
+   4 5 6 7 1
+
+   Output: 4
+   ```
+
+   #### Explanation
+   ```
+   The first line refers to the total number of input. 4, 5, 6 and 7 are in order. 1 comes after 4, 5, 6, 7 on the list but is smaller than all 4 of them. Hence 4 is the output.        
+   ```
+
+   #### Sample Input/Output 2
+   ```
+   Input:
+   5
+   5 4 3 2 1
+
+   Output: 10
+   ```
+
+- **References**
+    - [Divide And Conquer](https://www.javatpoint.com/divide-and-conquer-introduction)
+    - [Merge Sort](https://www.javatpoint.com/merge-sort)  
+----
+### December 25 - Harmony Hurdle
+
+   #### Problem Statement
+   In a parallel universe, tasks await execution, each with dependencies. Task 'i' can only be done when all tasks in dependencies[i] are complete. Write a function to calculate the minimum time needed to 
+   complete all tasks, considering parallel execution while respecting task dependencies. Can you optimize the parallel execution plan?
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/febee453-b9f4-42df-a165-adf13025a620"></p>
+   
+   #### Sample Input/Output 1
+   ```
+      Input: tasks = [1, 2, 3, 4, 5]
+             dependencies = [[], [1], [2], [3], [4, 1]]
+
+      Output: 6
+   ```
+
+   #### Explanation
+   ```
+   Task 1 has no dependencies and can be executed first.
+   Task 2 depends on Task 1.
+   Task 3 depends on Task 2.
+   Task 4 depends on Task 3.
+   Task 5 depends on both Task 4 and Task 1, so it can only start after Task 4 and Task 1 are completed.
+   The minimum time required to execute all tasks is 6.
+   ```
+   #### Sample Input/Output 2
+   ```
+      Input: tasks = [1, 2, 3, 4, 5]
+             dependencies = [[], [1], [2], [3], [4]]
+
+      Output: 5
+   ```
+    
+- **References**
+    - [Topological Sorting](https://www.geeksforgeeks.org/topological-sorting/)
+----
+
+### December 26 - The Phantom Cycle
+
+   #### Problem Statement
+   Hackers use sophisticated methods to exploit computer systems, such as exploiting vulnerabilities in memory management mechanisms like linked lists. Linked lists are commonly used data structures in 
+   programming, but they can be susceptible to errors that can be exploited by hackers. In this challenge, you must identify a specific vulnerability in a linked list implementation. Your goal is to determine 
+   whether the linked list contains any cyclic references, which could indicate a malicious attempt to execute the commands repeatedly or cause the system to crash.
+
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/a862cf5b-4a90-4eab-9045-b4cd58561692" width = "350"></p>
+   
+   #### Sample Input/Output 1
+   ```
+   Input: 1 -> 2 -> 3 -> 4 -> 5 -> 1
+   Output: Cycle Found
+   ```
+
+   #### Explanation
+   ```
+   The linked list contains a cyclic reference. The last node (5) points back to the first node (1), creating a loop that will never terminate. This cyclic reference could
+   indicate a malicious attempt to execute the commands repeatedly or cause the system to crash.       
+   ```
+   #### Sample Input/Output 2
+   ```
+    Input: 1 -> 2 -> 3 -> 4 -> 5 -> None
+    Output: No Cycle Found
+   ``` 
+    
+- **References**
+    - [Linked List](https://www.tutorialspoint.com/data_structures_algorithms/linked_lists_a)
+    - [Cycle Detection in Linked Lists](https://www.geeksforgeeks.org/problems/detect-loop-in-linked-list/1)
+----
+### December 27 - Circle of Endurance
+
+   #### Problem Statement
+   A truck driver embarks on a challenging expedition across a circular route dotted with N petrol pumps. Each pump has a unique combination of petrol reserves and distances to the next stop. The trucker, 
+   determined to complete the circle without running out of fuel, seeks your expertise to identify the optimal starting point. Can you help the resilient driver navigate this journey, ensuring
+   a seamless trip through the circle of petrol pumps, and emerge victorious in the face of this fueling challenge?
+   
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/acf248a7-5b62-4fed-94a5-d491180183d6"></p>
+
+   #### Input/Output Constraints
+   There are N petrol pumps on that circular path. You will be given two sets of data.
+   1. The amount of petrol that every petrol pump has.
+   2. Distance from that petrol pump to the next petrol pump.
+   Find a starting point where the truck can start to get through the complete circle without exhausting its petrol in between.
+   Note:  For 1-litre petrol, the truck can go 1 unit of distance.
+
+   #### Sample Input/Output 1
+   ```
+   Input: N = 4
+          Petrol = 4 6 7 4
+          Distance = 6 5 3 5
+
+   Output: 2
+   ```
+
+   #### Explanation
+   ```
+   There are 4 petrol pumps with the amount of petrol and distance to the next petrol pump value pairs as {4, 6}, {6, 5},{7, 3} and {4, 5}. The first point from where
+   the truck can make a circular tour is 2nd petrol pump. Output in this case is 2nd petrol pump.
+   ```
+   #### Sample Input/Output 2
+   ```
+    Input: 5
+           Petrol = 2 3 7 4 5
+           Distance = 6 5 3 5 3
+
+    Output: 3
+   ``` 
+    
+- **References**
+    - [Circular Tour using Queue](https://www.geeksforgeeks.org/find-a-tour-that-visits-all-stations/)
+----
 
 FAQ
 ======
