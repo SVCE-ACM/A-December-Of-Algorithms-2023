@@ -52,6 +52,7 @@ Check out our FAQ for more information.
   - [**December 25 - Harmony Hurdle**](#december-25---harmony-hurdle)
   - [**December 26 - The Phantom Cycle**](#december-26---the-phantom-cycle)
   - [**December 27 - Circle of Endurance**](#december-27---circle-of-endurance)
+  - [**December 28 - The Selling Game**](#december-28---the-selling-game)
   - [**FAQ**](#faq)
 
 
@@ -1275,6 +1276,72 @@ he must spend rotating dominoes to make his wish come true.
     
 - **References**
     - [Circular Tour using Queue](https://www.geeksforgeeks.org/find-a-tour-that-visits-all-stations/)
+----
+
+### December 28 - The Selling Game
+
+   #### Problem Statement
+   You are a gadget retailer in Tokyo with x unsold items. Each item g has a performance level m, and a minimum price n. There are z clients interested in purchasing gadgets, and each
+   client d has specific criteria: they want an item with a performance level greater than k and a price less than or equal to r. What is the maximum number of gadgets you can sell to the
+   clients based on their criteria? Each client can purchase at most one item, and each item can have at most one buyer.
+   
+   <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/89dbdfea-975f-431a-916e-2b4f844b2360"></p>
+
+   #### Sample Input/Output 1
+   ```
+   Input:
+   x=3
+   z=3
+   i=[
+       {‘k’ : 10, ‘r’ : 100, ‘m’ : 5, ‘n’ : 110},  #Item 0
+       {‘k’ : 9, ‘r’ : 200, ‘m’ : 2, ‘n’ : 200},  #Item 1
+       {‘k’ : 20, ‘r’ : 300, ‘m’ : 30, ‘n’ : 300}  #Item 2
+     ]
+  
+  c=[
+       {‘k’ : 5, ‘r’ : 110},   #client 0
+       {‘k’ : 9, ‘r’ : 500},   #client 1
+       {‘k’ : 20, ‘r’ : 400},   #client 2
+    ] 	
+
+  Output: 2
+   ```
+
+   #### Explanation
+   ```
+   1. Client 0 (desired_performance: 5, max_price: 110): The item with performance 5 and price 110 satisfies the requirements. One gadget is sold.
+
+   2. Client 1 (desired_performance: 9, max_price: 500): The remaining items do not meet the performance requirement, so no additional gadgets are sold.
+
+   3. Client 2 (desired_performance: 20, max_price: 400): The remaining item with performance 30 and price 300 satisfies the requirements. One more gadget is sold.
+
+   Therefore, based on the given input, the maximum number of gadgets that can be sold is 2. The solution efficiently matches items with clients, starting with the items
+   with the highest performance and considering clients with the lowest performance requirements first.
+   ```
+   #### Sample Input/Output 2
+   ```
+    Input:
+    x=4
+    z=4
+    i=[
+      	{‘k’ : 8, ‘r’ : 150, ‘m’ : 10, ‘n’ : 160},  #Item 0
+      	{‘k’ : 5, ‘r’ : 180, ‘m’ : 12, ‘n’ : 200},  #Item 1
+      	{‘k’ : 20, ‘r’ : 250, ‘m’ : 15, ‘n’ : 300}  #Item 2
+      	{‘k’ : 15, ‘r’ : 300, ‘m’ : 18, ‘n’ : 250}  #Item 3
+      ]
+
+   c=[
+     	{‘k’ : 6, ‘r’ : 200},   #client 0
+     	{‘k’ : 14, ‘r’ : 280},   #client 1
+     	{‘k’ : 8, ‘r’ : 220},   #client 2
+     	{‘k’ : 25, ‘r’ : 350},   #client 3
+     ]
+
+    Output: 3
+   ``` 
+    
+- **References**
+    - [Greedy Algorithm](https://www.programiz.com/dsa/greedy-algorithm)
 ----
 
 FAQ
