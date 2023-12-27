@@ -1283,7 +1283,7 @@ he must spend rotating dominoes to make his wish come true.
    #### Problem Statement
    You are a gadget retailer in Tokyo with x unsold items. Each item g has a performance level m, and a minimum price n. There are z clients interested in purchasing gadgets, and each
    client d has specific criteria: they want an item with a performance level greater than k and a price less than or equal to r. What is the maximum number of gadgets you can sell to the
-   clients based on their criteria. Each client can purchase at most one item, and each item can have at most one buyer.
+   clients based on their criteria? Each client can purchase at most one item, and each item can have at most one buyer.
    
    <p align="center"><img src="https://github.com/SVCE-ACM/A-December-Of-Algorithms-2023/assets/153520105/89dbdfea-975f-431a-916e-2b4f844b2360"></p>
 
@@ -1293,16 +1293,16 @@ he must spend rotating dominoes to make his wish come true.
    x=3
    z=3
    i=[
-    {‘k’ : 10, ‘r’ : 100, ‘m’ : 5, ‘n’ : 110},  #Item 0
-    {‘k’ : 9, ‘r’ : 200, ‘m’ : 2, ‘n’ : 200},  #Item 1
-    {‘k’ : 20, ‘r’ : 300, ‘m’ : 30, ‘n’ : 300}  #Item 2
-  ]
+       {‘k’ : 10, ‘r’ : 100, ‘m’ : 5, ‘n’ : 110},  #Item 0
+       {‘k’ : 9, ‘r’ : 200, ‘m’ : 2, ‘n’ : 200},  #Item 1
+       {‘k’ : 20, ‘r’ : 300, ‘m’ : 30, ‘n’ : 300}  #Item 2
+     ]
   
   c=[
-    {‘k’ : 5, ‘r’ : 110},   #client 0
-    {‘k’ : 9, ‘r’ : 500},   #client 1
-    {‘k’ : 20, ‘r’ : 400},   #client 2
-  ] 
+       {‘k’ : 5, ‘r’ : 110},   #client 0
+       {‘k’ : 9, ‘r’ : 500},   #client 1
+       {‘k’ : 20, ‘r’ : 400},   #client 2
+    ] 	
 
   Output: 2
    ```
@@ -1324,17 +1324,17 @@ he must spend rotating dominoes to make his wish come true.
     x=4
     z=4
     i=[
-      {‘k’ : 8, ‘r’ : 150, ‘m’ : 10, ‘n’ : 160},  #Item 0
-      {‘k’ : 5, ‘r’ : 180, ‘m’ : 12, ‘n’ : 200},  #Item 1
-      {‘k’ : 20, ‘r’ : 250, ‘m’ : 15, ‘n’ : 300}  #Item 2
-      {‘k’ : 15, ‘r’ : 300, ‘m’ : 18, ‘n’ : 250}  #Item 3
-   ]
+      	{‘k’ : 8, ‘r’ : 150, ‘m’ : 10, ‘n’ : 160},  #Item 0
+      	{‘k’ : 5, ‘r’ : 180, ‘m’ : 12, ‘n’ : 200},  #Item 1
+      	{‘k’ : 20, ‘r’ : 250, ‘m’ : 15, ‘n’ : 300}  #Item 2
+      	{‘k’ : 15, ‘r’ : 300, ‘m’ : 18, ‘n’ : 250}  #Item 3
+      ]
    c=[
-     {‘k’ : 6, ‘r’ : 200},   #client 0
-     {‘k’ : 14, ‘r’ : 280},   #client 1
-     {‘k’ : 8, ‘r’ : 220},   #client 2
-     {‘k’ : 25, ‘r’ : 350},   #client 3
-  ]
+     	{‘k’ : 6, ‘r’ : 200},   #client 0
+     	{‘k’ : 14, ‘r’ : 280},   #client 1
+     	{‘k’ : 8, ‘r’ : 220},   #client 2
+     	{‘k’ : 25, ‘r’ : 350},   #client 3
+     ]
 
     Output: 3
    ``` 
