@@ -1329,6 +1329,7 @@ he must spend rotating dominoes to make his wish come true.
       	{‘k’ : 20, ‘r’ : 250, ‘m’ : 15, ‘n’ : 300}  #Item 2
       	{‘k’ : 15, ‘r’ : 300, ‘m’ : 18, ‘n’ : 250}  #Item 3
       ]
+
    c=[
      	{‘k’ : 6, ‘r’ : 200},   #client 0
      	{‘k’ : 14, ‘r’ : 280},   #client 1
