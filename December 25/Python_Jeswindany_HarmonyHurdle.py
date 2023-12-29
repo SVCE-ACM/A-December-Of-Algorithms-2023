@@ -19,7 +19,5 @@ while(d):
         for j in d[i]:
             if j in l:
                 d[i].remove(j)
-    print(d)
-    
 print(t)
         
