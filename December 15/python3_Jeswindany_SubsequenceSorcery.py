@@ -9,4 +9,5 @@ def subsequence(s, sub, substr = ""):
 s = input()
 sub = []
 subsequence(s, sub)
+
 print(len(set(sub)))
