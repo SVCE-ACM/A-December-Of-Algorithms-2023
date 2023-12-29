@@ -1,4 +1,4 @@
-#include<iosteam>
+#include<iostream>
 #include<map>
 using namespace std;
 struct node
@@ -8,10 +8,10 @@ struct node
 };
 struct node *head = NULL;
 
-bool detectLoop(Node* head)
+bool detectLoop(struct node* head)
     {
-        Node* temp = head;
-        map<Node*,bool> v;
+        struct node* temp = head;
+        map<node*,bool> v;
         while(temp!=NULL){
             if(v[temp]!=true){
             v[temp] = true;
@@ -22,9 +22,9 @@ bool detectLoop(Node* head)
         }
         return false;
 }
-void insert(struct node *head, int val)
+void insert(int val)
 {
-    struct node *nn = malloc(sizeof(struct node));
+    struct node *nn = (struct node*)malloc(sizeof(struct node));
     nn->val=val;
     nn->next=NULL;
     if(head==NULL){
@@ -46,8 +46,9 @@ int main(){
   cin>>n;
   for(int i=0; i<n; i++){
     cin>>e;
-    insert(head,e);
+    insert(e);
   }
+  head->next->next->next->next=head;
   if(detectLoop(head)){
     cout << "Cycle Found";
   }
