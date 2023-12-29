@@ -1400,12 +1400,12 @@ he must spend rotating dominoes to make his wish come true.
 	  
    #### Constraints
    ```
-   1 ≤ T ≤ 105
-   2N, Q105
-   1 ≤ A[i]N
-   1 ≤ T ≤ 105
-   1 ≤ X, YN, X ≠ Y
-   1≤ x, yN, xy
+   1 ≤ T ≤ 10^5
+   2 ≤ N, Q ≤ 10^5
+   1 ≤ A[i] ≤ N
+   1 ≤ T ≤ 10^5
+   1 ≤ X, Y ≤ N, X ≠ Y
+   1 ≤ x, y ≤ N, x ≠ y
    ```
 
    #### Sample Input/Output
