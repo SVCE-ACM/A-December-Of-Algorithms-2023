@@ -53,6 +53,7 @@ Check out our FAQ for more information.
   - [**December 26 - The Phantom Cycle**](#december-26---the-phantom-cycle)
   - [**December 27 - Circle of Endurance**](#december-27---circle-of-endurance)
   - [**December 28 - The Selling Game**](#december-28---the-selling-game)
+  - [**December 29 - Cartesian Walk Validator**](#december-29---cartesian-walk-validator)
   - [**FAQ**](#faq)
 
 
@@ -1344,6 +1345,37 @@ he must spend rotating dominoes to make his wish come true.
     - [Greedy Algorithm](https://www.programiz.com/dsa/greedy-algorithm)
 ----
 
+### December 29 - Cartesian Walk Validator
+
+   #### Problem Statement
+   You live in the city of Cartesia where all the roads are laid out in a perfect grid. You arrived ten minutes too early to an appointment, so you decided to take the opportunity to go
+   for a short walk. The city provides its citizens with a "Walk Generator" app on their phones every time you press the button, it sends you an array of one letter strings representing
+   directions to walk. You always walk only a single block for each letter and you know it takes you 1 minute to traverse one city block, so create a function that will return “TRUE” if
+   the walk the app gives you will take you exactly ten minutes and will return you to your starting point. Return “FALSE” otherwise.
+   
+   <p align="center"><img src="https://cdn.dribbble.com/users/2915843/screenshots/6886074/_2.gif" width = "350"></p>
+
+   #### Sample Input/Output 1
+   ```
+   Input: walk = ['n', 's', 'n', 's', 'n', 's', 'n', 's', 'n', 's']
+   Output: TRUE
+   ```
+
+   #### Explanation
+   ```
+   The function checks if the length of the walk is exactly 10 minutes. Since the length of the input walk is 10, the function proceeds to check if the walk returns you to your starting point.
+   The input walk consists of 5 pairs of 'n' and 's' directions, which cancel each other out in terms of north-south movement. Similarly, the input walk consists of 5 pairs of 'e' and 'w' directions,
+   which cancel each other out in terms of east-west movement. Therefore, the function returns 'TRUE' as you have returned to your starting point after exactly 10 minutes of walking.
+   ```
+   #### Sample Input/Output 2
+   ```
+    Input: walk = ['w', 'e', 'w', 'e', 'w', 'e', 'w', 'e', 'w', 'n']
+    Output: FALSE
+   ``` 
+    
+- **References**
+    - [Arrays](https://www.geeksforgeeks.org/what-is-array/)
+----
 FAQ
 ======
 
