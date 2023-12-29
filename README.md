@@ -1438,6 +1438,12 @@ he must spend rotating dominoes to make his wish come true.
    1
    9
    ```
+
+   #### Explanation
+   ```
+     In this sample, an 8-node tree is described, each node with a distinct color. The output values for queries between nodes 4 and 6, 7 and 8, 5 and 4, 7 and 6, 3 and 8, 1 and 2, and 4 and 8 
+     are 7, 8, 8, 5, 2, 1, and 9, respectively. These counts are derived by traversing the tree and comparing colors along the specified paths.
+   ```
 - **References**
     - [Tree Traversal Techniques](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
 ----
