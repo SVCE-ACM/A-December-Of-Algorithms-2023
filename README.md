@@ -54,6 +54,7 @@ Check out our FAQ for more information.
   - [**December 27 - Circle of Endurance**](#december-27---circle-of-endurance)
   - [**December 28 - The Selling Game**](#december-28---the-selling-game)
   - [**December 29 - Cartesian Walk Validator**](#december-29---cartesian-walk-validator)
+  - [**December 30 - Tree Inversions**](#december-30---tree-inversions)
   - [**FAQ**](#faq)
 
 
@@ -1376,6 +1377,71 @@ he must spend rotating dominoes to make his wish come true.
 - **References**
     - [Arrays](https://www.geeksforgeeks.org/what-is-array/)
 ----
+
+### December 30 - Tree Inversions
+
+   #### Problem Statement
+   You are given a tree with N nodes and N-1 edges. Each node i of the tree is assigned a color A[i]. Let c(x,y) be the array of colors encountered while traversing from node x to
+   node y in the tree in order. Let f(x,y) represent the numbers of inversion in the array c(x,y). Compute f(x,y) + f(y,x) for Q different queries. Inversions in array 'arr[]' are equal to
+   the count of pairs (i,j) such that i < j and arr[i] > arr[j]. A tree is a graph with N nodes and N-1 edges such that it is possible to travel from any node to any other node.
+
+   
+   <p align="center"><img src="https://shorturl.at/afxOZ" width = "350"></p>
+
+   #### Input Format
+   First line of the input contains an integer T, representing the number of test cases.
+   The first line of each test case contains 2 space-separated integers N, Q representing the number of nodes and the number of queries respectively.
+   The next line of each test case contains N integers separated by a space representing array A, the array of colors.
+   Next N-1 lines of each test case contains 2 integers space-separated integers X,Y each (X,Y), representing that there’s an edge between node X to node Y.
+   The next Q lines of each test case contains 2 space-separated integers x,y each (x,y) representing the queries.
+
+   #### Output Format
+   For each query output the answer in a new line representing the value f(x,y) + f(y,x).
+	  
+   #### Constraints
+   ```
+   1 ≤ T ≤ 105
+   2N, Q105
+   1 ≤ A[i]N
+   1 ≤ T ≤ 105
+   1 ≤ X, YN, X ≠ Y
+   1≤ x, yN, xy
+   ```
+
+   #### Sample Input/Output
+   ```
+   Input:
+   1
+   8 7
+   1 2 3 1 2 1 3 1
+   1 2
+   1 3
+   2 4
+   3 5
+   3 6
+   5 7
+   6 8
+   4 6
+   7 8
+   5 4
+   7 6
+   3 8
+   1 2
+   4 8
+
+   Output:
+   7 
+   8
+   8
+   5
+   2
+   1
+   9
+   ```
+- **References**
+    - [Tree Traversal Techniques](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
+----
+
 FAQ
 ======
 
