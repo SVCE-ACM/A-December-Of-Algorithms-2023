@@ -53,6 +53,9 @@ Check out our FAQ for more information.
   - [**December 26 - The Phantom Cycle**](#december-26---the-phantom-cycle)
   - [**December 27 - Circle of Endurance**](#december-27---circle-of-endurance)
   - [**December 28 - The Selling Game**](#december-28---the-selling-game)
+  - [**December 29 - Cartesian Walk Validator**](#december-29---cartesian-walk-validator)
+  - [**December 30 - Tree Inversions**](#december-30---tree-inversions)
+  - [**December 31 - N Queens**](#december-31---n-queens)
   - [**FAQ**](#faq)
 
 
@@ -1342,6 +1345,147 @@ he must spend rotating dominoes to make his wish come true.
     
 - **References**
     - [Greedy Algorithm](https://www.programiz.com/dsa/greedy-algorithm)
+----
+
+### December 29 - Cartesian Walk Validator
+
+   #### Problem Statement
+   You live in the city of Cartesia where all the roads are laid out in a perfect grid. You arrived ten minutes too early to an appointment, so you decided to take the opportunity to go
+   for a short walk. The city provides its citizens with a "Walk Generator" app on their phones every time you press the button, it sends you an array of one letter strings representing
+   directions to walk. You always walk only a single block for each letter and you know it takes you 1 minute to traverse one city block, so create a function that will return “TRUE” if
+   the walk the app gives you will take you exactly ten minutes and will return you to your starting point. Return “FALSE” otherwise.
+   
+   <p align="center"><img src="https://cdn.dribbble.com/users/2915843/screenshots/6886074/_2.gif" width = "350"></p>
+
+   #### Sample Input/Output 1
+   ```
+   Input: walk = ['n', 's', 'n', 's', 'n', 's', 'n', 's', 'n', 's']
+   Output: TRUE
+   ```
+
+   #### Explanation
+   ```
+   The function checks if the length of the walk is exactly 10 minutes. Since the length of the input walk is 10, the function proceeds to check if the walk returns you to your starting point.
+   The input walk consists of 5 pairs of 'n' and 's' directions, which cancel each other out in terms of north-south movement. Similarly, the input walk consists of 5 pairs of 'e' and 'w' directions,
+   which cancel each other out in terms of east-west movement. Therefore, the function returns 'TRUE' as you have returned to your starting point after exactly 10 minutes of walking.
+   ```
+   #### Sample Input/Output 2
+   ```
+    Input: walk = ['w', 'e', 'w', 'e', 'w', 'e', 'w', 'e', 'w', 'n']
+    Output: FALSE
+   ``` 
+    
+- **References**
+    - [Arrays](https://www.geeksforgeeks.org/what-is-array/)
+----
+
+### December 30 - Tree Inversions
+
+   #### Problem Statement
+   You are given a tree with N nodes and N-1 edges. Each node i of the tree is assigned a color A[i]. Let c(x,y) be the array of colors encountered while traversing from node x to
+   node y in the tree in order. Let f(x,y) represent the numbers of inversion in the array c(x,y). Compute f(x,y) + f(y,x) for Q different queries. Inversions in array 'arr[]' are equal to
+   the count of pairs (i,j) such that i < j and arr[i] > arr[j]. A tree is a graph with N nodes and N-1 edges such that it is possible to travel from any node to any other node.
+
+   
+   <p align="center"><img src="https://shorturl.at/afxOZ" width = "350"></p>
+
+   #### Input Format
+   First line of the input contains an integer T, representing the number of test cases.
+   The first line of each test case contains 2 space-separated integers N, Q representing the number of nodes and the number of queries respectively.
+   The next line of each test case contains N integers separated by a space representing array A, the array of colors.
+   Next N-1 lines of each test case contains 2 integers space-separated integers X,Y each (X,Y), representing that there’s an edge between node X to node Y.
+   The next Q lines of each test case contains 2 space-separated integers x,y each (x,y) representing the queries.
+
+   #### Output Format
+   For each query output the answer in a new line representing the value f(x,y) + f(y,x).
+	  
+   #### Constraints
+   ```
+   1 ≤ T ≤ 10^5
+   2 ≤ N, Q ≤ 10^5
+   1 ≤ A[i] ≤ N
+   1 ≤ T ≤ 10^5
+   1 ≤ X, Y ≤ N, X ≠ Y
+   1 ≤ x, y ≤ N, x ≠ y
+   ```
+
+   #### Sample Input/Output
+   ```
+   Input:
+   1
+   8 7
+   1 2 3 1 2 1 3 1
+   1 2
+   1 3
+   2 4
+   3 5
+   3 6
+   5 7
+   6 8
+   4 6
+   7 8
+   5 4
+   7 6
+   3 8
+   1 2
+   4 8
+
+   Output:
+   7 
+   8
+   8
+   5
+   2
+   1
+   9
+   ```
+
+   #### Explanation
+   ```
+     In this sample, an 8-node tree is described, each node with a distinct color. The output values for queries between nodes 4 and 6, 7 and 8, 5 and 4, 7 and 6, 3 and 8, 1 and 2, and 4 and 8 
+     are 7, 8, 8, 5, 2, 1, and 9, respectively. These counts are derived by traversing the tree and comparing colors along the specified paths.
+   ```
+- **References**
+    - [Tree Traversal Techniques](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
+----
+
+### December 31 - N Queens
+
+   #### Problem Statement
+   The N-Queens problem is a classic combinatorial problem in computer science. The goal is to place N queens on an N x N chessboard such that no two queens attack each other.
+   A queen can attack any piece on the same row, column, or diagonal. Given the value of N, write a program to find all possible solutions to the N-Queens problem.
+   
+   <p align="center"><img src="https://media0.giphy.com/media/32dfpYx8kBX1bXSEu8/giphy.gif"></p>
+
+   #### Input and Output Constraints
+   The input consists of a single line containing the value of N, where N is an integer between 1 and 8. The output should consist of all possible solutions to the N-Queens problem. Each
+   solution should be printed on a separate line, with the positions of the queens represented by the row and column indices (starting from 1). For example, if the queen
+   is placed in the third row and fourth column, it would be represented as (3, 4).
+
+   #### Sample Input/Output 1
+   ```
+   Input: 4
+   Output: (1, 3) (2, 1) (3, 4) (4, 2)
+           (1, 4) (2, 2) (3, 1) (4, 3)
+   ```
+
+   #### Explanation
+   ```
+   There are two possible solutions to the 4-Queens problem. In the first solution, the queens are placed at (1, 3), (2, 1), (3, 4), and (4, 2).
+   In the second solution, the queens are placed at (1, 4), (2, 2), (3, 1), and (4, 3).
+   ```
+   #### Sample Input/Output 2
+   ```
+    Input: 8
+    Output: (1, 4) (2, 7) (3, 5) (4, 1) (5, 3) (6, 6) (7, 2) (8, 8)
+            (2, 5) (3, 1) (4, 6) (5, 2) (6, 7) (7, 4) (8, 3)
+            (4, 1) (5, 8) (6, 2) (7, 7) (8, 3)
+            (5, 1) (6, 6) (7, 2) (8, 5)
+            (6, 6) (7, 1) (8, 4)
+   ``` 
+    
+- **References**
+    - [Backtracking](https://www.javatpoint.com/backtracking-introduction)
 ----
 
 FAQ
