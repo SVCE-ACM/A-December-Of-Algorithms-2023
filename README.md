@@ -55,6 +55,7 @@ Check out our FAQ for more information.
   - [**December 28 - The Selling Game**](#december-28---the-selling-game)
   - [**December 29 - Cartesian Walk Validator**](#december-29---cartesian-walk-validator)
   - [**December 30 - Tree Inversions**](#december-30---tree-inversions)
+  - [**December 31 - N Queens**](#december-31---n-queens)
   - [**FAQ**](#faq)
 
 
@@ -1446,6 +1447,45 @@ he must spend rotating dominoes to make his wish come true.
    ```
 - **References**
     - [Tree Traversal Techniques](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
+----
+
+### December 31 - N Queens
+
+   #### Problem Statement
+   The N-Queens problem is a classic combinatorial problem in computer science. The goal is to place N queens on an N x N chessboard such that no two queens attack each other.
+   A queen can attack any piece on the same row, column, or diagonal. Given the value of N, write a program to find all possible solutions to the N-Queens problem.
+   
+   <p align="center"><img src="https://media0.giphy.com/media/32dfpYx8kBX1bXSEu8/giphy.gif"></p>
+
+   #### Input and Output Constraints
+   The input consists of a single line containing the value of N, where N is an integer between 1 and 8. The output should consist of all possible solutions to the N-Queens problem. Each
+   solution should be printed on a separate line, with the positions of the queens represented by the row and column indices (starting from 1). For example, if the queen
+   is placed in the third row and fourth column, it would be represented as (3, 4).
+
+   #### Sample Input/Output 1
+   ```
+   Input: 4
+   Output: (1, 3) (2, 1) (3, 4) (4, 2)
+           (1, 4) (2, 2) (3, 1) (4, 3)
+   ```
+
+   #### Explanation
+   ```
+   There are two possible solutions to the 4-Queens problem. In the first solution, the queens are placed at (1, 3), (2, 1), (3, 4), and (4, 2).
+   In the second solution, the queens are placed at (1, 4), (2, 2), (3, 1), and (4, 3).
+   ```
+   #### Sample Input/Output 2
+   ```
+    Input: 8
+    Output: (1, 4) (2, 7) (3, 5) (4, 1) (5, 3) (6, 6) (7, 2) (8, 8)
+            (2, 5) (3, 1) (4, 6) (5, 2) (6, 7) (7, 4) (8, 3)
+            (4, 1) (5, 8) (6, 2) (7, 7) (8, 3)
+            (5, 1) (6, 6) (7, 2) (8, 5)
+            (6, 6) (7, 1) (8, 4)
+   ``` 
+    
+- **References**
+    - [Backtracking](https://www.javatpoint.com/backtracking-introduction)
 ----
 
 FAQ
