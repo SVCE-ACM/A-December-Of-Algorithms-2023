@@ -10,6 +10,7 @@ Usage:
     print(binary_representation)
 """
 
+
 def decimal_to_binary(val):
     """
     Convert a decimal number to its binary representation.
@@ -36,6 +37,7 @@ def decimal_to_binary(val):
         binary_representation += digit
     return binary_representation
 
+
 if __name__ == "__main__":
     # Example: Finding the binary representation of a number
     val_set = (51, 12)
@@ -43,4 +45,3 @@ if __name__ == "__main__":
 
     print("Output:")
     print(binary_representation)
-
