@@ -25,8 +25,6 @@ class c {
 };
 
 int main() {
-    freopen("C:/Users/karth/OneDrive/Desktop/December of Algorithms/A-December-Of-Algorithms-2023/input.txt", "r", stdin);
-    freopen("C:/Users/karth/OneDrive/Desktop/December of Algorithms/A-December-Of-Algorithms-2023/output.txt", "w", stdout);
     int x = 3;
     int z = 3;
     i items[] = {

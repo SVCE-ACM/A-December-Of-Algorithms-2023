@@ -62,8 +62,6 @@ void bruteforce(vector<int>& arr, int n) {
     cout << count << endl;
 }
 int main() {
-    freopen("C:/Users/karth/OneDrive/Desktop/December of Algorithms/A-December-Of-Algorithms-2023/input.txt", "r", stdin);
-    freopen("C:/Users/karth/OneDrive/Desktop/December of Algorithms/A-December-Of-Algorithms-2023/output.txt", "w", stdout);
     int n;
     cin >> n;
     vector<int> arr(n);

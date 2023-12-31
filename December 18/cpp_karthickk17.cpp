@@ -29,8 +29,6 @@ int nCr(int n, int r) {
 
 int main()
 {
-    freopen("C:/Users/karth/OneDrive/Desktop/December of Algorithms/A-December-Of-Algorithms-2023/December 18/input.txt", "r", stdin);
-	freopen("C:/Users/karth/OneDrive/Desktop/December of Algorithms/A-December-Of-Algorithms-2023/December 18/output.txt", "w", stdout);
     int t;
     cin >> t;
     while(t--) {
