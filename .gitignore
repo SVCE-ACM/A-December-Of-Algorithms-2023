@@ -9,7 +9,7 @@ __pycache__/
 
 # C extensions
 *.so
-
+*.gitignore
 # node.js
 /node_modules
 package-lock.json
@@ -229,4 +229,3 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
-
