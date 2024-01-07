@@ -9,7 +9,7 @@ __pycache__/
 
 # C extensions
 *.so
-
+*.gitignore
 # node.js
 /node_modules
 package-lock.json
