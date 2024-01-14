@@ -17,3 +17,4 @@ int main()
     cout << total << endl << pos;
     return 0;
 }
+
