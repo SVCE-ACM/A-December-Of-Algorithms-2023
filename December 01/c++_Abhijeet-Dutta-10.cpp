@@ -12,7 +12,7 @@ int main()
             pos = i;
             maxi = a;
         }
-    }
+    } 
     cout << total << endl << pos;
     return 0;
 }
