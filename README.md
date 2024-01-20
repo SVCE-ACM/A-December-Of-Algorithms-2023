@@ -15,7 +15,7 @@ Finish them all to get a certificate :)
 
 **Send a pull request only after completing all 31 algorithms.**
 
-**Please submit all PRs on or before January 15th 11:59 PM IST.**
+**Please submit all PRs on or before January 21st 11:59 PM IST.**
 
 ## What Do I Do?
 We have a small collection of algorithms, one for every day of the month. Scroll down to take a look at them. 
