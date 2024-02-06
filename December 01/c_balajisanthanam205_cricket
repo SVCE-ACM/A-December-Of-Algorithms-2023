@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main()
+{
+int total=0,n,i,max,x;
+printf("Enter total number of Players played:");
+scanf("%d",&n);
+int runs[n];
+for (i=0;i<n;i++)
+{
+printf ("Enter the score of batsman %d:",i+1);
+scanf("%d",&runs[i]);
+}
+for (i=0;i<n;i++)
+{
+total=total+runs[i];
+}
+max=runs[0];
+x=0;
+for (i=0;i<n;i++)
+{
+if (max<runs[i])
+{
+max=runs[i];
+x=i;
+}
+} 
+printf ("The total runs scored by the team is %d\n", total );
+printf ("The top scored batsman index is %d\nand he scored %d runs\n",x,max);
+return 0;
+}
+    
