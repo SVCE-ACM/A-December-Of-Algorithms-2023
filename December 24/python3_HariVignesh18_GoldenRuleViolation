@@ -1,0 +1,9 @@
+a = [int(i) for i in input().split()]
+b = a.copy()
+count = 0
+for i in range(0,len(a)):
+    c = b[:i+1]
+    for j in c:
+        if j > a[i]:
+            count += 1
+print(count)
